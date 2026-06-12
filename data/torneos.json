@@ -1,1 +1,8 @@
-
+[
+  {
+    "id":"worldcup2026",
+    "nombre":"Mundial 2026",
+    "banner":"worldcup.jpg",
+    "activo":true
+  }
+]
