@@ -1,46 +1,123 @@
+/* =========================
+   LAYOUT PRINCIPAL
+========================= */
+
 .app{
     display:grid;
-    grid-template-columns:300px 1fr 340px;
+
+    grid-template-columns:
+        300px
+        minmax(0, 1fr)
+        340px;
+
     gap:24px;
 
     min-height:100vh;
 
-    padding:20px;
+    max-width:1800px;
+    margin:0 auto;
+
+    padding:24px;
 }
+
+/* =========================
+   COLUMNAS
+========================= */
 
 .sidebar{
     display:flex;
     flex-direction:column;
+
+    min-width:0;
 }
 
 .content{
     display:flex;
     flex-direction:column;
+
     gap:24px;
+
+    min-width:0;
 }
 
 .rightbar{
     display:flex;
     flex-direction:column;
+
     gap:24px;
+
+    min-width:0;
 }
+
+/* =========================
+   TABLET
+========================= */
 
 @media(max-width:1200px){
 
     .app{
-        grid-template-columns:220px 1fr;
+
+        grid-template-columns:
+            240px
+            minmax(0,1fr);
+
     }
 
     .rightbar{
+
         grid-column:2;
+
+        display:grid;
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:24px;
     }
 
 }
 
+/* =========================
+   MOBILE
+========================= */
+
 @media(max-width:900px){
 
     .app{
+
         grid-template-columns:1fr;
+
+        gap:16px;
+
+        padding:16px;
+    }
+
+    .sidebar{
+        order:1;
+    }
+
+    .content{
+        order:2;
+    }
+
+    .rightbar{
+
+        order:3;
+
+        display:flex;
+        flex-direction:column;
+    }
+
+}
+
+/* =========================
+   TELEFONOS PEQUEÑOS
+========================= */
+
+@media(max-width:600px){
+
+    .app{
+        padding:12px;
     }
 
 }
