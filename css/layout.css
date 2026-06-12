@@ -1,11 +1,13 @@
 .app{
     display:grid;
-    grid-template-columns:240px 1fr 320px;
+    grid-template-columns:240px 1fr 300px;
+    gap:20px;
     min-height:100vh;
 }
 
 .sidebar{
-    background:#0f172a;
+    background:#111827;
+    border-radius:16px;
     padding:20px;
 }
 
@@ -14,5 +16,13 @@
 }
 
 .rightbar{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.widget{
+    background:#1f2937;
+    border-radius:16px;
     padding:20px;
 }
