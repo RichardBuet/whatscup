@@ -1,1 +1,13 @@
+.hero{
+    background:#16213e;
+    border-radius:16px;
+    padding:30px;
+    margin-bottom:20px;
+}
 
+.widget{
+    background:#1f2937;
+    border-radius:16px;
+    padding:20px;
+    margin-bottom:20px;
+}
