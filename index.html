@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsCup</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/cards.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-<style>
 
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>WhatsCup</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
 
 </head>
+
 <body>
 
 <div class="app">
@@ -21,15 +23,17 @@
     <aside class="sidebar">
 
         <div class="logo">
-            🏆 WhatsCup
+            🏆 <span>WhatsCup</span>
         </div>
 
         <nav>
+
             <a href="#">🏠 Inicio</a>
             <a href="#">📅 Fixture</a>
             <a href="#">📊 Posiciones</a>
             <a href="#">⚽ Goleadores</a>
             <a href="#">👥 Equipos</a>
+
         </nav>
 
     </aside>
@@ -38,19 +42,29 @@
 
         <section class="hero">
 
-            <h2>MUNDIAL 2026</h2>
+            <div class="hero-content">
 
-            <h1>El sueño de 63 naciones</h1>
+                <small>MUNDIAL 2026</small>
+
+                <h1>El sueño de<br>63 naciones</h1>
+
+                <button>Ver más</button>
+
+            </div>
 
         </section>
-        <section class="matches">
-        
-            <h2>Partidos destacados</h2>
-        
-            <div id="fixture"></div>
-        
-        </section>
-        <section id="fixture">
+
+        <section class="section">
+
+            <div class="section-title">
+
+                ⚽ Partidos destacados
+
+            </div>
+
+            <div id="fixture">
+
+            </div>
 
         </section>
 
@@ -59,16 +73,43 @@
     <aside class="rightbar">
 
         <div class="widget">
-            Tabla de posiciones
+
+            <div class="widget-title">
+                Tabla de posiciones
+            </div>
+
+            <div class="table-mini">
+
+                <div>1 🇦🇷 Argentina</div>
+                <div>2 🇫🇷 Francia</div>
+                <div>3 🇧🇷 Brasil</div>
+                <div>4 🇪🇸 España</div>
+
+            </div>
+
         </div>
 
         <div class="widget">
-            Goleadores
+
+            <div class="widget-title">
+                Goleadores
+            </div>
+
+            <div class="table-mini">
+
+                <div>⚽ Mbappé (4)</div>
+                <div>⚽ Haaland (3)</div>
+                <div>⚽ Julián (2)</div>
+
+            </div>
+
         </div>
 
     </aside>
 
 </div>
+
+<script src="js/fixture.js"></script>
 
 </body>
 </html>
