@@ -35,13 +35,13 @@ document.getElementById('fixture').innerHTML =
 `
 <div class="partido">
     <div class="fecha">
-        TEST
+        FASE 1
     </div>
 
     <div class="resultado">
-        <span>Argentina</span>
+        <span>Mexico</span>
         <strong>2 - 0</strong>
-        <span>Austria</span>
+        <span>Sudafrica</span>
     </div>
 </div>
 `;
