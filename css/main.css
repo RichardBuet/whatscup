@@ -1,13 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#030712;
+    color:white;
+    font-family:'Inter',sans-serif;
+
+}
+
+.app{
+
+    display:grid;
+
+    grid-template-columns:
+        260px
+        1fr
+        320px;
+
+    gap:24px;
+
+    min-height:100vh;
+
+    padding:20px;
+}
+
+.sidebar{
+
+    background:#0f172a;
+
+    border-radius:24px;
+
+    padding:24px;
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+
+    margin-bottom:40px;
+}
+
+.sidebar nav{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:18px;
+}
+
+.sidebar nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:.2s;
+}
+
+.sidebar nav a:hover{
+
+    color:#22c55e;
+}
+
+.content{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:24px;
+}
+
 .hero{
-    background:#16213e;
-    border-radius:16px;
-    padding:30px;
+
+    height:320px;
+
+    border-radius:24px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.4),
+        rgba(0,0,0,.4)
+    ),
+    url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=1200');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:40px;
+}
+
+.hero small{
+
+    color:#22c55e;
+
+    font-size:16px;
+
+    font-weight:600;
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    margin-top:10px;
+
+    line-height:1.05;
+}
+
+.hero button{
+
+    margin-top:25px;
+
+    background:#22c55e;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 22px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+}
+
+.section{
+
+    background:#0f172a;
+
+    border-radius:24px;
+
+    padding:24px;
+}
+
+.section-title{
+
+    font-size:26px;
+
+    font-weight:700;
+
     margin-bottom:20px;
 }
 
+.rightbar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+}
+
 .widget{
-    background:#1f2937;
-    border-radius:16px;
-    padding:20px;
+
+    background:#1e293b;
+
+    border-radius:24px;
+
+    padding:24px;
+}
+
+.widget-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
     margin-bottom:20px;
+}
+
+.table-mini{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+}
+
+.partido{
+
+    background:#111827;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    margin-bottom:12px;
+}
+
+.resultado{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:22px;
+}
+
+.fecha{
+
+    color:#94a3b8;
+
+    margin-bottom:10px;
 }
