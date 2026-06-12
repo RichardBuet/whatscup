@@ -1,11 +1,14 @@
 [
   {
+    "id":1,
+    "torneo":"worldcup2026",
+    "grupo":"A",
     "fecha":"2026-06-12",
     "hora":"14:00",
-    "grupo":"A",
-    "local":"Canadá",
+    "local":"Canada",
     "visitante":"Bosnia",
     "golesLocal":1,
-    "golesVisitante":1
+    "golesVisitante":1,
+    "estado":"finalizado"
   }
 ]
