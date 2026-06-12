@@ -1,223 +1,266 @@
+/* =========================
+   RESET
+========================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* =========================
+   GENERAL
+========================= */
+
 body{
-
     background:#030712;
-    color:white;
+    color:#ffffff;
     font-family:'Inter',sans-serif;
-
 }
 
-.app{
-
-    display:grid;
-
-    grid-template-columns:
-        260px
-        1fr
-        320px;
-
-    gap:24px;
-
-    min-height:100vh;
-
-    padding:20px;
-}
+/* =========================
+   SIDEBAR
+========================= */
 
 .sidebar{
     position:sticky;
-    top:20px;
+    top:24px;
+
+    height:calc(100vh - 48px);
+
     background:#0f172a;
 
     border-radius:24px;
 
-    padding:24px;
-
+    padding:32px 24px;
 }
 
 .logo{
+    font-size:2rem;
+    font-weight:800;
 
-    font-size:28px;
-    font-weight:700;
-
-    margin-bottom:40px;
+    margin-bottom:48px;
 }
 
 .sidebar nav{
-
     display:flex;
     flex-direction:column;
-
-    gap:18px;
+    gap:22px;
 }
 
 .sidebar nav a{
-
     color:white;
-
     text-decoration:none;
 
-    font-size:20px;
+    font-size:1.5rem;
+    font-weight:500;
 
-    transition:.2s;
+    transition:0.2s ease;
 }
 
 .sidebar nav a:hover{
-
     color:#22c55e;
+    transform:translateX(4px);
 }
 
-.content{
+/* =========================
+   CONTENIDO CENTRAL
+========================= */
 
+.content{
     display:flex;
     flex-direction:column;
-
     gap:24px;
 }
 
+/* =========================
+   HERO
+========================= */
+
 .hero{
+    min-height:460px;
 
-    height:320px;
-
-    border-radius:24px;
+    border-radius:28px;
 
     background:
     linear-gradient(
-        rgba(0,0,0,.4),
-        rgba(0,0,0,.4)
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.55)
     ),
-    url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=1200');
+    url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=1600');
 
     background-size:cover;
     background-position:center;
 
     display:flex;
-
     align-items:center;
 
-    padding:40px;
+    padding:48px;
+}
+
+.hero-content{
+    max-width:600px;
 }
 
 .hero small{
+    display:block;
 
     color:#22c55e;
 
-    font-size:16px;
+    font-size:1rem;
+    font-weight:700;
 
-    font-weight:600;
+    letter-spacing:1px;
+
+    margin-bottom:12px;
 }
 
 .hero h1{
+    font-size:4.5rem;
+    font-weight:800;
 
-    font-size:58px;
+    line-height:1;
 
-    margin-top:10px;
-
-    line-height:1.05;
+    margin-bottom:24px;
 }
 
 .hero button{
-
-    margin-top:25px;
-
     background:#22c55e;
 
     color:white;
 
     border:none;
 
-    padding:14px 22px;
+    border-radius:14px;
 
-    border-radius:12px;
+    padding:14px 26px;
+
+    font-size:1rem;
+    font-weight:600;
 
     cursor:pointer;
+
+    transition:0.2s;
 }
 
-.section{
+.hero button:hover{
+    background:#16a34a;
+}
 
+/* =========================
+   SECCIONES
+========================= */
+
+.section{
     background:#0f172a;
 
     border-radius:24px;
 
-    padding:24px;
+    padding:28px;
 }
 
 .section-title{
+    font-size:2rem;
+    font-weight:800;
 
-    font-size:26px;
-
-    font-weight:700;
-
-    margin-bottom:20px;
+    margin-bottom:24px;
 }
+
+/* =========================
+   PANEL DERECHO
+========================= */
 
 .rightbar{
-    position:sticky;
-    top:20px;
-}
     display:flex;
-
     flex-direction:column;
-
     gap:24px;
 }
 
 .widget{
-
-    background:#1e293b;
+    background:#0f172a;
 
     border-radius:24px;
 
-    padding:24px;
+    padding:28px;
 }
 
 .widget-title{
+    font-size:2rem;
+    font-weight:800;
 
-    font-size:22px;
-
-    font-weight:700;
-
-    margin-bottom:20px;
+    margin-bottom:24px;
 }
 
 .table-mini{
-
     display:flex;
-
     flex-direction:column;
+    gap:18px;
 
-    gap:14px;
+    font-size:1.3rem;
 }
 
-.partido{
+/* =========================
+   PARTIDOS
+========================= */
 
+.partido{
     background:#111827;
 
-    border-radius:18px;
+    border-radius:20px;
 
-    padding:18px;
+    padding:22px;
+
+    margin-bottom:14px;
+
+    transition:0.2s;
+}
+
+.partido:hover{
+    transform:translateY(-2px);
+}
+
+.fecha{
+    color:#94a3b8;
+
+    font-size:.95rem;
 
     margin-bottom:12px;
 }
 
 .resultado{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    font-size:22px;
+    font-size:1.8rem;
+    font-weight:600;
 }
 
-.fecha{
+/* =========================
+   MOBILE
+========================= */
 
-    color:#94a3b8;
+@media(max-width:900px){
 
-    margin-bottom:10px;
+    .hero{
+        min-height:340px;
+        padding:28px;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .logo{
+        font-size:1.6rem;
+    }
+
+    .sidebar nav a{
+        font-size:1.2rem;
+    }
+
+    .resultado{
+        font-size:1.3rem;
+    }
+
 }
