@@ -1,1 +1,18 @@
+.app{
+    display:grid;
+    grid-template-columns:240px 1fr 320px;
+    min-height:100vh;
+}
 
+.sidebar{
+    background:#0f172a;
+    padding:20px;
+}
+
+.content{
+    padding:20px;
+}
+
+.rightbar{
+    padding:20px;
+}
