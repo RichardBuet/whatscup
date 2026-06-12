@@ -1,1 +1,11 @@
-
+[
+  {
+    "fecha":"2026-06-12",
+    "hora":"14:00",
+    "grupo":"A",
+    "local":"Canadá",
+    "visitante":"Bosnia",
+    "golesLocal":1,
+    "golesVisitante":1
+  }
+]
