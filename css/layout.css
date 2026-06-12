@@ -1,13 +1,7 @@
 .app{
     display:grid;
     grid-template-columns:240px 1fr 320px;
-    gap:24px;
-}
-
-body{
-    background:#030712;
-    color:white;
-    font-family:Segoe UI,sans-serif;
+    /* gap:24px; */
 }
 
 .sidebar{
@@ -37,7 +31,7 @@ body{
     flex-direction:column;
     gap:20px;
 }
-
+/* 
 .widget{
     background:#1e293b;
     border-radius:20px;
@@ -65,4 +59,4 @@ body{
 .hero h2{
     font-size:18px;
     color:#22c55e;
-}
+} */
