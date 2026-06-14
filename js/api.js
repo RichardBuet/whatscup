@@ -1,31 +1,29 @@
 async function getWorldCupMatches() {
 
-    const response = await fetch(
-        "https://api.football-data.org/v4/competitions/WC/matches",
-        {
-            headers: {
-                "X-Auth-Token": API_KEY
+    try {
+
+        const response = await fetch(
+            `${API_BASE}/competitions/WC/matches`,
+            {
+                headers: {
+                    "X-Auth-Token": API_KEY
+                }
             }
+        );
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
         }
-    );
 
-    const data = await response.json();
+        return await response.json();
 
-    return data;
+    } catch(error) {
+
+        console.error("Error API:", error);
+
+        return {
+            matches:[]
+        };
+    }
+
 }
-
-
-// export async function getPartidos() {
-//     const res = await fetch('data/partidos.json');
-//     return await res.json();
-// }
-
-// export async function getTorneos() {
-//     const res = await fetch('data/torneos.json');
-//     return await res.json();
-// }
-
-// export async function getGoleadores() {
-//     const res = await fetch('data/goleadores.json');
-//     return await res.json();
-// }
