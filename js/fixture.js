@@ -1,69 +1,41 @@
-document.addEventListener("DOMContentLoaded", async () => {
+async function cargarPartidos() {
 
     const fixture = document.getElementById("fixture");
 
-    fixture.innerHTML = `
-        <div class="partido">
-            Cargando partidos...
-        </div>
-    `;
+    fixture.innerHTML = "Cargando...";
 
     const data = await getWorldCupMatches();
 
-    if (!data.matches || data.matches.length === 0) {
-
-        fixture.innerHTML = `
-            <div class="partido">
-                No se pudieron obtener partidos.
-            </div>
-        `;
-
-        return;
-    }
+    console.log(data);
 
     fixture.innerHTML = "";
 
-    data.matches.slice(0,10).forEach(match => {
-
-        const homeGoals =
-            match.score?.fullTime?.home ?? "-";
-
-        const awayGoals =
-            match.score?.fullTime?.away ?? "-";
+    data.matches.slice(0,5).forEach(match => {
 
         fixture.innerHTML += `
+            <div class="partido">
+                <div class="fecha">
+                    ${match.utcDate}
+                </div>
 
-        <div class="partido">
+                <div class="resultado">
 
-            <div class="fecha">
+                    <span>${match.homeTeam.name}</span>
 
-                ${new Date(match.utcDate)
-                    .toLocaleDateString("es-AR")}
+                    <strong>
+                        ${match.score.fullTime.home ?? "-"}
+                        -
+                        ${match.score.fullTime.away ?? "-"}
+                    </strong>
 
+                    <span>${match.awayTeam.name}</span>
+
+                </div>
             </div>
-
-            <div class="resultado">
-
-                <span>
-                    ${match.homeTeam.name}
-                </span>
-
-                <strong>
-                    ${homeGoals}
-                    -
-                    ${awayGoals}
-                </strong>
-
-                <span>
-                    ${match.awayTeam.name}
-                </span>
-
-            </div>
-
-        </div>
-
         `;
 
     });
 
-});
+}
+
+cargarPartidos();
