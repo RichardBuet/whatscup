@@ -1,0 +1,35 @@
+[
+  {
+    "pos": 1,
+    "pais": "Argentina",
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 8,
+    "gc": 1,
+    "pts": 9
+  },
+  {
+    "pos": 2,
+    "pais": "Francia",
+    "pj": 3,
+    "pg": 2,
+    "pe": 1,
+    "pp": 0,
+    "gf": 6,
+    "gc": 2,
+    "pts": 7
+  },
+  {
+    "pos": 3,
+    "pais": "Brasil",
+    "pj": 3,
+    "pg": 2,
+    "pe": 0,
+    "pp": 1,
+    "gf": 5,
+    "gc": 3,
+    "pts": 6
+  }
+]
