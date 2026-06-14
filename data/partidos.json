@@ -1,9 +1,26 @@
-{
-  "id":1,
-  "grupo":"A",
-  "fecha":"2026-06-11",
-  "local":"Mexico",
-  "visitante":"Sudafrica",
-  "golesLocal":2,
-  "golesVisitante":0
-}
+[
+  {
+    "fecha":"2026-06-16",
+    "hora":"18:00",
+    "local":"Argentina",
+    "visitante":"Argelia",
+    "golesLocal":3,
+    "golesVisitante":0
+  },
+  {
+    "fecha":"2026-06-17",
+    "hora":"16:00",
+    "local":"Francia",
+    "visitante":"Senegal",
+    "golesLocal":2,
+    "golesVisitante":1
+  },
+  {
+    "fecha":"2026-06-18",
+    "hora":"21:00",
+    "local":"Brasil",
+    "visitante":"Haití",
+    "golesLocal":4,
+    "golesVisitante":0
+  }
+]
