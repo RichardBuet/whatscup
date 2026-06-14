@@ -1,18 +1,45 @@
-async function cargarPartidos() {
+document.addEventListener("DOMContentLoaded", async () => {
 
     const fixture = document.getElementById("fixture");
 
+    fixture.innerHTML = `
+        <div class="partido">
+            Cargando partidos...
+        </div>
+    `;
+
     const data = await getWorldCupMatches();
+
+    if (!data.matches || data.matches.length === 0) {
+
+        fixture.innerHTML = `
+            <div class="partido">
+                No se pudieron obtener partidos.
+            </div>
+        `;
+
+        return;
+    }
 
     fixture.innerHTML = "";
 
     data.matches.slice(0,10).forEach(match => {
 
+        const homeGoals =
+            match.score?.fullTime?.home ?? "-";
+
+        const awayGoals =
+            match.score?.fullTime?.away ?? "-";
+
         fixture.innerHTML += `
+
         <div class="partido">
 
             <div class="fecha">
-                ${match.utcDate}
+
+                ${new Date(match.utcDate)
+                    .toLocaleDateString("es-AR")}
+
             </div>
 
             <div class="resultado">
@@ -22,9 +49,9 @@ async function cargarPartidos() {
                 </span>
 
                 <strong>
-                    ${match.score.fullTime.home ?? "-"}
+                    ${homeGoals}
                     -
-                    ${match.score.fullTime.away ?? "-"}
+                    ${awayGoals}
                 </strong>
 
                 <span>
@@ -34,58 +61,9 @@ async function cargarPartidos() {
             </div>
 
         </div>
+
         `;
 
     });
 
-}
-
-cargarPartidos();
-
-// fetch('data/partidos.json')
-// .then(response => response.json())
-// .then(partidos => {
-
-//     const fixture = document.getElementById('fixture');
-
-//     partidos.forEach(partido => {
-
-//         fixture.innerHTML += `
-//             <div class="partido">
-
-//                 <div class="fecha">
-//                     ${partido.fecha}
-//                 </div>
-
-//                 <div class="resultado">
-//                     <span>${partido.local}</span>
-
-//                     <strong>
-//                         ${partido.golesLocal}
-//                         -
-//                         ${partido.golesVisitante}
-//                     </strong>
-
-//                     <span>${partido.visitante}</span>
-//                 </div>
-
-//             </div>
-//         `;
-//     });
-
-// });
-
-// document.getElementById('fixture').innerHTML =
-// `
-// <div class="partido">
-//     <div class="fecha">
-//         FASE 1
-//     </div>
-
-//     <div class="resultado">
-//         <span>Mexico</span>
-//         <strong>2 - 0</strong>
-//         <span>Sudafrica</span>
-//     </div>
-// </div>
-// `;
+});
