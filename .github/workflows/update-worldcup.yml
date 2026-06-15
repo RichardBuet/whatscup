@@ -6,6 +6,9 @@ on:
   schedule:
     - cron: "*/15 * * * *"
 
+permissions:
+  contents: write
+  
 jobs:
 
   update:
@@ -26,7 +29,10 @@ jobs:
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: node scripts/import-worldcup.js
-
+        
+      - name: Generate Standings
+        run: node scripts/generar-posiciones.js
+  
       - name: Commit Changes
         run: |
           git config user.name "WhatsCup Bot"
