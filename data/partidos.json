@@ -160,9 +160,9 @@
     "hora": "22:00",
     "local": "Saudi Arabia",
     "visitante": "Uruguay",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "IN_PLAY"
   },
   {
     "id": 537364,
