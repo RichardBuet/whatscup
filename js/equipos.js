@@ -31,6 +31,7 @@ async function cargarEquipos() {
 >
 
     <div class="equipo-nombre">
+        ${banderas[equipo.equipo] || "🏳️"}
         ${equipo.equipo}
     </div>
 
