@@ -24,12 +24,58 @@ async function cargarPartidos() {
         .slice(0,20)
         .forEach(match => {
 
+            const fechaPartido =
+                new Date(match.fecha);
+
+            const hoy =
+                new Date();
+
+            let estado = "";
+
+            if (
+                match.golesLocal !== null &&
+                match.golesVisitante !== null
+            ) {
+
+                estado =
+                    "✅ Finalizado";
+
+            } else if (
+                fechaPartido > hoy
+            ) {
+
+                estado =
+                    "📅 Próximo";
+
+            } else {
+
+                estado =
+                    "🔴 En juego";
+
+            }
+
+            const fechaTexto =
+                fechaPartido.toLocaleDateString(
+                    "es-AR",
+                    {
+                        day:"2-digit",
+                        month:"2-digit",
+                        year:"numeric"
+                    }
+                );
+
             fixture.innerHTML += `
 
                 <div class="partido">
 
                     <div class="fecha">
-                        ${match.fecha}
+
+                        ${estado}
+
+                        <br>
+
+                        ${fechaTexto}
+
                     </div>
 
                     <div class="resultado">
@@ -40,9 +86,15 @@ async function cargarPartidos() {
 
                         <strong>
 
-                            ${match.golesLocal}
+                            ${
+                                match.golesLocal ?? "-"
+                            }
+
                             -
-                            ${match.golesVisitante}
+
+                            ${
+                                match.golesVisitante ?? "-"
+                            }
 
                         </strong>
 
