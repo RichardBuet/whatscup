@@ -439,3 +439,19 @@ table{
     }
 
 }
+
+
+@media(max-width:900px){
+
+    .resultado{
+
+        flex-direction:column;
+
+        gap:10px;
+
+        text-align:center;
+
+        font-size:1.4rem;
+    }
+
+}
