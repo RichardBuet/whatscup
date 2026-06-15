@@ -274,5 +274,29 @@
       "gf": 1,
       "gc": 5
     }
+  ],
+  "H": [
+    {
+      "equipo": "Spain",
+      "grupo": "H",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 0,
+      "gc": 0
+    },
+    {
+      "equipo": "Cape Verde Islands",
+      "grupo": "H",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 0,
+      "gc": 0
+    }
   ]
 }
