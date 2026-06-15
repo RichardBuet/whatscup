@@ -25,24 +25,26 @@ async function cargarEquipos() {
 
             lista.innerHTML += `
 
-                <div class="equipo-card">
+             <a
+    href="equipo.html?equipo=${encodeURIComponent(equipo.equipo)}"
+    class="equipo-card"
+>
 
-                    <div class="equipo-nombre">
-                        ${equipo.equipo}
-                    </div>
+    <div class="equipo-nombre">
+        ${equipo.equipo}
+    </div>
 
-                    <div class="equipo-datos">
+    <div class="equipo-datos">
 
-                        PJ ${equipo.pj}
-                        ·
-                        PTS ${equipo.pts}
-                        ·
-                        DG ${equipo.gf - equipo.gc}
+        PJ ${equipo.pj}
+        ·
+        PTS ${equipo.pts}
+        ·
+        DG ${equipo.gf - equipo.gc}
 
-                    </div>
+    </div>
 
-                </div>
-
+</a>
             `;
 
         });
