@@ -7,7 +7,7 @@ const partidos = JSON.parse(
     )
 );
 
-const tabla = {};
+const grupos = {};
 
 for (const partido of partidos) {
 
@@ -15,12 +15,22 @@ for (const partido of partidos) {
         continue;
     }
 
+    const grupo = partido.grupo || "SIN_GRUPO";
+
+    if (!grupos[grupo]) {
+        grupos[grupo] = {};
+    }
+
+    const tabla = grupos[grupo];
+
     const local = partido.local;
     const visitante = partido.visitante;
 
     if (!tabla[local]) {
+
         tabla[local] = {
             equipo: local,
+            grupo: grupo,
             pts: 0,
             pj: 0,
             pg: 0,
@@ -29,11 +39,14 @@ for (const partido of partidos) {
             gf: 0,
             gc: 0
         };
+
     }
 
     if (!tabla[visitante]) {
+
         tabla[visitante] = {
             equipo: visitante,
+            grupo: grupo,
             pts: 0,
             pj: 0,
             pg: 0,
@@ -42,6 +55,7 @@ for (const partido of partidos) {
             gf: 0,
             gc: 0
         };
+
     }
 
     tabla[local].pj++;
@@ -60,8 +74,11 @@ for (const partido of partidos) {
 
         tabla[visitante].pp++;
 
-    } else if (
-        partido.golesLocal < partido.golesVisitante
+    }
+
+    else if (
+        partido.golesLocal <
+        partido.golesVisitante
     ) {
 
         tabla[visitante].pg++;
@@ -69,7 +86,9 @@ for (const partido of partidos) {
 
         tabla[local].pp++;
 
-    } else {
+    }
+
+    else {
 
         tabla[local].pe++;
         tabla[visitante].pe++;
@@ -81,20 +100,31 @@ for (const partido of partidos) {
 
 }
 
-const posiciones = Object.values(tabla)
-.sort((a,b) => {
+const posiciones = {};
 
-    const dgA = a.gf - a.gc;
-    const dgB = b.gf - b.gc;
+for (const grupo in grupos) {
 
-    if (b.pts !== a.pts)
-        return b.pts - a.pts;
+    posiciones[grupo] =
+        Object.values(grupos[grupo])
+        .sort((a,b) => {
 
-    if (dgB !== dgA)
-        return dgB - dgA;
+            const dgA =
+                a.gf - a.gc;
 
-    return b.gf - a.gf;
-});
+            const dgB =
+                b.gf - b.gc;
+
+            if (b.pts !== a.pts)
+                return b.pts - a.pts;
+
+            if (dgB !== dgA)
+                return dgB - dgA;
+
+            return b.gf - a.gf;
+
+        });
+
+}
 
 fs.writeFileSync(
     "./data/posiciones.json",
@@ -106,5 +136,5 @@ fs.writeFileSync(
 );
 
 console.log(
-    `${posiciones.length} equipos procesados`
+    `${Object.keys(posiciones).length} grupos procesados`
 );
