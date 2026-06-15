@@ -149,9 +149,9 @@
     "hora": "19:00",
     "local": "Belgium",
     "visitante": "Egypt",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": 1,
+    "golesVisitante": 1,
+    "estado": "FINISHED"
   },
   {
     "id": 537370,

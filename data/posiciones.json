@@ -298,5 +298,29 @@
       "gf": 0,
       "gc": 0
     }
+  ],
+  "G": [
+    {
+      "equipo": "Belgium",
+      "grupo": "G",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 1,
+      "gc": 1
+    },
+    {
+      "equipo": "Egypt",
+      "grupo": "G",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 1,
+      "gc": 1
+    }
   ]
 }
