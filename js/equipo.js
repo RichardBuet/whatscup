@@ -93,8 +93,12 @@ async function cargarEquipo() {
         </a>
 
         <h1>
-            ${equipoEncontrado.equipo}
-        </h1>
+
+    ${banderas[equipoEncontrado.equipo] || "🏳️"}
+
+    ${equipoEncontrado.equipo}
+
+</h1>
 
         <br>
 
