@@ -472,3 +472,40 @@ table{
     min-width:800px;
 
 }
+
+
+.equipo-card{
+
+    background:#111827;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:12px;
+
+    transition:.2s;
+}
+
+.equipo-card:hover{
+
+    transform:translateY(-2px);
+}
+
+.equipo-nombre{
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+}
+
+.equipo-datos{
+
+    color:#94a3b8;
+
+    font-size:.95rem;
+}
+
+
