@@ -87,9 +87,9 @@ body{
         rgba(0,0,0,.45),
         rgba(0,0,0,.55)
     ),
-    /*url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=1600');*/
-url('https://png.pngtree.com/thumb_back/fw800/background/20251102/pngtree-futuristic-glowing-blue-fifa-world-cup-2026-trophy-design-image_20183393.webp');
-
+    /*url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=1600');
+      url('https://png.pngtree.com/thumb_back/fw800/background/20251102/pngtree-futuristic-glowing-blue-fifa-world-cup-2026-trophy-design-image_20183393.webp');*/
+      url('https://r1.ilikewallpaper.net/pic/201406/Fifa_World_Cup_Trophy_640.jpg');
 
     background-size:cover;
     background-position:center;
