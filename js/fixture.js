@@ -4,7 +4,11 @@ async function cargarPartidos() {
 
     fixture.innerHTML = "Cargando...";
 
-    const data = await getWorldCupMatches();
+    const response =
+    await fetch("data/partidos.json");
+
+const partidos =
+    await response.json();
 
     console.log(data);
 
