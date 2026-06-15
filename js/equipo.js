@@ -8,13 +8,13 @@ async function cargarEquipo() {
     const nombreEquipo =
         params.get("equipo");
 
-    const response =
+    const responsePosiciones =
         await fetch(
             "data/posiciones.json"
         );
 
     const grupos =
-        await response.json();
+        await responsePosiciones.json();
 
     let equipoEncontrado = null;
 
@@ -45,13 +45,52 @@ async function cargarEquipo() {
     if (!equipoEncontrado) {
 
         html.innerHTML =
-            "Equipo no encontrado";
+            "<h2>Equipo no encontrado</h2>";
 
         return;
 
     }
 
+    const responsePartidos =
+        await fetch(
+            "data/partidos.json"
+        );
+
+    const partidos =
+        await responsePartidos.json();
+
+    const jugados =
+        partidos.filter(p =>
+
+            (p.local === nombreEquipo ||
+             p.visitante === nombreEquipo)
+
+            &&
+
+            p.estado === "FINISHED"
+
+        );
+
+    const proximos =
+        partidos.filter(p =>
+
+            (p.local === nombreEquipo ||
+             p.visitante === nombreEquipo)
+
+            &&
+
+            p.estado !== "FINISHED"
+
+        );
+
     html.innerHTML = `
+
+        <a
+            href="javascript:history.back()"
+            class="volver"
+        >
+            ← Volver
+        </a>
 
         <h1>
             ${equipoEncontrado.equipo}
@@ -67,37 +106,15 @@ async function cargarEquipo() {
 
         <div class="equipo-card">
 
-            <p>
-                PJ:
-                ${equipoEncontrado.pj}
-            </p>
-
-            <p>
-                PG:
-                ${equipoEncontrado.pg}
-            </p>
-
-            <p>
-                PE:
-                ${equipoEncontrado.pe}
-            </p>
-
-            <p>
-                PP:
-                ${equipoEncontrado.pp}
-            </p>
+            <p>PJ: ${equipoEncontrado.pj}</p>
+            <p>PG: ${equipoEncontrado.pg}</p>
+            <p>PE: ${equipoEncontrado.pe}</p>
+            <p>PP: ${equipoEncontrado.pp}</p>
 
             <br>
 
-            <p>
-                GF:
-                ${equipoEncontrado.gf}
-            </p>
-
-            <p>
-                GC:
-                ${equipoEncontrado.gc}
-            </p>
+            <p>GF: ${equipoEncontrado.gf}</p>
+            <p>GC: ${equipoEncontrado.gc}</p>
 
             <p>
                 DG:
@@ -116,7 +133,93 @@ async function cargarEquipo() {
 
         </div>
 
+        <br>
+
+        <h2>
+            ⚽ Partidos jugados
+        </h2>
+
+        <div id="partidosJugados"></div>
+
+        <br>
+
+        <h2>
+            📅 Próximos partidos
+        </h2>
+
+        <div id="proximosPartidos"></div>
+
     `;
+
+    const contenedorJugados =
+        document.getElementById(
+            "partidosJugados"
+        );
+
+    jugados.forEach(p => {
+
+        contenedorJugados.innerHTML += `
+
+            <div class="partido">
+
+                <div class="fecha">
+                    ${p.fecha}
+                </div>
+
+                <div class="resultado">
+
+                    ${p.local}
+
+                    <strong>
+
+                        ${p.golesLocal}
+                        -
+                        ${p.golesVisitante}
+
+                    </strong>
+
+                    ${p.visitante}
+
+                </div>
+
+            </div>
+
+        `;
+
+    });
+
+    const contenedorProximos =
+        document.getElementById(
+            "proximosPartidos"
+        );
+
+    proximos.forEach(p => {
+
+        contenedorProximos.innerHTML += `
+
+            <div class="partido">
+
+                <div class="fecha">
+                    ${p.fecha}
+                </div>
+
+                <div class="resultado">
+
+                    ${p.local}
+
+                    <strong>
+                        vs
+                    </strong>
+
+                    ${p.visitante}
+
+                </div>
+
+            </div>
+
+        `;
+
+    });
 
 }
 
