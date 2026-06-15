@@ -1,0 +1,39 @@
+name: Update World Cup Data
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+
+  update:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run Import Script
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: node scripts/import-worldcup.js
+
+      - name: Commit Changes
+        run: |
+          git config user.name "WhatsCup Bot"
+          git config user.email "bot@whatscup.com"
+
+          git add data/*.json
+
+          git diff --staged --quiet || git commit -m "Update World Cup data"
+
+          git push
