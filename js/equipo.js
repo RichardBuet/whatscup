@@ -16,27 +16,35 @@ async function cargarEquipo() {
     const grupos =
         await responsePosiciones.json();
 
-    let equipoEncontrado = null;
 
-    Object.keys(grupos).forEach(grupo => {
+    
+let equipoEncontrado = null;
+let posicionGrupo = null;
 
-        grupos[grupo].forEach(equipo => {
+Object.keys(grupos).forEach(grupo => {
 
-            if (
-                equipo.equipo === nombreEquipo
-            ) {
+    grupos[grupo].forEach((equipo,index) => {
 
-                equipoEncontrado = {
-                    ...equipo,
-                    grupo
-                };
+        if (
+            equipo.equipo === nombreEquipo
+        ) {
 
-            }
+            equipoEncontrado = {
+                ...equipo,
+                grupo
+            };
 
-        });
+            posicionGrupo =
+                index + 1;
+
+        }
 
     });
 
+});
+
+
+    
     const html =
         document.getElementById(
             "equipoDetalle"
@@ -94,17 +102,31 @@ async function cargarEquipo() {
 
         <h1>
 
-    ${banderas[equipoEncontrado.equipo] || "🏳️"}
-
-    ${equipoEncontrado.equipo}
-
-</h1>
+            ${banderas[equipoEncontrado.equipo] || "🏳️"}
+        
+            ${equipoEncontrado.equipo}
+        
+        </h1>
 
         <br>
 
         <h2>
             Grupo ${equipoEncontrado.grupo}
         </h2>
+        
+        <p>
+            ${
+                posicionGrupo === 1
+                ? "🥇"
+                : posicionGrupo === 2
+                ? "🥈"
+                : posicionGrupo === 3
+                ? "🥉"
+                : "⚪"
+            }
+        
+            ${posicionGrupo}° del Grupo
+        </p>
 
         <br>
 
