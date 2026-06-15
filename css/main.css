@@ -359,3 +359,15 @@ tr{
     1px solid rgba(255,255,255,.08);
 
 }
+
+.section{
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    min-width:700px;
+
+}
