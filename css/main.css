@@ -45,7 +45,7 @@ body{
 .sidebar nav{
     display:flex;
     flex-direction:column;
-    gap:22px;
+    gap:4px;
 }
 
 .sidebar nav a{
@@ -210,9 +210,8 @@ body{
 
     border-radius:20px;
 
-    padding:22px;
-
-    margin-bottom:14px;
+    padding: 7px;
+    margin-bottom: 8px;
 
     transition:0.2s;
 }
