@@ -151,5 +151,3 @@ async function cargarPosiciones() {
     });
 
 }
-
-cargarPosiciones();
