@@ -455,3 +455,20 @@ table{
     }
 
 }
+
+
+.tabla-scroll{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    -webkit-overflow-scrolling:touch;
+
+}
+
+.tabla-grupo{
+
+    min-width:800px;
+
+}
