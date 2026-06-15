@@ -508,4 +508,20 @@ table{
     font-size:.95rem;
 }
 
+.volver{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    color:#22c55e;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+
+
 
