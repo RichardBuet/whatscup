@@ -1,4 +1,9 @@
 {
-  "name":"whatscup",
-  "type":"module"
+  "name": "whatscup",
+  "version": "1.0.0",
+  "description": "WhatsCup - Mundial 2026",
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/import-worldcup.js"
+  }
 }
