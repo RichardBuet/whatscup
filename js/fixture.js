@@ -20,49 +20,50 @@ async function cargarPartidos() {
 
     fixture.innerHTML = "";
 
+    const hoy =
+        new Date()
+            .toISOString()
+            .split("T")[0];
+
     partidos
         .slice(0,20)
         .forEach(match => {
 
-            const fechaPartido =
-                new Date(match.fecha);
-
-            const hoy =
-                new Date();
-
             let estado = "";
 
             if (
-                match.golesLocal !== null &&
-                match.golesVisitante !== null
+                match.fecha < hoy
             ) {
 
                 estado =
                     "✅ Finalizado";
 
-            } else if (
-                fechaPartido > hoy
+            }
+            else if (
+                match.fecha === hoy
             ) {
+
+                estado =
+                    "🟡 Hoy";
+
+            }
+            else {
 
                 estado =
                     "📅 Próximo";
 
-            } else {
-
-                estado =
-                    "🔴 En juego";
-
             }
 
             const fechaTexto =
-                fechaPartido.toLocaleDateString(
-                    "es-AR",
-                    {
-                        day:"2-digit",
-                        month:"2-digit",
-                        year:"numeric"
-                    }
-                );
+                new Date(match.fecha)
+                    .toLocaleDateString(
+                        "es-AR",
+                        {
+                            day:"2-digit",
+                            month:"2-digit",
+                            year:"numeric"
+                        }
+                    );
 
             fixture.innerHTML += `
 
@@ -87,13 +88,15 @@ async function cargarPartidos() {
                         <strong>
 
                             ${
-                                match.golesLocal ?? "-"
+                                match.golesLocal ??
+                                "-"
                             }
 
                             -
 
                             ${
-                                match.golesVisitante ?? "-"
+                                match.golesVisitante ??
+                                "-"
                             }
 
                         </strong>
