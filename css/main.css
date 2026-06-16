@@ -367,20 +367,55 @@ tr{
 
 }
 
-table{
 
-    min-width:700px;
 
-}
+/* =========================
+   POSICIONES
+========================= */
 
-/* POSICIONES */
-
-.tabla-scroll table{
+.tabla-scroll{
 
     width:100%;
+
+    overflow-x:auto;
+
+    -webkit-overflow-scrolling:touch;
+
 }
 
-@media (max-width:768px){
+.tabla-grupo{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-bottom:40px;
+
+}
+
+.tabla-grupo th,
+.tabla-grupo td{
+
+    padding:12px;
+
+    text-align:center;
+
+    border-bottom:
+    1px solid rgba(255,255,255,.08);
+
+}
+
+@media(max-width:768px){
+
+    .col-px{
+
+        display:none;
+
+    }
+
+}
+
+/* @media (max-width:768px){
 
     .tabla-scroll table{
 max-width:100vw;
@@ -388,7 +423,7 @@ max-width:100vw;
     .col-px{ display:none; }
     }
 
-}
+} */
 
 /* =========================
    MOBILE OVERRIDES
@@ -471,11 +506,6 @@ max-width:100vw;
 
 }
 
-.tabla-grupo{
-
-    min-width:800px;
-
-}
 
 
 .equipo-card{
