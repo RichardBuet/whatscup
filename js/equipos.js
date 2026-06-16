@@ -1,7 +1,9 @@
 async function cargarEquipos() {
 
     const response =
-        await fetch("data/posiciones.json");
+        await fetch(
+            "data/posiciones.json"
+        );
 
     const grupos =
         await response.json();
@@ -11,46 +13,48 @@ async function cargarEquipos() {
             "listaEquipos"
         );
 
-    lista.innerHTML = "";
+    lista.innerHTML =
+        '<div class="grupos-grid">';
 
     Object.keys(grupos).forEach(grupo => {
 
         lista.innerHTML += `
-            <h2 class="grupo-titulo">
-                Grupo ${grupo}
-            </h2>
+
+            <div class="grupo-card">
+
+                <h2>
+                    Grupo ${grupo}
+                </h2>
+
         `;
 
         grupos[grupo].forEach(equipo => {
 
             lista.innerHTML += `
 
-             <a
-    href="equipo.html?equipo=${encodeURIComponent(equipo.equipo)}"
-    class="equipo-card"
->
+                <a
+                    href="equipo.html?equipo=${encodeURIComponent(equipo.equipo)}"
+                    class="equipo-link"
+                >
 
-    <div class="equipo-nombre">
-        ${banderas[equipo.equipo] || "🏳️"}
-        ${equipo.equipo}
-    </div>
+                    ${bandera(equipo.equipo)}
+                    ${equipo.equipo}
 
-    <div class="equipo-datos">
+                </a>
 
-        PJ ${equipo.pj}
-        ·
-        PTS ${equipo.pts}
-        ·
-        DG ${equipo.gf - equipo.gc}
-
-    </div>
-
-</a>
             `;
 
         });
 
+        lista.innerHTML += `
+            </div>
+        `;
+
     });
+
+    lista.innerHTML += `
+        </div>
+    `;
 
 }
 
