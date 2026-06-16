@@ -1,0 +1,411 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+body{
+    background:#020617;
+    color:#fff;
+    font-family:'Inter',sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+    position:sticky;
+    top:24px;
+
+    height:calc(100vh - 48px);
+
+    background:#0f172a;
+
+    border-radius:24px;
+
+    padding:32px 24px;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:800;
+    margin-bottom:35px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.sidebar nav a{
+    color:white;
+    padding:12px 16px;
+    border-radius:14px;
+    font-size:1.25rem;
+    transition:.2s;
+}
+
+.sidebar nav a:hover{
+    background:#1e293b;
+}
+
+.sidebar nav a.active{
+    background:#22c55e;
+    font-weight:700;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:420px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.65)
+    ),
+    url('https://r1.ilikewallpaper.net/pic/201406/Fifa_World_Cup_Trophy_640.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    padding:48px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.hero small{
+    color:#61d26a;
+    font-weight:700;
+}
+
+.hero button{
+    margin-top:10px;
+
+    border:none;
+
+    background:#61d26a;
+    color:white;
+
+    padding:14px 24px;
+
+    border-radius:14px;
+
+    font-size:1rem;
+    font-weight:700;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+    background:#08112a;
+
+    border-radius:24px;
+
+    padding:28px;
+}
+
+.section-title{
+    font-size:2.2rem;
+    font-weight:800;
+
+    margin-bottom:25px;
+}
+
+/* =========================
+   PARTIDOS
+========================= */
+
+#fixtureCompleto{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.partido{
+
+    background:#0b1328;
+
+    border-radius:18px;
+
+    padding:16px 18px;
+
+    transition:.2s;
+}
+
+.partido:hover{
+    transform:translateY(-2px);
+}
+
+.fecha{
+    color:#94a3b8;
+    font-size:.85rem;
+    margin-bottom:8px;
+}
+
+.resultado{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:1.25rem;
+    font-weight:700;
+}
+
+.resultado strong{
+    font-size:1.5rem;
+}
+
+/* =========================
+   TABLAS
+========================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1e293b;
+    font-weight:700;
+}
+
+th,
+td{
+    padding:14px;
+    text-align:center;
+}
+
+tr{
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* =========================
+   POSICIONES
+========================= */
+
+.grupo-titulo{
+
+    color:#7ce27e;
+
+    margin-top:30px;
+    margin-bottom:15px;
+
+    font-size:2rem;
+}
+
+.tabla-scroll{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+/* =========================
+   EQUIPOS
+========================= */
+
+.grupos-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.grupo-card{
+
+    background:#111827;
+
+    border-radius:18px;
+
+    padding:20px;
+}
+
+.grupo-card h2{
+
+    color:#7ce27e;
+
+    margin-bottom:15px;
+}
+
+.equipo-link{
+
+    display:block;
+
+    padding:8px 0;
+
+    border-bottom:
+    1px solid rgba(255,255,255,.08);
+
+    transition:.2s;
+}
+
+.equipo-link:hover{
+
+    color:#61d26a;
+
+    transform:translateX(4px);
+}
+
+.equipo-link:last-child{
+    border-bottom:none;
+}
+
+/* =========================
+   EQUIPO INDIVIDUAL
+========================= */
+
+.equipo-card{
+
+    background:#111827;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-bottom:14px;
+}
+
+.equipo-nombre{
+
+    font-size:1.3rem;
+    font-weight:700;
+
+    margin-bottom:8px;
+}
+
+.equipo-datos{
+
+    color:#94a3b8;
+}
+
+.volver{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    color:#61d26a;
+
+    font-weight:700;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    .hero{
+
+        min-height:300px;
+        padding:24px;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .section-title{
+        font-size:1.6rem;
+    }
+
+    .resultado{
+
+        flex-direction:column;
+
+        gap:6px;
+
+        text-align:center;
+
+        font-size:1rem;
+    }
+
+    .sidebar{
+
+        position:fixed !important;
+
+        left:0;
+        right:0;
+        bottom:0;
+
+        top:auto;
+
+        height:70px;
+
+        border-radius:24px 24px 0 0;
+
+        padding:0;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    .sidebar nav{
+
+        flex-direction:row;
+
+        justify-content:space-around;
+
+        align-items:center;
+
+        width:100%;
+        height:100%;
+    }
+
+    .sidebar nav a{
+
+        font-size:12px;
+
+        padding:0;
+    }
+
+    .grupos-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .col-px{
+        display:none;
+    }
+}
