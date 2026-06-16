@@ -33,12 +33,12 @@ async function cargarEquipos() {
             html += `
 
                 <a
-                    href="equipo.html?equipo=${encodeURIComponent(equipo.equipo)}"
+                    href="equipo.html?equipo=${encodeURIComponent(equipo)}"  
                     class="equipo-link"
                 >
                     
                     
-                    ${equipo.equipo}
+                    ${equipo}
 
                 </a>
 
