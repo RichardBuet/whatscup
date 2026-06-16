@@ -524,5 +524,7 @@ table{
 }
 
 
-
+@media (max-width: 768px){
+    .col-px{ display:none; }
+}
 
