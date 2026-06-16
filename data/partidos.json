@@ -161,8 +161,8 @@
     "local": "Saudi Arabia",
     "visitante": "Uruguay",
     "golesLocal": 1,
-    "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "golesVisitante": 1,
+    "estado": "FINISHED"
   },
   {
     "id": 537364,
@@ -172,8 +172,8 @@
     "local": "Iran",
     "visitante": "New Zealand",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesVisitante": 1,
+    "estado": "IN_PLAY"
   },
   {
     "id": 537391,
