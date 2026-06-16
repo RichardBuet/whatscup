@@ -383,9 +383,9 @@ table{
 @media (max-width:768px){
 
     .tabla-scroll table{
-
+max-width:100vw;
         min-width:auto;
-
+    .col-px{ display:none; }
     }
 
 }
@@ -527,7 +527,4 @@ table{
 }
 
 
-@media (max-width: 768px){
-    .col-px{ display:none; }
-}
 
