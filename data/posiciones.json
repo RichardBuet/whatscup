@@ -323,6 +323,28 @@
   ],
   "G": [
     {
+      "equipo": "Iran",
+      "grupo": "G",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 2,
+      "gc": 2
+    },
+    {
+      "equipo": "New Zealand",
+      "grupo": "G",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 2,
+      "gc": 2
+    },
+    {
       "equipo": "Belgium",
       "grupo": "G",
       "pts": 1,
