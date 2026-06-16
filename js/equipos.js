@@ -13,12 +13,12 @@ async function cargarEquipos() {
             "listaEquipos"
         );
 
-    lista.innerHTML =
+    let html =
         '<div class="grupos-grid">';
 
     Object.keys(grupos).forEach(grupo => {
 
-        lista.innerHTML += `
+        html += `
 
             <div class="grupo-card">
 
@@ -30,7 +30,7 @@ async function cargarEquipos() {
 
         grupos[grupo].forEach(equipo => {
 
-            lista.innerHTML += `
+            html += `
 
                 <a
                     href="equipo.html?equipo=${encodeURIComponent(equipo.equipo)}"
@@ -46,15 +46,17 @@ async function cargarEquipos() {
 
         });
 
-        lista.innerHTML += `
+        html += `
             </div>
         `;
 
     });
 
-    lista.innerHTML += `
+    html += `
         </div>
     `;
+
+    lista.innerHTML = html;
 
 }
 
