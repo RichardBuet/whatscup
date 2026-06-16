@@ -375,16 +375,19 @@ table{
 
 /* POSICIONES */
 
-.tabla-scroll{
-
-    width:100%;
-
-    overflow-x:auto;
-}
-
 .tabla-scroll table{
 
-    min-width:700px;
+    width:100%;
+}
+
+@media (max-width:768px){
+
+    .tabla-scroll table{
+
+        min-width:auto;
+
+    }
+
 }
 
 /* =========================
