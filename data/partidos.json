@@ -171,9 +171,9 @@
     "hora": "01:00",
     "local": "Iran",
     "visitante": "New Zealand",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "IN_PLAY"
+    "estado": "PAUSED"
   },
   {
     "id": 537391,
