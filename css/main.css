@@ -556,5 +556,76 @@ max-width:100vw;
 
 }
 
+/* =========================
+   EQUIPOS
+========================= */
 
+.grupos-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(260px,1fr)
+        );
+
+    gap:24px;
+
+}
+
+.grupo-card{
+
+    background:#111827;
+
+    border-radius:20px;
+
+    padding:20px;
+
+}
+
+.grupo-card h2{
+
+    color:#61d26a;
+
+    margin-bottom:15px;
+
+    font-size:1.8rem;
+
+}
+
+.equipo-link{
+
+    display:block;
+
+    padding:12px 0;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+    border-bottom:
+    1px solid rgba(
+        255,255,255,.08
+    );
+
+    transition:.2s;
+
+}
+
+.equipo-link:hover{
+
+    color:#22c55e;
+
+}
+
+.equipo-link:last-child{
+
+    border-bottom:none;
+
+}
 
