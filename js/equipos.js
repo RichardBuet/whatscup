@@ -2,7 +2,7 @@ async function cargarEquipos() {
 
     const response =
         await fetch(
-            "data/posiciones.json"
+            "data/grupos.json"
         );
 
     const grupos =
@@ -36,7 +36,8 @@ async function cargarEquipos() {
                     href="equipo.html?equipo=${encodeURIComponent(equipo.equipo)}"
                     class="equipo-link"
                 >
-
+                    
+                    // ${bandera(equipo.equipo)}
                     ${equipo.equipo}
 
                 </a>
