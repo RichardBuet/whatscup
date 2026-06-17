@@ -237,9 +237,9 @@
     "hora": "20:00",
     "local": "England",
     "visitante": "Croatia",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": 3,
+    "golesVisitante": 2,
+    "estado": "IN_PLAY"
   },
   {
     "id": 537410,
