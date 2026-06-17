@@ -47,6 +47,28 @@
   ],
   "B": [
     {
+      "equipo": "Canada",
+      "grupo": "B",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 1,
+      "gc": 1
+    },
+    {
+      "equipo": "Bosnia-Herzegovina",
+      "grupo": "B",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 1,
+      "gc": 1
+    },
+    {
       "equipo": "Qatar",
       "grupo": "B",
       "pts": 1,
@@ -67,28 +89,6 @@
       "pp": 0,
       "gf": 1,
       "gc": 1
-    },
-    {
-      "equipo": "Canada",
-      "grupo": "B",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 0,
-      "gc": 0
-    },
-    {
-      "equipo": "Bosnia-Herzegovina",
-      "grupo": "B",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 0,
-      "gc": 0
     }
   ],
   "D": [
@@ -457,6 +457,30 @@
       "pp": 1,
       "gf": 0,
       "gc": 3
+    }
+  ],
+  "K": [
+    {
+      "equipo": "Portugal",
+      "grupo": "K",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 1,
+      "gc": 1
+    },
+    {
+      "equipo": "Congo DR",
+      "grupo": "K",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 1,
+      "gc": 1
     }
   ]
 }
