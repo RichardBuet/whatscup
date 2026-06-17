@@ -215,9 +215,9 @@
     "hora": "04:00",
     "local": "Austria",
     "visitante": "Jordan",
-    "golesLocal": 1,
+    "golesLocal": 3,
     "golesVisitante": 1,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537403,
