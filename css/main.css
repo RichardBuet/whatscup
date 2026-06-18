@@ -1,530 +1,408 @@
 /* =========================
-   RESET
+RESET
 ========================= */
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 /* =========================
-   GENERAL
+GENERAL
 ========================= */
 
 body{
-
-    background:
-    linear-gradient(
-        180deg,
-        #020617 0%,
-        #071129 100%
-    );
-
-    color:#ffffff;
-
-    font-family:'Inter',sans-serif;
-
-    min-height:100vh;
-
+background:
+linear-gradient(
+  180deg,
+  #020617 0%,
+  #071129 100%
+);
+color:#ffffff;
+font-family:'Inter',sans-serif;
+min-height:100vh;
 }
 
 a{
-    text-decoration:none;
-    color:inherit;
+text-decoration:none;
+color:inherit;
 }
 
 /* =========================
-   SIDEBAR
+SIDEBAR
 ========================= */
 
 .sidebar{
-    position:sticky;
-    top:24px;
-
-    height:calc(100vh - 48px);
-
-    background:#0f172a;
-
-    border-radius:24px;
-
-    padding:32px 24px;
+position:sticky;
+top:24px;
+height:calc(100vh - 48px);
+background:#0f172a;
+border-radius:24px;
+padding:32px 24px;
 }
 
 .logo{
-    font-size:2rem;
-    font-weight:800;
-    margin-bottom:35px;
+font-size:2rem;
+font-weight:800;
+margin-bottom:35px;
 }
 
 .sidebar nav{
-    display:flex;
-    flex-direction:column;
-    gap:6px;
+display:flex;
+flex-direction:column;
+gap:6px;
 }
 
 .sidebar nav a{
-    color:white;
-    padding:12px 16px;
-    border-radius:14px;
-    font-size:1.25rem;
-    transition:.2s;
+color:white;
+padding:12px 16px;
+border-radius:14px;
+font-size:1.25rem;
+transition:.2s;
 }
 
 .sidebar nav a:hover{
-    background:#1e293b;
+background:#1e293b;
 }
 
 .sidebar nav a.active{
-
-    background:#22c55e;
-
-    color:#fff;
-
-    font-weight:700;
-
-    border-radius:999px;
-
-    padding: 2px;
+background:#22c55e;
+color:#fff;
+font-weight:700;
+border-radius:999px;
+padding: 2px;
 }
 
 /* =========================
-   CONTENT
+CONTENT
 ========================= */
 
 .content{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+display:flex;
+flex-direction:column;
+gap:20px;
 }
 
 /* =========================
-   HERO
+HERO
 ========================= */
 
 .hero{
-    min-height:420px;
-
-    border-radius:28px;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,.45),
-        rgba(0,0,0,.65)
-    ),
-    url('https://r1.ilikewallpaper.net/pic/201406/Fifa_World_Cup_Trophy_640.jpg');
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    align-items:center;
-
-    padding:48px;
+min-height:420px;
+border-radius:28px;
+background:
+linear-gradient(
+  rgba(0,0,0,.45),
+  rgba(0,0,0,.65)
+),
+url('https://r1.ilikewallpaper.net/pic/201406/Fifa_World_Cup_Trophy_640.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:48px;
 }
 
 .hero h1{
-
-    font-size:3.3rem;
-
-    line-height:1.05;
-
+font-size:3.3rem;
+line-height:1.05;
 }
 
 .hero small{
-    color:#61d26a;
-    font-weight:700;
+color:#61d26a;
+font-weight:700;
 }
 
 .hero button{
-    margin-top:10px;
-
-    border:none;
-
-    background:#61d26a;
-    color:white;
-
-    padding:14px 24px;
-
-    border-radius:14px;
-
-    font-size:1rem;
-    font-weight:700;
+margin-top:10px;
+border:none;
+background:#61d26a;
+color:white;
+padding:14px 24px;
+border-radius:14px;
+font-size:1rem;
+font-weight:700;
 }
 
 /* =========================
-   SECTIONS
+SECTIONS
 ========================= */
 
 .section{
-
-    background:#09132d;
-
-    border-radius:28px;
-
-    padding:12px;
-
-    box-shadow:
-    0 8px 24px rgba(0,0,0,.25);
-
+background:#09132d;
+border-radius:28px;
+padding:12px;
+box-shadow:
+0 8px 24px rgba(0,0,0,.25);
 }
 
 .section-title{
-
-    font-size:1.45rem;
-
-    font-weight:800;
-
-    margin-bottom:18px;
-
+font-size:1.45rem;
+font-weight:800;
+margin-bottom:18px;
 }
 
 /* =========================
-   PARTIDOS
+PARTIDOS
 ========================= */
 
 #fixtureCompleto{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+display:flex;
+flex-direction:column;
+gap:10px;
 }
 
 .partido{
-
-    background:#0b1328;
-
-    border:1px solid
-    rgba(255,255,255,.04);
-
-    border-radius:18px;
-
-    padding: 6px;
-    margin-bottom: 4px;
-
-    transition:.2s;
-
+background:#0b1328;
+border:1px solid
+rgba(255,255,255,.04);
+border-radius:18px;
+padding: 6px;
+margin-bottom: 4px;
+transition:.2s;
 }
 
 .partido:hover{
-
-    transform:
-    translateY(-2px);
-
-    border-color:
-    rgba(34,197,94,.35);
-
+transform:
+translateY(-2px);
+border-color:
+rgba(34,197,94,.35);
 }
 
 .fecha{
-
-    color:#94a3b8;
-
-    font-size:.75rem;
-
-    font-weight:600;
-
-    letter-spacing:.5px;
-
-    margin-bottom:10px;
-
+color:#94a3b8;
+font-size:.75rem;
+font-weight:600;
+letter-spacing:.5px;
+margin-bottom:10px;
 }
 
 .resultado{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    font-size:1rem;
-
-    font-weight:600;
-
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:1rem;
+font-weight:600;
 }
 
 .resultado strong{
-
-    font-size:1.7rem;
-
-    font-weight:800;
-
-    color:#ffffff;
-
-    min-width:80px;
-
-    text-align:center;
-
+font-size:1.7rem;
+font-weight:800;
+color:#ffffff;
+min-width:80px;
+text-align:center;
 }
 
 /* =========================
-   TABLAS
+TABLAS
 ========================= */
 
 table{
-    width:100%;
-    border-collapse:collapse;
+width:100%;
+border-collapse:collapse;
 }
 
 th{
-    background:#1e293b;
-    font-weight:700;
+background:#1e293b;
+font-weight:700;
 }
 
 th,
 td{
-    padding:14px;
-    text-align:center;
+padding:14px;
+text-align:center;
 }
 
 tr{
-    border-bottom:1px solid rgba(255,255,255,.08);
+border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 /* =========================
-   POSICIONES
+POSICIONES
 ========================= */
 
 .grupo-titulo{
-
-    color:#7ce27e;
-
-    margin-top:30px;
-    margin-bottom:15px;
-
-    font-size:2rem;
+color:#7ce27e;
+margin-top:30px;
+margin-bottom:15px;
+font-size:2rem;
 }
 
 .tabla-scroll{
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
+overflow-x:auto;
+-webkit-overflow-scrolling:touch;
 }
 
 /* =========================
-   EQUIPOS
+EQUIPOS
 ========================= */
 
 .grupos-grid{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
-
-    gap:20px;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .equipo-card{
-
-    background:#0b1328;
-
-    border:1px solid
-    rgba(255,255,255,.04);
-
-    border-radius:18px;
-
-    padding:18px;
-
-    margin-bottom:12px;
-
+background:#0b1328;
+border:1px solid
+rgba(255,255,255,.04);
+border-radius:18px;
+padding:18px;
+margin-bottom:12px;
 }
 
 .grupo-card h2{
-
-    color:#7ce27e;
-
-    margin-bottom:15px;
+color:#7ce27e;
+margin-bottom:15px;
 }
 
 .equipo-link{
-
-    display:block;
-
-    padding:8px 0;
-
-    border-bottom:
-    1px solid rgba(255,255,255,.08);
-
-    transition:.2s;
+display:block;
+padding:8px 0;
+border-bottom:
+1px solid rgba(255,255,255,.08);
+transition:.2s;
 }
 
 .equipo-link:hover{
-
-    color:#61d26a;
-
-    transform:translateX(4px);
+color:#61d26a;
+transform:translateX(4px);
 }
 
 .equipo-link:last-child{
-    border-bottom:none;
+border-bottom:none;
 }
 
 /* =========================
-   EQUIPO INDIVIDUAL
+EQUIPO INDIVIDUAL
 ========================= */
 
 .equipo-card{
-
-    background:#111827;
-
-    border-radius:18px;
-
-    padding:22px;
-
-    margin-bottom:14px;
+background:#111827;
+border-radius:18px;
+padding:22px;
+margin-bottom:14px;
 }
 
 .equipo-nombre{
-
-    font-size:1.3rem;
-    font-weight:700;
-
-    margin-bottom:8px;
+font-size:1.3rem;
+font-weight:700;
+margin-bottom:8px;
 }
 
 .equipo-datos{
-
-    color:#94a3b8;
+color:#94a3b8;
 }
 
 .volver{
-
-    display:inline-block;
-
-    margin-bottom:20px;
-
-    color:#61d26a;
-
-    font-weight:700;
+display:inline-block;
+margin-bottom:20px;
+color:#61d26a;
+font-weight:700;
 }
 
 /* =========================
-   MOBILE
+MOBILE
 ========================= */
 
 @media(max-width:900px){
+.hero{
+min-height:300px;
+  padding:24px;
+}
 
-    .hero{
+.hero h1{
+  font-size:3rem;
+}
 
-        min-height:300px;
-        padding:24px;
-    }
+.section-title{
+  font-size:1.6rem;
+}
 
-    .hero h1{
-        font-size:3rem;
-    }
+.resultado{
+flex-direction:row;
+gap:6px;
+text-align:center;
+font-size:0.95rem;
+}
 
-    .section-title{
-        font-size:1.6rem;
-    }
+.fecha {
+margin-bottom: 7px;
+}
+.sidebar{
+position:fixed !important;
+left:0;
+  right:0;
+  bottom:0;
+top:auto;
+height:70px;
+border-radius:24px 24px 0 0;
+padding:0;
+}
 
-    .resultado{
+.logo{
+  display:none;
+}
 
-        flex-direction:column;
+.sidebar nav{
+flex-direction:row;
+justify-content:space-around;
+align-items:center;
+width:100%;
+height:100%;
+}
 
-        gap:6px;
+.sidebar nav a{
+font-size:12px;
+padding:0;
+}
 
-        text-align:center;
+.grupos-grid{
+grid-template-columns:1fr;
+}
 
-        font-size:0.95rem;
-    }
-
-    .sidebar{
-
-        position:fixed !important;
-
-        left:0;
-        right:0;
-        bottom:0;
-
-        top:auto;
-
-        height:70px;
-
-        border-radius:24px 24px 0 0;
-
-        padding:0;
-    }
-
-    .logo{
-        display:none;
-    }
-
-    .sidebar nav{
-
-        flex-direction:row;
-
-        justify-content:space-around;
-
-        align-items:center;
-
-        width:100%;
-        height:100%;
-    }
-
-    .sidebar nav a{
-
-        font-size:12px;
-
-        padding:0;
-    }
-
-    .grupos-grid{
-
-        grid-template-columns:1fr;
-    }
-
-    .col-px{
-        display:none;
-    }
+.col-px{
+  display:none;
+}
 }
 
 @media(max-width:1199px){
-
-    .rightbar{
-        display:none;
-    }
+.rightbar{
+  display:none;
+}
 
 }
 
 
 /* =========================
-   WIDESCREEN TV
+WIDESCREEN TV
 ========================= */
 
 @media (min-width:1200px){
+.app{
+display:grid;
+grid-template-columns:
+      240px
+      1fr
+      360px;
+gap:24px;
+padding:24px;
+align-items:start;
+}
 
-    .app{
+.content{
+display:flex;
+  flex-direction:column;
+  gap:24px;
+}
 
-        display:grid;
-
-        grid-template-columns:
-            240px
-            1fr
-            360px;
-
-        gap:24px;
-
-        padding:24px;
-
-        align-items:start;
-
-    }
-
-    .content{
-
-        display:flex;
-        flex-direction:column;
-        gap:24px;
-
-    }
-
-    .rightbar{
-
-        display:flex;
-        flex-direction:column;
-        gap:24px;
-
-    }
+.rightbar{
+display:flex;
+  flex-direction:column;
+  gap:24px;
+}
 
 }
