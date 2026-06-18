@@ -259,9 +259,9 @@
     "hora": "02:00",
     "local": "Uzbekistan",
     "visitante": "Colombia",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": 1,
+    "golesVisitante": 3,
+    "estado": "FINISHED"
   },
   {
     "id": 537329,
