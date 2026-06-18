@@ -270,9 +270,9 @@
     "hora": "16:00",
     "local": "Czechia",
     "visitante": "South Africa",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "IN_PLAY"
   },
   {
     "id": 537335,
