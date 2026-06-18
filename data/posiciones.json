@@ -25,24 +25,24 @@
     {
       "equipo": "Czechia",
       "grupo": "A",
-      "pts": 0,
-      "pj": 1,
+      "pts": 1,
+      "pj": 2,
       "pg": 0,
-      "pe": 0,
+      "pe": 1,
       "pp": 1,
-      "gf": 1,
-      "gc": 2
+      "gf": 2,
+      "gc": 3
     },
     {
       "equipo": "South Africa",
       "grupo": "A",
-      "pts": 0,
-      "pj": 1,
+      "pts": 1,
+      "pj": 2,
       "pg": 0,
-      "pe": 0,
+      "pe": 1,
       "pp": 1,
-      "gf": 0,
-      "gc": 2
+      "gf": 1,
+      "gc": 3
     }
   ],
   "B": [
