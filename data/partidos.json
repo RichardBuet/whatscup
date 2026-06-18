@@ -248,9 +248,9 @@
     "hora": "23:00",
     "local": "Ghana",
     "visitante": "Panama",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537404,

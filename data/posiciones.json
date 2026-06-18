@@ -496,6 +496,28 @@
       "gc": 2
     },
     {
+      "equipo": "Ghana",
+      "grupo": "L",
+      "pts": 3,
+      "pj": 1,
+      "pg": 1,
+      "pe": 0,
+      "pp": 0,
+      "gf": 1,
+      "gc": 0
+    },
+    {
+      "equipo": "Panama",
+      "grupo": "L",
+      "pts": 0,
+      "pj": 1,
+      "pg": 0,
+      "pe": 0,
+      "pp": 1,
+      "gf": 0,
+      "gc": 1
+    },
+    {
       "equipo": "Croatia",
       "grupo": "L",
       "pts": 0,
