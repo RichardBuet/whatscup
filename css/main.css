@@ -478,3 +478,53 @@ tr{
         display:none;
     }
 }
+
+@media(max-width:1199px){
+
+    .rightbar{
+        display:none;
+    }
+
+}
+
+
+/* =========================
+   WIDESCREEN TV
+========================= */
+
+@media (min-width:1200px){
+
+    .app{
+
+        display:grid;
+
+        grid-template-columns:
+            240px
+            1fr
+            360px;
+
+        gap:24px;
+
+        padding:24px;
+
+        align-items:start;
+
+    }
+
+    .content{
+
+        display:flex;
+        flex-direction:column;
+        gap:24px;
+
+    }
+
+    .rightbar{
+
+        display:flex;
+        flex-direction:column;
+        gap:24px;
+
+    }
+
+}
