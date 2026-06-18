@@ -47,18 +47,18 @@
   ],
   "B": [
     {
-      "equipo": "Canada",
+      "equipo": "Switzerland",
       "grupo": "B",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
+      "pts": 4,
+      "pj": 2,
+      "pg": 1,
       "pe": 1,
       "pp": 0,
-      "gf": 1,
-      "gc": 1
+      "gf": 5,
+      "gc": 2
     },
     {
-      "equipo": "Bosnia-Herzegovina",
+      "equipo": "Canada",
       "grupo": "B",
       "pts": 1,
       "pj": 1,
@@ -80,15 +80,15 @@
       "gc": 1
     },
     {
-      "equipo": "Switzerland",
+      "equipo": "Bosnia-Herzegovina",
       "grupo": "B",
       "pts": 1,
-      "pj": 1,
+      "pj": 2,
       "pg": 0,
       "pe": 1,
-      "pp": 0,
-      "gf": 1,
-      "gc": 1
+      "pp": 1,
+      "gf": 2,
+      "gc": 5
     }
   ],
   "D": [
