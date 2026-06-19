@@ -379,6 +379,9 @@ font-weight:700;
 /* =========================
 MOBILE
 ========================= */
+@media(max-width:500px){
+  .col-px{ display:none;}
+}
 
 @media(max-width:900px){
 .hero{
@@ -436,9 +439,6 @@ padding:0;
 grid-template-columns:1fr;
 }
 
-.col-px{
-  display:none;
-}
 }
 
 @media(max-width:1199px){
