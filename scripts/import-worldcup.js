@@ -21,21 +21,43 @@ async function importar() {
 
     const data = await response.json();
 
-    const partidos = data.matches.map(match => ({
+    const partidos = data.matches.map(match => {
+
+    const fechaLocal =
+        new Date(match.utcDate);
+
+    return {
 
         id: match.id,
 
         grupo:
-            match.group?.replace("GROUP_", "")
-            || "",
+            match.group?.replace(
+                "GROUP_",
+                ""
+            ) || "",
 
         fecha:
-            match.utcDate.split("T")[0],
+            fechaLocal.toLocaleDateString(
+                "en-CA",
+                {
+                    timeZone:
+                    "America/Argentina/Buenos_Aires"
+                }
+            ),
 
         hora:
-            match.utcDate
-                .split("T")[1]
-                .substring(0, 5),
+            fechaLocal.toLocaleTimeString(
+                "es-AR",
+                {
+                    timeZone:
+                    "America/Argentina/Buenos_Aires",
+
+                    hour:"2-digit",
+                    minute:"2-digit",
+
+                    hour12:false
+                }
+            ),
 
         local:
             match.homeTeam?.name || "",
@@ -52,8 +74,10 @@ async function importar() {
         estado:
             match.status
 
-    }));
+    };
 
+});
+    
     fs.writeFileSync(
         "./data/partidos.json",
         JSON.stringify(
