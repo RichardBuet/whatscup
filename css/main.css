@@ -12,16 +12,29 @@ box-sizing:border-box;
 GENERAL
 ========================= */
 
+html{
+
+    background:#020617;
+
+}
+
 body{
-background:
-linear-gradient(
-  180deg,
-  #020617 0%,
-  #071129 100%
-);
-color:#ffffff;
-font-family:'Inter',sans-serif;
-min-height:100vh;
+
+    background:
+    linear-gradient(
+      180deg,
+      #020617 0%,
+      #071129 100%
+    );
+
+    color:#ffffff;
+
+    font-family:'Inter',sans-serif;
+
+    min-height:100dvh;
+
+    overflow-x:hidden;
+
 }
 
 a{
