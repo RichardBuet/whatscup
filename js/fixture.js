@@ -29,30 +29,38 @@ async function cargarPartidos() {
         .slice(0,20)
         .forEach(match => {
 
-            let estado = "";
+let estado = "";
 
-            if (
-                match.fecha < hoy
-            ) {
+if (
+    match.estado === "FINISHED"
+) {
 
-                estado =
-                    "✅ Finalizado";
+    estado =
+        "⚫ Finalizado";
 
-            }
-            else if (
-                match.fecha === hoy
-            ) {
+}
+else if (
+    match.estado === "IN_PLAY"
+) {
 
-                estado =
-                    "🟡 Hoy";
+    estado =
+        "🟢 En vivo";
 
-            }
-            else {
+}
+else if (
+    match.estado === "TIMED"
+) {
 
-                estado =
-                    "📅 Próximo";
+    estado =
+        `🕖 ${match.hora}`;
 
-            }
+}
+else {
+
+    estado =
+        "📅 Programado";
+
+}
 
             const fechaTexto =
                 new Date(match.fecha)
@@ -85,21 +93,15 @@ async function cargarPartidos() {
                             ${match.local}
                         </span>
 
-                        <strong>
+<strong>
 
-                            ${
-                                match.golesLocal ??
-                                "-"
-                            }
+    ${
+        match.estado === "TIMED"
+        ? "vs"
+        : `${match.golesLocal} - ${match.golesVisitante}`
+    }
 
-                            -
-
-                            ${
-                                match.golesVisitante ??
-                                "-"
-                            }
-
-                        </strong>
+</strong>
 
                         <span>
                             ${match.visitante}
