@@ -294,7 +294,7 @@
     "visitante": "Qatar",
     "golesLocal": 6,
     "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537330,
@@ -305,7 +305,7 @@
     "visitante": "South Korea",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "IN_PLAY"
   },
   {
     "id": 537348,
