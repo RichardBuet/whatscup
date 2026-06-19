@@ -16,62 +16,91 @@ async function cargarPartidos() {
     const partidos =
         await response.json();
 
-    console.log(partidos);
-
     fixture.innerHTML = "";
 
-    const hoy =
-        new Date()
-            .toISOString()
-            .split("T")[0];
-
     partidos
-        .slice(0,20)
+
+        .sort((a,b) => {
+
+            const fechaA =
+                new Date(
+                    `${a.fecha}T${a.hora || "00:00"}`
+                );
+
+            const fechaB =
+                new Date(
+                    `${b.fecha}T${b.hora || "00:00"}`
+                );
+
+            return fechaA - fechaB;
+
+        })
+
+        .slice(0,50)
+
         .forEach(match => {
 
-let estado = "";
+            let estado = "";
 
-if (
-    match.estado === "FINISHED"
-) {
+            if (
+                match.estado === "FINISHED"
+            ) {
 
-    estado =
-        "⚫ Finalizado";
+                estado =
+                    `
+                    <span class="estado-finalizado">
+                        ⚫ Finalizado
+                    </span>
+                    `;
 
-}
-else if (
-    match.estado === "IN_PLAY"
-) {
+            }
+            else if (
+                match.estado === "IN_PLAY"
+            ) {
 
-    estado =
-        "🟢 En vivo";
+                estado =
+                    `
+                    <span class="estado-vivo">
+                        🟢 En vivo
+                    </span>
+                    `;
 
-}
-else if (
-    match.estado === "TIMED"
-) {
+            }
+            else if (
+                match.estado === "TIMED"
+            ) {
 
-    estado =
-        `🕖 ${match.hora}`;
+                estado =
+                    `
+                    <span class="estado-programado">
+                        🕖 ${match.hora}
+                    </span>
+                    `;
 
-}
-else {
+            }
+            else {
 
-    estado =
-        "📅 Programado";
+                estado =
+                    `
+                    <span class="estado-programado">
+                        📅 Programado
+                    </span>
+                    `;
 
-}
+            }
 
             const fechaTexto =
-                new Date(match.fecha)
-                    .toLocaleDateString(
-                        "es-AR",
-                        {
-                            day:"2-digit",
-                            month:"2-digit",
-                            year:"numeric"
-                        }
-                    );
+                new Date(
+                    `${match.fecha}T00:00:00`
+                )
+                .toLocaleDateString(
+                    "es-AR",
+                    {
+                        day:"2-digit",
+                        month:"2-digit",
+                        year:"numeric"
+                    }
+                );
 
             fixture.innerHTML += `
 
@@ -93,15 +122,15 @@ else {
                             ${match.local}
                         </span>
 
-<strong>
+                        <strong>
 
-    ${
-        match.estado === "TIMED"
-        ? "vs"
-        : `${match.golesLocal} - ${match.golesVisitante}`
-    }
+                            ${
+                                match.estado === "TIMED"
+                                    ? "vs"
+                                    : `${match.golesLocal ?? 0} - ${match.golesVisitante ?? 0}`
+                            }
 
-</strong>
+                        </strong>
 
                         <span>
                             ${match.visitante}
