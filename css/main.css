@@ -425,6 +425,89 @@ font-weight:700;
 
 }
 
+/* =========================
+GOLEADORES
+========================= */
+
+.goleador-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:16px;
+
+    margin-bottom:12px;
+
+    border-radius:16px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .04
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .08
+        );
+
+}
+
+.goleador-posicion{
+
+    font-size:1.4rem;
+
+    min-width:50px;
+
+    text-align:center;
+
+}
+
+.goleador-info{
+
+    flex:1;
+
+}
+
+.goleador-nombre{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.goleador-equipo{
+
+    margin-top:4px;
+
+    font-size:.85rem;
+
+    opacity:.7;
+
+}
+
+.goleador-goles{
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    color:#7CFF72;
+
+}
+
+
+
 
 /* =========================
 MOBILE
