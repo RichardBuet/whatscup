@@ -130,33 +130,44 @@ Object.keys(grupos).forEach(grupo => {
 
         <br>
 
-        <div class="equipo-card">
-
-            <p>PJ: ${equipoEncontrado.pj}</p>
-            <p>PG: ${equipoEncontrado.pg}</p>
-            <p>PE: ${equipoEncontrado.pe}</p>
-            <p>PP: ${equipoEncontrado.pp}</p>
-
-            <br>
-
-            <p>GF: ${equipoEncontrado.gf}</p>
-            <p>GC: ${equipoEncontrado.gc}</p>
-
-            <p>
-                DG:
-                ${
-                    equipoEncontrado.gf -
-                    equipoEncontrado.gc
-                }
-            </p>
-
-            <br>
-
-            <h2>
-                PTS:
-                ${equipoEncontrado.pts}
-            </h2>
-
+        <div class="equipo-card stats-card">
+        
+            <div class="stats-header">
+        
+                <span>PJ</span>
+                <span>PG</span>
+                <span>PE</span>
+                <span>PP</span>
+                <span>GF</span>
+                <span>GC</span>
+                <span>DG</span>
+        
+            </div>
+        
+            <div class="stats-values">
+        
+                <span>${equipoEncontrado.pj}</span>
+                <span>${equipoEncontrado.pg}</span>
+                <span>${equipoEncontrado.pe}</span>
+                <span>${equipoEncontrado.pp}</span>
+                <span>${equipoEncontrado.gf}</span>
+                <span>${equipoEncontrado.gc}</span>
+        
+                <span>
+                    ${
+                        equipoEncontrado.gf -
+                        equipoEncontrado.gc
+                    }
+                </span>
+        
+            </div>
+        
+            <div class="stats-points">
+        
+                PTS: ${equipoEncontrado.pts}
+        
+            </div>
+        
         </div>
 
         <br>
