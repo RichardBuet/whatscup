@@ -184,14 +184,21 @@ justify-content:space-between;
 align-items:center;
 font-size:1rem;
 font-weight:600;
+gap:12px;
+}
+
+.resultado span{
+    flex:1;
 }
 
 .resultado strong{
 font-size:1.7rem;
 font-weight:800;
 color:#ffffff;
+width:90px;
 min-width:80px;
 text-align:center;
+flex-shrink:0;
 }
 
 /* =========================
