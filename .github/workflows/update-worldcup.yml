@@ -29,7 +29,12 @@ jobs:
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: node scripts/import-worldcup.js
-        
+      
+      - name: Import Scorers
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: node scripts/import-scorers.js
+  
       - name: Generate Standings
         run: node scripts/generar-posiciones.js
   
@@ -43,3 +48,4 @@ jobs:
           git diff --staged --quiet || git commit -m "Update World Cup data"
 
           git push
+
