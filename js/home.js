@@ -1,25 +1,34 @@
 async function cargarHome() {
 
     const response =
-        await fetch("./data/partidos.json");
+        await fetch(
+            "./data/partidos.json"
+        );
 
     const partidos =
         await response.json();
+
+    const enVivo =
+        partidos.filter(
+            p => p.estado === "IN_PLAY"
+        );
+
+    const proximos =
+        partidos.filter(
+            p => p.estado === "TIMED"
+        );
 
     const terminados =
         partidos.filter(
             p => p.estado === "FINISHED"
         );
 
-    const pendientes =
-        partidos.filter(
-            p =>
-                p.estado !== "FINISHED"
-        );
+
 
     document.getElementById(
         "ultimosResultados"
     ).innerHTML =
+
         terminados
         .slice(-5)
         .reverse()
@@ -27,19 +36,31 @@ async function cargarHome() {
 
             <div class="partido">
 
+                <div class="fecha">
+
+                    ⚫ Finalizado
+
+                    <br>
+
+                    ${p.fecha}
+
+                </div>
+
                 <div class="resultado">
 
-                    ${p.local}
+                    <span>
+                        ${p.local}
+                    </span>
 
                     <strong>
-
                         ${p.golesLocal}
                         -
                         ${p.golesVisitante}
-
                     </strong>
 
-                    ${p.visitante}
+                    <span>
+                        ${p.visitante}
+                    </span>
 
                 </div>
 
@@ -48,28 +69,70 @@ async function cargarHome() {
         `)
         .join("");
 
+
+
     document.getElementById(
         "proximosPartidos"
     ).innerHTML =
-        pendientes
+
+        [
+
+            ...enVivo,
+
+            ...proximos
+
+        ]
+
         .slice(0,5)
+
         .map(p => `
 
-            <div class="partido">
+            <div class="partido ${
+                p.estado === "IN_PLAY"
+                ? "partido-vivo"
+                : ""
+            }">
+
+                <div class="fecha">
+
+                    ${
+                        p.estado === "IN_PLAY"
+                        ? "🟢 En vivo"
+                        : `🕖 ${p.hora}`
+                    }
+
+                    <br>
+
+                    ${p.fecha}
+
+                </div>
 
                 <div class="resultado">
 
-                    ${p.local}
+                    <span>
+                        ${p.local}
+                    </span>
 
-                    <strong>vs</strong>
+                    <strong>
 
-                    ${p.visitante}
+                        ${
+                            p.estado === "IN_PLAY"
+                            ? `${p.golesLocal} - ${p.golesVisitante}`
+                            : "vs"
+                        }
+
+                    </strong>
+
+                    <span>
+                        ${p.visitante}
+                    </span>
 
                 </div>
 
             </div>
 
         `)
+
         .join("");
 
 }
