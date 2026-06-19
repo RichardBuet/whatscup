@@ -237,15 +237,19 @@ Object.keys(grupos).forEach(grupo => {
                 </div>
 
                 <div class="resultado">
-
-                    ${p.local}
-
+                
+                    <span>
+                        ${p.local}
+                    </span>
+                
                     <strong>
                         vs
                     </strong>
-
-                    ${p.visitante}
-
+                
+                    <span>
+                        ${p.visitante}
+                    </span>
+                
                 </div>
 
             </div>
