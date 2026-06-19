@@ -20,6 +20,11 @@
     "goles": 2
   },
   {
+    "jugador": "Ismael Saibari",
+    "equipo": "Morocco",
+    "goles": 2
+  },
+  {
     "jugador": "Kai Havertz",
     "equipo": "Germany",
     "goles": 2
@@ -42,11 +47,6 @@
   {
     "jugador": "Erling Haaland",
     "equipo": "Norway",
-    "goles": 2
-  },
-  {
-    "jugador": "Harry Kane",
-    "equipo": "England",
     "goles": 2
   }
 ]

@@ -326,8 +326,8 @@
     "local": "Scotland",
     "visitante": "Morocco",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesVisitante": 1,
+    "estado": "PAUSED"
   },
   {
     "id": 537341,
