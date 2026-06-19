@@ -33,39 +33,35 @@ async function cargarGoleadores() {
 
         contenedor.innerHTML += `
 
-            <div class="goleador-card">
+<div class="goleador-row">
 
-                <div class="goleador-posicion">
+    <div class="goleador-pos">
 
-                    ${medalla}
+        ${medalla}
 
-                </div>
+    </div>
 
-                <div class="goleador-info">
+    <div class="goleador-player">
 
-                    <div class="goleador-nombre">
+        ${g.jugador}
 
-                        ${g.jugador}
+        <span>
 
-                    </div>
+            ${g.equipo}
 
-                    <div class="goleador-equipo">
+        </span>
 
-                        ${g.equipo}
+    </div>
 
-                    </div>
+    <div class="goleador-goals">
 
-                </div>
+        ${g.goles}
 
-                <div class="goleador-goles">
+    </div>
 
-                    ${g.goles} ⚽
+</div>
 
-                </div>
-
-            </div>
-
-        `;
+`;
 
     });
 
