@@ -101,8 +101,10 @@ Object.keys(grupos).forEach(grupo => {
         </a>
 
         <h1>
-
-            ${banderas[equipoEncontrado.equipo] || "🏳️"}
+        
+            ${obtenerBandera(
+                equipoEncontrado.equipo
+            )}
         
             ${equipoEncontrado.equipo}
         
@@ -205,15 +207,21 @@ Object.keys(grupos).forEach(grupo => {
 
                 <div class="resultado">
                 
-                    <span>${p.local}</span>
+                    <span>
+                        ${obtenerBandera(p.local)}
+                        ${p.local}
+                    </span>
                 
                     <strong>
                         ${p.golesLocal}
                         -
                         ${p.golesVisitante}
                     </strong>
-                
-                    <span>${p.visitante}</span>
+
+                    <span>
+                        ${obtenerBandera(p.visitante)}
+                        ${p.visitante}
+                    </span>
                 
                 </div>
 
