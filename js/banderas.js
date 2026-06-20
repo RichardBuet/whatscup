@@ -46,7 +46,7 @@ const banderas = {
     "Norway":"no",
 
     "Portugal":"pt",
-    "DR Congo":"cd",
+    "Congo DR":"cd",
     "Uzbekistan":"uz",
     "Colombia":"co",
 
