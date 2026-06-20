@@ -247,6 +247,7 @@ Object.keys(grupos).forEach(grupo => {
                 <div class="resultado">
                 
                     <span>
+                        ${obtenerBandera(p.local)}
                         ${p.local}
                     </span>
                 
@@ -255,6 +256,7 @@ Object.keys(grupos).forEach(grupo => {
                     </strong>
                 
                     <span>
+                        ${obtenerBandera(p.visitante)}
                         ${p.visitante}
                     </span>
                 
