@@ -338,7 +338,7 @@
     "visitante": "Haiti",
     "golesLocal": 3,
     "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537347,
@@ -348,8 +348,8 @@
     "local": "Turkey",
     "visitante": "Paraguay",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesVisitante": 1,
+    "estado": "FINISHED"
   },
   {
     "id": 537359,

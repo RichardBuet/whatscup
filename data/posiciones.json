@@ -115,29 +115,40 @@
       "gc": 2
     },
     {
+      "equipo": "Paraguay",
+      "grupo": "D",
+      "pts": 3,
+      "pj": 2,
+      "pg": 1,
+      "pe": 0,
+      "pp": 1,
+      "gf": 2,
+      "gc": 4
+    },
+    {
       "equipo": "Turkey",
       "grupo": "D",
       "pts": 0,
-      "pj": 1,
+      "pj": 2,
       "pg": 0,
       "pe": 0,
-      "pp": 1,
+      "pp": 2,
       "gf": 0,
-      "gc": 2
-    },
-    {
-      "equipo": "Paraguay",
-      "grupo": "D",
-      "pts": 0,
-      "pj": 1,
-      "pg": 0,
-      "pe": 0,
-      "pp": 1,
-      "gf": 1,
-      "gc": 4
+      "gc": 3
     }
   ],
   "C": [
+    {
+      "equipo": "Brazil",
+      "grupo": "C",
+      "pts": 4,
+      "pj": 2,
+      "pg": 1,
+      "pe": 1,
+      "pp": 0,
+      "gf": 4,
+      "gc": 1
+    },
     {
       "equipo": "Morocco",
       "grupo": "C",
@@ -161,26 +172,15 @@
       "gc": 1
     },
     {
-      "equipo": "Brazil",
-      "grupo": "C",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 1,
-      "gc": 1
-    },
-    {
       "equipo": "Haiti",
       "grupo": "C",
       "pts": 0,
-      "pj": 1,
+      "pj": 2,
       "pg": 0,
       "pe": 0,
-      "pp": 1,
+      "pp": 2,
       "gf": 0,
-      "gc": 1
+      "gc": 4
     }
   ],
   "E": [
