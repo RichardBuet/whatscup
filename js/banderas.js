@@ -15,7 +15,7 @@ const banderas = {
     "Iran":"ir",
     "New Zealand":"nz",
 
-    "Bosnia and Herzegovina":"ba",
+    "Bosnia-Herzegovina":"ba",
     "Canada":"ca",
     "Qatar":"qa",
     "Switzerland":"ch",
@@ -26,7 +26,7 @@ const banderas = {
     "Haiti":"ht",
 
     "Germany":"de",
-    "Curacao":"cw",
+    "Curaçao":"cw",
     "Ivory Coast":"ci",
     "Ecuador":"ec",
 
@@ -36,7 +36,7 @@ const banderas = {
     "Tunisia":"tn",
 
     "Spain":"es",
-    "Cape Verde":"cv",
+    "Cape Verde Islands":"cv",
     "Saudi Arabia":"sa",
     "Uruguay":"uy",
 
