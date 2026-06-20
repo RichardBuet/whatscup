@@ -43,7 +43,8 @@ async function cargarGoleadores() {
 
     <div class="goleador-player">
 
-        ${g.jugador}
+        ${obtenerBandera(g.equipo)}
+${g.jugador}
 
         <span>
 
