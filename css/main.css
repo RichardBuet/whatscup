@@ -386,6 +386,77 @@ font-weight:700;
 }
 
 
+/* =========================
+   FIXTURE FLASHSCORE
+========================= */
+
+#selectorFechas{
+
+    display:flex;
+
+    gap:10px;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    white-space:nowrap;
+
+    padding:10px 0 16px;
+
+    scrollbar-width:none;
+}
+
+#selectorFechas::-webkit-scrollbar{
+    display:none;
+}
+
+.fecha-btn{
+
+    flex:0 0 auto;
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:10px 16px;
+
+    background:#16213f;
+
+    color:#cbd5e1;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.fecha-btn.activo{
+
+    background:#6BE675;
+
+    color:#021018;
+
+    box-shadow:
+        0 0 15px
+        rgba(107,230,117,.4);
+}
+
+#resumenFixture{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-bottom:14px;
+
+    font-weight:600;
+
+    color:#dbeafe;
+}
+
+
 /* ESTADOS DEL FIXTURE Y PARTIDOS*/
 
 .partido-vivo{
