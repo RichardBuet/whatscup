@@ -5,6 +5,16 @@ async function cargarPartidos() {
             "fixture"
         );
 
+    const selectorFechas =
+        document.getElementById(
+            "selectorFechas"
+        );
+
+    const resumen =
+        document.getElementById(
+            "resumenFixture"
+        );
+
     fixture.innerHTML =
         "Cargando...";
 
@@ -16,29 +26,129 @@ async function cargarPartidos() {
     const partidos =
         await response.json();
 
-    fixture.innerHTML = "";
+    partidos.sort((a,b) => {
 
-    partidos
+        const fechaA =
+            new Date(
+                `${a.fecha}T${a.hora || "00:00"}`
+            );
 
-        .sort((a,b) => {
+        const fechaB =
+            new Date(
+                `${b.fecha}T${b.hora || "00:00"}`
+            );
 
-            const fechaA =
-                new Date(
-                    `${a.fecha}T${a.hora || "00:00"}`
+        return fechaA - fechaB;
+
+    });
+
+    const fechas =
+        [...new Set(
+            partidos.map(
+                p => p.fecha
+            )
+        )];
+
+    const hoy =
+        new Date()
+        .toLocaleDateString(
+            "en-CA"
+        );
+
+    let fechaSeleccionada =
+        fechas.includes(hoy)
+        ? hoy
+        : fechas[0];
+
+    function renderizarFechas() {
+
+        selectorFechas.innerHTML =
+            fechas.map(fecha => {
+
+                const texto =
+                    fecha === hoy
+                    ? "HOY"
+                    : fecha.substring(5);
+
+                return `
+
+                    <button
+                        class="
+                            fecha-btn
+                            ${
+                                fecha === fechaSeleccionada
+                                ? "activo"
+                                : ""
+                            }
+                        "
+                        data-fecha="${fecha}"
+                    >
+
+                        ${texto}
+
+                    </button>
+
+                `;
+
+            })
+            .join("");
+
+        document
+            .querySelectorAll(
+                ".fecha-btn"
+            )
+            .forEach(btn => {
+
+                btn.addEventListener(
+                    "click",
+                    () => {
+
+                        fechaSeleccionada =
+                            btn.dataset.fecha;
+
+                        renderizarFechas();
+
+                        renderizarPartidos();
+
+                    }
                 );
 
-            const fechaB =
-                new Date(
-                    `${b.fecha}T${b.hora || "00:00"}`
-                );
+            });
 
-            return fechaA - fechaB;
+    }
 
-        })
+    function renderizarPartidos() {
 
-        .slice(0,50)
+        const partidosFecha =
+            partidos.filter(
+                p =>
+                    p.fecha ===
+                    fechaSeleccionada
+            );
 
-        .forEach(match => {
+        const enVivo =
+            partidos.filter(
+                p =>
+                    p.estado === "IN_PLAY"
+                    ||
+                    p.estado === "PAUSED"
+            ).length;
+
+        resumen.innerHTML = `
+
+            <div class="resumen-item">
+                🟢 ${enVivo} En vivo
+            </div>
+
+            <div class="resumen-item">
+                ⚽ ${partidosFecha.length} partidos
+            </div>
+
+        `;
+
+        fixture.innerHTML = "";
+
+        partidosFecha.forEach(match => {
 
             let estado = "";
 
@@ -46,65 +156,57 @@ async function cargarPartidos() {
                 match.estado === "FINISHED"
             ) {
 
-                estado =
-                    `
+                estado = `
                     <span class="estado-finalizado">
                         ⚫ Finalizado
                     </span>
-                    `;
+                `;
 
             }
             else if (
                 match.estado === "IN_PLAY"
             ) {
 
-                estado =
-                    `
+                estado = `
                     <span class="estado-vivo">
                         🟢 En vivo
                     </span>
-                    `;
+                `;
 
             }
             else if (
-                match.estado === "TIMED"
+                match.estado === "PAUSED"
             ) {
 
-                estado =
-                    `
-                    <span class="estado-programado">
-                        🕖 ${match.hora}
+                estado = `
+                    <span class="estado-vivo">
+                        ⏸️ Entretiempo
                     </span>
-                    `;
+                `;
 
             }
             else {
 
-                estado =
-                    `
+                estado = `
                     <span class="estado-programado">
-                        📅 Programado
+                        🕖 ${match.hora}
                     </span>
-                    `;
+                `;
 
             }
 
-            const fechaTexto =
-                new Date(
-                    `${match.fecha}T00:00:00`
-                )
-                .toLocaleDateString(
-                    "es-AR",
-                    {
-                        day:"2-digit",
-                        month:"2-digit",
-                        year:"numeric"
-                    }
-                );
-
             fixture.innerHTML += `
 
-                <div class="partido">
+                <div class="
+                    partido
+                    ${
+                        match.estado === "IN_PLAY"
+                        ||
+                        match.estado === "PAUSED"
+                        ? "partido-vivo"
+                        : ""
+                    }
+                ">
 
                     <div class="fecha">
 
@@ -112,7 +214,7 @@ async function cargarPartidos() {
 
                         <br>
 
-                        ${fechaTexto}
+                        ${match.fecha}
 
                     </div>
 
@@ -126,8 +228,8 @@ async function cargarPartidos() {
 
                             ${
                                 match.estado === "TIMED"
-                                    ? "vs"
-                                    : `${match.golesLocal ?? 0} - ${match.golesVisitante ?? 0}`
+                                ? "VS"
+                                : `${match.golesLocal} - ${match.golesVisitante}`
                             }
 
                         </strong>
@@ -143,6 +245,12 @@ async function cargarPartidos() {
             `;
 
         });
+
+    }
+
+    renderizarFechas();
+
+    renderizarPartidos();
 
 }
 
