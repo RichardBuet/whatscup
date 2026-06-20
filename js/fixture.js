@@ -20,7 +20,7 @@ async function cargarPartidos() {
 
     const response =
         await fetch(
-            "data/partidos.json"
+            "data/partidos.json?ver=1"
         );
 
     const partidos =
