@@ -11,7 +11,8 @@
       content="yes">
 <meta name="apple-mobile-web-app-status-bar-style"
       content="black-translucent">
-    
+<link rel="manifest" href="manifest.json">
+      
 <title>WhatsCup</title>
 <link rel="icon" type="image/png" href="https://assets.football-logos.cc/logos/tournaments/256x256/fifa-world-cup-2026--white.bb78d21f.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -133,6 +134,21 @@
 
 <script src="js/banderas.js"></script>
 <script src="js/home.js"></script>
+
+<script>
+
+if (
+    "serviceWorker"
+    in navigator
+) {
+
+    navigator.serviceWorker.register(
+        "./sw.js"
+    );
+
+}
+
+</script>
 
 </body>
 </html>
