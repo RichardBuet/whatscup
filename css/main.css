@@ -603,7 +603,29 @@ GOLEADORES V2
 
 }
 
+.flag{
 
+    width:24px;
+
+    height:18px;
+
+    object-fit:cover;
+
+    border-radius:3px;
+
+    vertical-align:middle;
+
+    margin-right:8px;
+
+    box-shadow:
+        0 0 4px rgba(
+            0,
+            0,
+            0,
+            .3
+        );
+
+}
 
 
 
