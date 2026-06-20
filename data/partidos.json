@@ -370,8 +370,8 @@
     "local": "Germany",
     "visitante": "Ivory Coast",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesVisitante": 1,
+    "estado": "IN_PLAY"
   },
   {
     "id": 537354,
