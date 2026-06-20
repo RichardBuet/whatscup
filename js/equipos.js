@@ -37,7 +37,7 @@ async function cargarEquipos() {
                     class="equipo-link"
                 >
                     
-                    
+                    ${obtenerBandera(equipo)}
                     ${equipo}
 
                 </a>
