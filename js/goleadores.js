@@ -2,7 +2,7 @@ async function cargarGoleadores() {
 
     const response =
         await fetch(
-            "data/goleadores.json"
+            "data/goleadores.json?ver=1"
         );
 
     const goleadores =
