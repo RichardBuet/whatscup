@@ -1,7 +1,7 @@
 async function cargarPosiciones() {
 
     const response =
-        await fetch("data/posiciones.json");
+        await fetch("data/posiciones.json?ver=1");
 
     const grupos =
         await response.json();
