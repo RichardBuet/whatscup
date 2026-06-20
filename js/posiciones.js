@@ -50,11 +50,28 @@ async function cargarPosiciones() {
 
                 html += `
 
-                    <tr>
+                    <tr
+                        class="fila-equipo"
+                        onclick="
+                            location.href=
+                            'equipo.html?equipo=' +
+                            encodeURIComponent(
+                                '${equipo.equipo}'
+                            )
+                        "
+                    >
 
                         <td>${index+1}</td>
 
-                        <td>${equipo.equipo}</td>
+                        <td class="equipo-nombre">
+                        
+                            ${obtenerBandera(
+                                equipo.equipo
+                            )}
+                        
+                            ${equipo.equipo}
+                        
+                        </td>
 
                         <td>${equipo.pj}</td>
                         <td class="col-px" >${equipo.pg}</td>
