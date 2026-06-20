@@ -103,7 +103,12 @@ for (const partido of partidos) {
 const posiciones = {};
 
 for (const grupo in grupos) {
+    
+Object.keys(grupos)
+.sort()
+.forEach(grupo => {
 
+ 
     posiciones[grupo] =
         Object.values(grupos[grupo])
         .sort((a,b) => {
@@ -124,7 +129,7 @@ for (const grupo in grupos) {
 
         });
 
-}
+});
 
 fs.writeFileSync(
     "./data/posiciones.json",
