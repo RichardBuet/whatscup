@@ -358,9 +358,9 @@
     "hora": "14:00",
     "local": "Netherlands",
     "visitante": "Sweden",
-    "golesLocal": 2,
-    "golesVisitante": 0,
-    "estado": "PAUSED"
+    "golesLocal": 5,
+    "golesVisitante": 1,
+    "estado": "FINISHED"
   },
   {
     "id": 537353,
