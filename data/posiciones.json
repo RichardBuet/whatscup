@@ -139,29 +139,29 @@
   ],
   "C": [
     {
+      "equipo": "Morocco",
+      "grupo": "C",
+      "pts": 4,
+      "pj": 2,
+      "pg": 1,
+      "pe": 1,
+      "pp": 0,
+      "gf": 2,
+      "gc": 1
+    },
+    {
       "equipo": "Scotland",
       "grupo": "C",
       "pts": 3,
-      "pj": 1,
+      "pj": 2,
       "pg": 1,
       "pe": 0,
-      "pp": 0,
-      "gf": 1,
-      "gc": 0
-    },
-    {
-      "equipo": "Brazil",
-      "grupo": "C",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
+      "pp": 1,
       "gf": 1,
       "gc": 1
     },
     {
-      "equipo": "Morocco",
+      "equipo": "Brazil",
       "grupo": "C",
       "pts": 1,
       "pj": 1,
