@@ -336,9 +336,9 @@
     "hora": "21:30",
     "local": "Brazil",
     "visitante": "Haiti",
-    "golesLocal": 0,
+    "golesLocal": 3,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "IN_PLAY"
   },
   {
     "id": 537347,

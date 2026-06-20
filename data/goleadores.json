@@ -25,6 +25,11 @@
     "goles": 2
   },
   {
+    "jugador": "Vinicius Junior",
+    "equipo": "Brazil",
+    "goles": 2
+  },
+  {
     "jugador": "Kai Havertz",
     "equipo": "Germany",
     "goles": 2
@@ -42,11 +47,6 @@
   {
     "jugador": "Kylian Mbappé",
     "equipo": "France",
-    "goles": 2
-  },
-  {
-    "jugador": "Erling Haaland",
-    "equipo": "Norway",
     "goles": 2
   }
 ]
