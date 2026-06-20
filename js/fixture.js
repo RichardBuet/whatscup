@@ -277,8 +277,11 @@ async function cargarPartidos() {
                     <div class="resultado">
 
                         <span>
+                            ${obtenerBandera(
+                                match.local
+                            )}
                             ${match.local}
-                        </span>
+                       </span>
 
                         <strong>
 
@@ -291,8 +294,11 @@ async function cargarPartidos() {
                         </strong>
 
                         <span>
+                            ${obtenerBandera(
+                                match.visitante
+                            )}
                             ${match.visitante}
-                        </span>
+                       </span>
 
                     </div>
 
