@@ -65,10 +65,42 @@ async function cargarPartidos() {
         selectorFechas.innerHTML =
             fechas.map(fecha => {
 
+                const fechaObj =
+                    new Date(
+                        `${fecha}T00:00:00`
+                    );
+                
+                const dias = [
+                    "DO",
+                    "LU",
+                    "MA",
+                    "MI",
+                    "JU",
+                    "VI",
+                    "SA"
+                ];
+                
+                const diaSemana =
+                    dias[
+                        fechaObj.getDay()
+                    ];
+                
+                const diaMes =
+                    fechaObj
+                    .getDate()
+                    .toString()
+                    .padStart(2,"0");
+                
                 const texto =
                     fecha === hoy
-                    ? "HOY"
-                    : fecha.substring(5);
+                    ? `
+                        <div>HOY</div>
+                        <small>${diaMes}</small>
+                      `
+                    : `
+                        <div>${diaSemana}</div>
+                        <small>${diaMes}</small>
+                      `;
 
                 return `
 
