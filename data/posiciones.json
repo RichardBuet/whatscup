@@ -187,24 +187,24 @@
     {
       "equipo": "Germany",
       "grupo": "E",
-      "pts": 3,
-      "pj": 1,
-      "pg": 1,
+      "pts": 6,
+      "pj": 2,
+      "pg": 2,
       "pe": 0,
       "pp": 0,
-      "gf": 7,
-      "gc": 1
+      "gf": 9,
+      "gc": 2
     },
     {
       "equipo": "Ivory Coast",
       "grupo": "E",
       "pts": 3,
-      "pj": 1,
+      "pj": 2,
       "pg": 1,
       "pe": 0,
-      "pp": 0,
-      "gf": 1,
-      "gc": 0
+      "pp": 1,
+      "gf": 2,
+      "gc": 2
     },
     {
       "equipo": "Ecuador",

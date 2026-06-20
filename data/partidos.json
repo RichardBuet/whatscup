@@ -369,9 +369,9 @@
     "hora": "17:00",
     "local": "Germany",
     "visitante": "Ivory Coast",
-    "golesLocal": 0,
+    "golesLocal": 2,
     "golesVisitante": 1,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537354,
