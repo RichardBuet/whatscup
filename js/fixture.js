@@ -114,7 +114,31 @@ async function cargarPartidos() {
                 );
 
             });
+    setTimeout(() => {
 
+    const activo =
+
+        document.querySelector(
+
+            ".fecha-btn.activo"
+
+        );
+
+    if (activo) {
+
+        activo.scrollIntoView({
+
+            behavior: "smooth",
+
+            inline: "center",
+
+            block: "nearest"
+
+        });
+
+    }
+
+}, 50);
     }
 
     function renderizarPartidos() {
