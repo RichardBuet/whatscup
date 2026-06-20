@@ -11,6 +11,8 @@ async function cargarHome() {
     const enVivo =
         partidos.filter(
             p => p.estado === "IN_PLAY"
+                        ||
+            p.estado === "PAUSED"
         );
 
     const proximos =
@@ -49,6 +51,7 @@ async function cargarHome() {
                 <div class="resultado">
 
                     <span>
+                        ${obtenerBandera(p.local)} 
                         ${p.local}
                     </span>
 
@@ -59,6 +62,7 @@ async function cargarHome() {
                     </strong>
 
                     <span>
+                        ${obtenerBandera(p.visitante)}
                         ${p.visitante}
                     </span>
 
@@ -97,8 +101,10 @@ async function cargarHome() {
 
                     ${
                         p.estado === "IN_PLAY"
-                        ? "🟢 En vivo"
-                        : `🕖 ${p.hora}`
+? "🟢 En vivo"
+: p.estado === "PAUSED"
+? "⏸️ Entretiempo"
+: `🕖 ${p.hora}`
                     }
 
                     <br>
@@ -110,7 +116,8 @@ async function cargarHome() {
                 <div class="resultado">
 
                     <span>
-                        ${p.local}
+                       ${obtenerBandera(p.local)} 
+                       ${p.local}
                     </span>
 
                     <strong>
@@ -124,6 +131,7 @@ async function cargarHome() {
                     </strong>
 
                     <span>
+                        ${obtenerBandera(p.visitante)}
                         ${p.visitante}
                     </span>
 
