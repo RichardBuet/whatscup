@@ -4,10 +4,10 @@ async function cargarPosiciones() {
         Math.floor(
             Date.now() / 900000
         );
-    
+
     const response =
         await fetch(
-            `data/partidos.json?v=${version}`
+            `data/posiciones.json?v=${version}`
         );
 
     const grupos =
@@ -20,91 +20,110 @@ async function cargarPosiciones() {
 
     let html = "";
 
-    for (const grupo in grupos) {
+    Object.keys(grupos)
+        .sort()
+        .forEach(grupo => {
 
-        html += `
+            html += `
 
-            <h2 class="grupo-titulo">
-                Grupo ${grupo}
-            </h2>
+                <h2 class="grupo-titulo">
+                    Grupo ${grupo}
+                </h2>
 
-            <table class="tabla-grupo">
+                <table class="tabla-grupo">
 
-                <thead>
+                    <thead>
 
-                    <tr>
+                        <tr>
 
-                        <th>#</th>
-                        <th>Equipo</th>
-                        <th>PJ</th>
-                        <th class="col-px" >PG</th>
-                        <th class="col-px" >PE</th>
-                        <th class="col-px" >PP</th>
-                        <th class="col-px" >GF</th>
-                        <th class="col-px" >GC</th>
-                        <th>PTS</th>
+                            <th>#</th>
+                            <th>Equipo</th>
+                            <th>PJ</th>
+                            <th class="col-px">PG</th>
+                            <th class="col-px">PE</th>
+                            <th class="col-px">PP</th>
+                            <th class="col-px">GF</th>
+                            <th class="col-px">GC</th>
+                            <th>PTS</th>
 
-                    </tr>
+                        </tr>
 
-                </thead>
+                    </thead>
 
-                <tbody>
+                    <tbody>
 
-        `;
+            `;
 
-        grupos[grupo].forEach(
-            (equipo,index) => {
+            grupos[grupo].forEach(
+                (equipo,index) => {
 
-                html += `
+                    html += `
 
-                    <tr
-                        class="fila-equipo"
-                        onclick="
-                            location.href=
-                            'equipo.html?equipo=' +
-                            encodeURIComponent(
-                                '${equipo.equipo}'
-                            )
-                        "
-                    >
+                        <tr
+                            class="fila-equipo"
+                            onclick="
+                                location.href=
+                                'equipo.html?equipo=' +
+                                encodeURIComponent(
+                                    '${equipo.equipo}'
+                                )
+                            "
+                        >
 
-                        <td>${index+1}</td>
+                            <td>${index+1}</td>
 
-                        <td class="equipo-nombre">
-                        
-                            ${obtenerBandera(
-                                equipo.equipo
-                            )}
-                        
-                            ${equipo.equipo}
-                        
-                        </td>
+                            <td class="equipo-nombre">
 
-                        <td>${equipo.pj}</td>
-                        <td class="col-px" >${equipo.pg}</td>
-                        <td class="col-px" >${equipo.pe}</td>
-                        <td class="col-px" >${equipo.pp}</td>
+                                ${obtenerBandera(
+                                    equipo.equipo
+                                )}
 
-                        <td class="col-px" >${equipo.gf}</td>
-                        <td class="col-px" >${equipo.gc}</td>
+                                ${equipo.equipo}
 
-                        <td>${equipo.pts}</td>
+                            </td>
 
-                    </tr>
+                            <td>${equipo.pj}</td>
 
-                `;
+                            <td class="col-px">
+                                ${equipo.pg}
+                            </td>
 
-            }
-        );
+                            <td class="col-px">
+                                ${equipo.pe}
+                            </td>
 
-        html += `
+                            <td class="col-px">
+                                ${equipo.pp}
+                            </td>
 
-                </tbody>
+                            <td class="col-px">
+                                ${equipo.gf}
+                            </td>
 
-            </table>
+                            <td class="col-px">
+                                ${equipo.gc}
+                            </td>
 
-        `;
-    }
+                            <td>
+                                ${equipo.pts}
+                            </td>
+
+                        </tr>
+
+                    `;
+
+                }
+            );
+
+            html += `
+
+                    </tbody>
+
+                </table>
+
+            `;
+
+        });
 
     contenedor.innerHTML = html;
 
