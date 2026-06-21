@@ -402,9 +402,9 @@
     "hora": "13:00",
     "local": "Spain",
     "visitante": "Saudi Arabia",
-    "golesLocal": 0,
+    "golesLocal": 3,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "PAUSED"
   },
   {
     "id": 537365,
