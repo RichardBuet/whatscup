@@ -91,52 +91,6 @@
       "gc": 7
     }
   ],
-  "D": [
-    {
-      "equipo": "United States",
-      "grupo": "D",
-      "pts": 6,
-      "pj": 2,
-      "pg": 2,
-      "pe": 0,
-      "pp": 0,
-      "gf": 6,
-      "gc": 1
-    },
-    {
-      "equipo": "Australia",
-      "grupo": "D",
-      "pts": 3,
-      "pj": 2,
-      "pg": 1,
-      "pe": 0,
-      "pp": 1,
-      "gf": 2,
-      "gc": 2
-    },
-    {
-      "equipo": "Paraguay",
-      "grupo": "D",
-      "pts": 3,
-      "pj": 2,
-      "pg": 1,
-      "pe": 0,
-      "pp": 1,
-      "gf": 2,
-      "gc": 4
-    },
-    {
-      "equipo": "Turkey",
-      "grupo": "D",
-      "pts": 0,
-      "pj": 2,
-      "pg": 0,
-      "pe": 0,
-      "pp": 2,
-      "gf": 0,
-      "gc": 3
-    }
-  ],
   "C": [
     {
       "equipo": "Brazil",
@@ -183,6 +137,52 @@
       "gc": 4
     }
   ],
+  "D": [
+    {
+      "equipo": "United States",
+      "grupo": "D",
+      "pts": 6,
+      "pj": 2,
+      "pg": 2,
+      "pe": 0,
+      "pp": 0,
+      "gf": 6,
+      "gc": 1
+    },
+    {
+      "equipo": "Australia",
+      "grupo": "D",
+      "pts": 3,
+      "pj": 2,
+      "pg": 1,
+      "pe": 0,
+      "pp": 1,
+      "gf": 2,
+      "gc": 2
+    },
+    {
+      "equipo": "Paraguay",
+      "grupo": "D",
+      "pts": 3,
+      "pj": 2,
+      "pg": 1,
+      "pe": 0,
+      "pp": 1,
+      "gf": 2,
+      "gc": 4
+    },
+    {
+      "equipo": "Turkey",
+      "grupo": "D",
+      "pts": 0,
+      "pj": 2,
+      "pg": 0,
+      "pe": 0,
+      "pp": 2,
+      "gf": 0,
+      "gc": 3
+    }
+  ],
   "E": [
     {
       "equipo": "Germany",
@@ -209,10 +209,10 @@
     {
       "equipo": "Ecuador",
       "grupo": "E",
-      "pts": 0,
-      "pj": 1,
+      "pts": 1,
+      "pj": 2,
       "pg": 0,
-      "pe": 0,
+      "pe": 1,
       "pp": 1,
       "gf": 0,
       "gc": 1
@@ -220,10 +220,10 @@
     {
       "equipo": "Curaçao",
       "grupo": "E",
-      "pts": 0,
-      "pj": 1,
+      "pts": 1,
+      "pj": 2,
       "pg": 0,
-      "pe": 0,
+      "pe": 1,
       "pp": 1,
       "gf": 1,
       "gc": 7
@@ -275,52 +275,6 @@
       "gc": 5
     }
   ],
-  "H": [
-    {
-      "equipo": "Saudi Arabia",
-      "grupo": "H",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 1,
-      "gc": 1
-    },
-    {
-      "equipo": "Uruguay",
-      "grupo": "H",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 1,
-      "gc": 1
-    },
-    {
-      "equipo": "Spain",
-      "grupo": "H",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 0,
-      "gc": 0
-    },
-    {
-      "equipo": "Cape Verde Islands",
-      "grupo": "H",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 0,
-      "gc": 0
-    }
-  ],
   "G": [
     {
       "equipo": "Iran",
@@ -365,6 +319,52 @@
       "pp": 0,
       "gf": 1,
       "gc": 1
+    }
+  ],
+  "H": [
+    {
+      "equipo": "Saudi Arabia",
+      "grupo": "H",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 1,
+      "gc": 1
+    },
+    {
+      "equipo": "Uruguay",
+      "grupo": "H",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 1,
+      "gc": 1
+    },
+    {
+      "equipo": "Spain",
+      "grupo": "H",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 0,
+      "gc": 0
+    },
+    {
+      "equipo": "Cape Verde Islands",
+      "grupo": "H",
+      "pts": 1,
+      "pj": 1,
+      "pg": 0,
+      "pe": 1,
+      "pp": 0,
+      "gf": 0,
+      "gc": 0
     }
   ],
   "I": [
