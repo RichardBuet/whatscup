@@ -37,6 +37,9 @@ jobs:
   
       - name: Generate Standings
         run: node scripts/generar-posiciones.js
+
+      - name: Generate Stats
+        run: node scripts/generar-estadisticas.js
   
       - name: Commit Changes
         run: |
