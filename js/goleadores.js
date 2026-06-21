@@ -4,10 +4,10 @@ async function cargarGoleadores() {
         Math.floor(
             Date.now() / 900000
         );
-    
+
     const response =
         await fetch(
-            `data/partidos.json?v=${version}`
+            `data/goleadores.json?v=${version}`
         );
 
     const goleadores =
@@ -49,7 +49,7 @@ async function cargarGoleadores() {
     <div class="goleador-player">
 
         ${obtenerBandera(g.equipo)}
-${g.jugador}
+        ${g.jugador}
 
         <span>
 
