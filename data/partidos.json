@@ -402,7 +402,7 @@
     "hora": "13:00",
     "local": "Spain",
     "visitante": "Saudi Arabia",
-    "golesLocal": 5,
+    "golesLocal": 4,
     "golesVisitante": 0,
     "estado": "FINISHED"
   },
@@ -415,7 +415,7 @@
     "visitante": "Iran",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537372,

@@ -279,13 +279,24 @@
     {
       "equipo": "Iran",
       "grupo": "G",
-      "pts": 1,
-      "pj": 1,
+      "pts": 2,
+      "pj": 2,
       "pg": 0,
-      "pe": 1,
+      "pe": 2,
       "pp": 0,
       "gf": 2,
       "gc": 2
+    },
+    {
+      "equipo": "Belgium",
+      "grupo": "G",
+      "pts": 2,
+      "pj": 2,
+      "pg": 0,
+      "pe": 2,
+      "pp": 0,
+      "gf": 1,
+      "gc": 1
     },
     {
       "equipo": "New Zealand",
@@ -297,17 +308,6 @@
       "pp": 0,
       "gf": 2,
       "gc": 2
-    },
-    {
-      "equipo": "Belgium",
-      "grupo": "G",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 1,
-      "gc": 1
     },
     {
       "equipo": "Egypt",
@@ -330,7 +330,7 @@
       "pg": 1,
       "pe": 1,
       "pp": 0,
-      "gf": 5,
+      "gf": 4,
       "gc": 0
     },
     {
@@ -364,7 +364,7 @@
       "pe": 1,
       "pp": 1,
       "gf": 1,
-      "gc": 6
+      "gc": 5
     }
   ],
   "I": [
