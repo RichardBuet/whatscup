@@ -17,10 +17,15 @@ async function cargarPartidos() {
 
     fixture.innerHTML =
         "Cargando...";
-
+    
+    const version =
+        Math.floor(
+            Date.now() / 900000
+        );
+    
     const response =
         await fetch(
-            "data/partidos.json?ver=1"
+            `data/partidos.json?v=${version}`
         );
 
     const partidos =
