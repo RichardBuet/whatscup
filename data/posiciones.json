@@ -242,6 +242,17 @@
       "gc": 3
     },
     {
+      "equipo": "Japan",
+      "grupo": "F",
+      "pts": 4,
+      "pj": 2,
+      "pg": 1,
+      "pe": 1,
+      "pp": 0,
+      "gf": 6,
+      "gc": 2
+    },
+    {
       "equipo": "Sweden",
       "grupo": "F",
       "pts": 3,
@@ -253,26 +264,15 @@
       "gc": 6
     },
     {
-      "equipo": "Japan",
-      "grupo": "F",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 2,
-      "gc": 2
-    },
-    {
       "equipo": "Tunisia",
       "grupo": "F",
       "pts": 0,
-      "pj": 1,
+      "pj": 2,
       "pg": 0,
       "pe": 0,
-      "pp": 1,
+      "pp": 2,
       "gf": 1,
-      "gc": 5
+      "gc": 9
     }
   ],
   "G": [

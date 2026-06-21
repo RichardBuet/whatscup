@@ -392,8 +392,8 @@
     "local": "Tunisia",
     "visitante": "Japan",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "golesVisitante": 4,
+    "estado": "FINISHED"
   },
   {
     "id": 537371,
