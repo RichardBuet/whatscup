@@ -424,9 +424,9 @@
     "hora": "19:00",
     "local": "Uruguay",
     "visitante": "Cape Verde Islands",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": 2,
+    "golesVisitante": 1,
+    "estado": "PAUSED"
   },
   {
     "id": 537366,
