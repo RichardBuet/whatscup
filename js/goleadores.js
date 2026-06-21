@@ -1,8 +1,13 @@
 async function cargarGoleadores() {
 
+    const version =
+        Math.floor(
+            Date.now() / 900000
+        );
+    
     const response =
         await fetch(
-            "data/goleadores.json?ver=1"
+            `data/partidos.json?v=${version}`
         );
 
     const goleadores =
