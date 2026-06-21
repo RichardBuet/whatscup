@@ -1,8 +1,13 @@
 async function cargarEquipos() {
 
+    const version =
+        Math.floor(
+            Date.now() / 900000
+        );
+    
     const response =
         await fetch(
-            "data/grupos.json"
+            `data/partidos.json?v=${version}`
         );
 
     const grupos =
