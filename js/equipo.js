@@ -1,5 +1,10 @@
 async function cargarEquipo() {
 
+    const version =
+        Math.floor(
+            Date.now() / 900000
+        );
+
     const params =
         new URLSearchParams(
             window.location.search
@@ -10,12 +15,21 @@ async function cargarEquipo() {
 
     const responsePosiciones =
         await fetch(
-            "data/posiciones.json"
+            `data/posiciones.json?v=${version}`
         );
 
     const grupos =
         await responsePosiciones.json();
 
+    ...
+
+    const responsePartidos =
+        await fetch(
+            `data/partidos.json?v=${version}`
+        );
+
+    const partidos =
+        await responsePartidos.json();
 
     
 let equipoEncontrado = null;
