@@ -109,6 +109,14 @@
 
     <aside class="rightbar">
 
+
+<div id="estadisticasSidebar">
+
+    Cargando estadísticas...
+
+</div>
+
+          
         <section class="widget">
 
             <div class="section-title">
@@ -143,20 +151,15 @@
 
 <script src="js/banderas.js"></script>
 <script src="js/home.js"></script>
-
+<script src="js/sidebar.js"></script>
+      
 <script>
-
-if (
-    "serviceWorker"
+if ( "serviceWorker"
     in navigator
-) {
-
-    navigator.serviceWorker.register(
+) { navigator.serviceWorker.register(
         "./sw.js"
     );
-
 }
-
 </script>
 
 </body>
