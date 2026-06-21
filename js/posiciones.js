@@ -1,7 +1,14 @@
 async function cargarPosiciones() {
 
+    const version =
+        Math.floor(
+            Date.now() / 900000
+        );
+    
     const response =
-        await fetch("data/posiciones.json?ver=1");
+        await fetch(
+            `data/partidos.json?v=${version}`
+        );
 
     const grupos =
         await response.json();
