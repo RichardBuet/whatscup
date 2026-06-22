@@ -84,7 +84,7 @@ background:#22c55e;
 color:#fff;
 font-weight:700;
 border-radius:999px;
-padding: 2px;
+/* padding: 2px; */
 }
 
 /* =========================
@@ -151,9 +151,9 @@ box-shadow:
 }
 
 .section-title{
-font-size:1.45rem;
+font-size:1.4rem;
 font-weight:800;
-margin-bottom:18px;
+margin-bottom:10px;
 }
 
 .sidebar-card{
@@ -956,7 +956,7 @@ min-height:300px;
 }
 
 .section-title{
-  font-size:1.6rem;
+  font-size:1.3rem;
 }
 
 .resultado{
