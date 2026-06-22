@@ -18,112 +18,189 @@ async function cargarPosiciones() {
             "tablaPosiciones"
         );
 
-    let html = "";
+let html = "";
 
-    Object.keys(grupos)
-        .sort()
-        .forEach(grupo => {
+const terceros = [];
 
-            html += `
+Object.keys(grupos)
+    .forEach(grupo => {
 
-                <h2 class="grupo-titulo">
-                    Grupo ${grupo}
-                </h2>
+        if (
+            grupos[grupo].length >= 3
+        ) {
 
-                <table class="tabla-grupo">
+            terceros.push({
+                ...grupos[grupo][2],
+                grupo
+            });
 
-                    <thead>
+        }
 
-                        <tr>
+    });
 
-                            <th>#</th>
-                            <th>Equipo</th>
-                            <th>PJ</th>
-                            <th class="col-px">PG</th>
-                            <th class="col-px">PE</th>
-                            <th class="col-px">PP</th>
-                            <th class="col-px">GF</th>
-                            <th class="col-px">GC</th>
-                            <th>PTS</th>
+terceros.sort((a,b) => {
 
-                        </tr>
+    const dgA =
+        a.gf - a.gc;
 
-                    </thead>
+    const dgB =
+        b.gf - b.gc;
 
-                    <tbody>
+    if (b.pts !== a.pts)
+        return b.pts - a.pts;
 
-            `;
+    if (dgB !== dgA)
+        return dgB - dgA;
 
-            grupos[grupo].forEach(
-                (equipo,index) => {
+    return b.gf - a.gf;
 
-                    html += `
+});
 
-                        <tr
-                            class="fila-equipo"
-                            onclick="
-                                location.href=
-                                'equipo.html?equipo=' +
-                                encodeURIComponent(
-                                    '${equipo.equipo}'
-                                )
-                            "
-                        >
+const mejoresTerceros =
+    terceros
+    .slice(0,8)
+    .map(t => t.equipo);
 
-                            <td>${index+1}</td>
+Object.keys(grupos)
+    .sort()
+    .forEach(grupo => {
 
-                            <td class="equipo-nombre">
+        html += `
 
-                                ${obtenerBandera(
-                                    equipo.equipo
-                                )}
+            <h2 class="grupo-titulo">
+                Grupo ${grupo}
+            </h2>
 
-                                ${equipo.equipo}
+            <div class="leyenda-clasificacion">
 
-                            </td>
+                <span>
+                    🟩 Clasifica
+                </span>
 
-                            <td>${equipo.pj}</td>
+                <span>
+                    🟨 Mejor tercero
+                </span>
 
-                            <td class="col-px">
-                                ${equipo.pg}
-                            </td>
+            </div>
 
-                            <td class="col-px">
-                                ${equipo.pe}
-                            </td>
+            <table class="tabla-grupo">
 
-                            <td class="col-px">
-                                ${equipo.pp}
-                            </td>
+                <thead>
 
-                            <td class="col-px">
-                                ${equipo.gf}
-                            </td>
+                    <tr>
 
-                            <td class="col-px">
-                                ${equipo.gc}
-                            </td>
+                        <th>#</th>
+                        <th>Equipo</th>
+                        <th>PJ</th>
+                        <th class="col-px">PG</th>
+                        <th class="col-px">PE</th>
+                        <th class="col-px">PP</th>
+                        <th class="col-px">GF</th>
+                        <th class="col-px">GC</th>
+                        <th>PTS</th>
 
-                            <td>
-                                ${equipo.pts}
-                            </td>
+                    </tr>
 
-                        </tr>
+                </thead>
 
-                    `;
+                <tbody>
+
+        `;
+
+        grupos[grupo].forEach(
+            (equipo,index) => {
+
+                let clase = "";
+
+                if (index < 2) {
+
+                    clase =
+                        "clasificado";
 
                 }
-            );
+                else if (
 
-            html += `
+                    mejoresTerceros.includes(
+                        equipo.equipo
+                    )
 
-                    </tbody>
+                ) {
 
-                </table>
+                    clase =
+                        "tercero";
 
-            `;
+                }
 
-        });
+                html += `
+
+                    <tr
+                        class="
+                            fila-equipo
+                            ${clase}
+                        "
+                        onclick="
+                            location.href=
+                            'equipo.html?equipo=' +
+                            encodeURIComponent(
+                                '${equipo.equipo}'
+                            )
+                        "
+                    >
+
+                        <td>${index+1}</td>
+
+                        <td class="equipo-nombre">
+
+                            ${obtenerBandera(
+                                equipo.equipo
+                            )}
+
+                            ${equipo.equipo}
+
+                        </td>
+
+                        <td>${equipo.pj}</td>
+
+                        <td class="col-px">
+                            ${equipo.pg}
+                        </td>
+
+                        <td class="col-px">
+                            ${equipo.pe}
+                        </td>
+
+                        <td class="col-px">
+                            ${equipo.pp}
+                        </td>
+
+                        <td class="col-px">
+                            ${equipo.gf}
+                        </td>
+
+                        <td class="col-px">
+                            ${equipo.gc}
+                        </td>
+
+                        <td>
+                            ${equipo.pts}
+                        </td>
+
+                    </tr>
+
+                `;
+
+            }
+        );
+
+        html += `
+
+                </tbody>
+
+            </table>
+
+        `;
+
+    });
 
     contenedor.innerHTML = html;
 
