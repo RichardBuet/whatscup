@@ -590,6 +590,27 @@ font-weight:700;
         4px solid #6BE675;
 }
 
+.tercero{
+
+    border-left:
+        4px solid #facc15;
+
+}
+
+.leyenda-clasificacion{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-bottom:10px;
+
+    font-size:.85rem;
+
+    color:#cbd5e1;
+
+}
+
 /* =========================
    FIXTURE FLASHSCORE
 ========================= */
