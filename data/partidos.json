@@ -28,8 +28,8 @@
     "hora": "16:00",
     "local": "Canada",
     "visitante": "Bosnia-Herzegovina",
-    "golesLocal": 1,
-    "golesVisitante": 1,
+    "golesLocal": 0,
+    "golesVisitante": 0,
     "estado": "FINISHED"
   },
   {
@@ -446,9 +446,9 @@
     "hora": "14:00",
     "local": "Argentina",
     "visitante": "Austria",
-    "golesLocal": 1,
+    "golesLocal": 2,
     "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537393,
