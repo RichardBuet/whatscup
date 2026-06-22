@@ -10,6 +10,11 @@
     "goles": 3
   },
   {
+    "jugador": "Kylian Mbappé",
+    "equipo": "France",
+    "goles": 3
+  },
+  {
     "jugador": "Jonathan David",
     "equipo": "Canada",
     "goles": 3
@@ -42,11 +47,6 @@
   {
     "jugador": "Daichi Kamada",
     "equipo": "Japan",
-    "goles": 2
-  },
-  {
-    "jugador": "Yasin Ayari",
-    "equipo": "Sweden",
     "goles": 2
   }
 ]

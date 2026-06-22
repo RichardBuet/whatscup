@@ -54,8 +54,8 @@
       "pg": 1,
       "pe": 1,
       "pp": 0,
-      "gf": 6,
-      "gc": 0
+      "gf": 7,
+      "gc": 1
     },
     {
       "equipo": "Switzerland",
@@ -76,8 +76,8 @@
       "pg": 0,
       "pe": 1,
       "pp": 1,
-      "gf": 1,
-      "gc": 4
+      "gf": 2,
+      "gc": 5
     },
     {
       "equipo": "Qatar",
