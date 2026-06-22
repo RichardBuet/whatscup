@@ -425,8 +425,8 @@
     "local": "Uruguay",
     "visitante": "Cape Verde Islands",
     "golesLocal": 2,
-    "golesVisitante": 1,
-    "estado": "PAUSED"
+    "golesVisitante": 2,
+    "estado": "FINISHED"
   },
   {
     "id": 537366,
@@ -435,9 +435,9 @@
     "hora": "22:00",
     "local": "New Zealand",
     "visitante": "Egypt",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "IN_PLAY"
   },
   {
     "id": 537399,

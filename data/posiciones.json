@@ -336,24 +336,24 @@
     {
       "equipo": "Uruguay",
       "grupo": "H",
-      "pts": 1,
-      "pj": 1,
+      "pts": 2,
+      "pj": 2,
       "pg": 0,
-      "pe": 1,
+      "pe": 2,
       "pp": 0,
-      "gf": 1,
-      "gc": 1
+      "gf": 3,
+      "gc": 3
     },
     {
       "equipo": "Cape Verde Islands",
       "grupo": "H",
-      "pts": 1,
-      "pj": 1,
+      "pts": 2,
+      "pj": 2,
       "pg": 0,
-      "pe": 1,
+      "pe": 2,
       "pp": 0,
-      "gf": 0,
-      "gc": 0
+      "gf": 2,
+      "gc": 2
     },
     {
       "equipo": "Saudi Arabia",
