@@ -277,6 +277,17 @@
   ],
   "G": [
     {
+      "equipo": "Egypt",
+      "grupo": "G",
+      "pts": 4,
+      "pj": 2,
+      "pg": 1,
+      "pe": 1,
+      "pp": 0,
+      "gf": 4,
+      "gc": 2
+    },
+    {
       "equipo": "Iran",
       "grupo": "G",
       "pts": 2,
@@ -302,23 +313,12 @@
       "equipo": "New Zealand",
       "grupo": "G",
       "pts": 1,
-      "pj": 1,
+      "pj": 2,
       "pg": 0,
       "pe": 1,
-      "pp": 0,
-      "gf": 2,
-      "gc": 2
-    },
-    {
-      "equipo": "Egypt",
-      "grupo": "G",
-      "pts": 1,
-      "pj": 1,
-      "pg": 0,
-      "pe": 1,
-      "pp": 0,
-      "gf": 1,
-      "gc": 1
+      "pp": 1,
+      "gf": 3,
+      "gc": 5
     }
   ],
   "H": [
