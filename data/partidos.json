@@ -490,9 +490,9 @@
     "hora": "14:00",
     "local": "Portugal",
     "visitante": "Uzbekistan",
-    "golesLocal": 3,
+    "golesLocal": 5,
     "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537411,
@@ -503,7 +503,7 @@
     "visitante": "Ghana",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "LIVE"
   },
   {
     "id": 537412,
