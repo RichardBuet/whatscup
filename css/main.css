@@ -606,6 +606,39 @@ font-weight:700;
     color:#cbd5e1;
 }
 
+.clasificados-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:4px 10px;
+
+}
+
+.clasificado-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+    text-overflow:ellipsis;
+
+    font-size:.85rem;
+
+}
+
+
+
+
+
 /* =========================
    FIXTURE FLASHSCORE
 ========================= */
