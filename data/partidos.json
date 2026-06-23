@@ -479,9 +479,9 @@
     "hora": "24:00",
     "local": "Jordan",
     "visitante": "Algeria",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": 1,
+    "golesVisitante": 2,
+    "estado": "FINISHED"
   },
   {
     "id": 537405,
