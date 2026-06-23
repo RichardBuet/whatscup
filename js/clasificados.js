@@ -57,9 +57,12 @@ async function cargarClasificados() {
 
     html += `
         <div class="sidebar-card">
+
             <h3>
                 🟩 Clasificados
             </h3>
+
+            <div class="clasificados-grid">
     `;
 
     Object.keys(grupos)
@@ -67,48 +70,77 @@ async function cargarClasificados() {
         .forEach(grupo => {
 
             html += `
-                <p>
+
+                <div class="clasificado-item">
+
                     ${obtenerBandera(
                         grupos[grupo][0].equipo
                     )}
-                    ${grupos[grupo][0].equipo}
-                </p>
 
-                <p>
+                    ${grupos[grupo][0].equipo}
+
+                </div>
+
+                <div class="clasificado-item">
+
                     ${obtenerBandera(
                         grupos[grupo][1].equipo
                     )}
+
                     ${grupos[grupo][1].equipo}
-                </p>
+
+                </div>
+
             `;
 
         });
 
     html += `
+
+            </div>
+
         </div>
+
     `;
 
     html += `
+
         <div class="sidebar-card">
+
             <h3>
                 🟨 Mejores terceros
             </h3>
+
+            <div class="clasificados-grid">
+
     `;
 
     mejoresTerceros.forEach(
         equipo => {
 
             html += `
-                <p>
+
+                <div class="clasificado-item">
+
+                    ${obtenerBandera(
+                        equipo
+                    )}
+
                     ${equipo}
-                </p>
+
+                </div>
+
             `;
 
         }
     );
 
     html += `
+
+            </div>
+
         </div>
+
     `;
 
     document
