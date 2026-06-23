@@ -5,13 +5,18 @@
     "goles": 5
   },
   {
-    "jugador": "Deniz Undav",
-    "equipo": "Germany",
-    "goles": 3
-  },
-  {
     "jugador": "Kylian Mbappé",
     "equipo": "France",
+    "goles": 4
+  },
+  {
+    "jugador": "Erling Haaland",
+    "equipo": "Norway",
+    "goles": 4
+  },
+  {
+    "jugador": "Deniz Undav",
+    "equipo": "Germany",
     "goles": 3
   },
   {
@@ -42,11 +47,6 @@
   {
     "jugador": "Kai Havertz",
     "equipo": "Germany",
-    "goles": 2
-  },
-  {
-    "jugador": "Daichi Kamada",
-    "equipo": "Japan",
     "goles": 2
   }
 ]

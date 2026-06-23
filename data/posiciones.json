@@ -369,48 +369,48 @@
   ],
   "I": [
     {
-      "equipo": "Norway",
+      "equipo": "France",
       "grupo": "I",
-      "pts": 3,
-      "pj": 1,
-      "pg": 1,
+      "pts": 6,
+      "pj": 2,
+      "pg": 2,
       "pe": 0,
       "pp": 0,
-      "gf": 4,
+      "gf": 6,
       "gc": 1
     },
     {
-      "equipo": "France",
+      "equipo": "Norway",
       "grupo": "I",
-      "pts": 3,
-      "pj": 1,
-      "pg": 1,
+      "pts": 6,
+      "pj": 2,
+      "pg": 2,
       "pe": 0,
       "pp": 0,
-      "gf": 3,
-      "gc": 1
+      "gf": 7,
+      "gc": 3
     },
     {
       "equipo": "Senegal",
       "grupo": "I",
       "pts": 0,
-      "pj": 1,
+      "pj": 2,
       "pg": 0,
       "pe": 0,
-      "pp": 1,
-      "gf": 1,
-      "gc": 3
+      "pp": 2,
+      "gf": 3,
+      "gc": 6
     },
     {
       "equipo": "Iraq",
       "grupo": "I",
       "pts": 0,
-      "pj": 1,
+      "pj": 2,
       "pg": 0,
       "pe": 0,
-      "pp": 1,
+      "pp": 2,
       "gf": 1,
-      "gc": 4
+      "gc": 7
     }
   ],
   "J": [
