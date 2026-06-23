@@ -503,7 +503,7 @@
     "visitante": "Ghana",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "LIVE"
+    "estado": "FINISHED"
   },
   {
     "id": 537412,
@@ -514,7 +514,7 @@
     "visitante": "Croatia",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "LIVE"
   },
   {
     "id": 537406,
@@ -818,7 +818,7 @@
     "grupo": "",
     "fecha": "2026-06-29",
     "hora": "17:30",
-    "local": "Germany",
+    "local": "",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
@@ -862,7 +862,7 @@
     "grupo": "",
     "fecha": "2026-06-30",
     "hora": "22:00",
-    "local": "Mexico",
+    "local": "",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
@@ -895,7 +895,7 @@
     "grupo": "",
     "fecha": "2026-07-01",
     "hora": "21:00",
-    "local": "United States",
+    "local": "",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
