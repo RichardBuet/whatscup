@@ -143,11 +143,14 @@ async function cargarClasificados() {
 
     `;
 
-    document
-        .getElementById(
-            "clasificadosSidebar"
-        )
-        .innerHTML = html;
+const contenedor =
+    document.getElementById(
+        "clasificadosSidebar"
+    );
+
+if (!contenedor) return;
+
+contenedor.innerHTML = html;
 
 }
 
