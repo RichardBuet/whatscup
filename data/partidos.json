@@ -534,9 +534,9 @@
     "hora": "16:00",
     "local": "Switzerland",
     "visitante": "Canada",
-    "golesLocal": 1,
-    "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "golesLocal": 2,
+    "golesVisitante": 1,
+    "estado": "FINISHED"
   },
   {
     "id": 537338,
@@ -545,9 +545,9 @@
     "hora": "16:00",
     "local": "Bosnia-Herzegovina",
     "visitante": "Qatar",
-    "golesLocal": 2,
+    "golesLocal": 3,
     "golesVisitante": 1,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537344,

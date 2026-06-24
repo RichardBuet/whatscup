@@ -47,48 +47,48 @@
   ],
   "B": [
     {
-      "equipo": "Canada",
+      "equipo": "Switzerland",
       "grupo": "B",
-      "pts": 4,
-      "pj": 2,
-      "pg": 1,
+      "pts": 7,
+      "pj": 3,
+      "pg": 2,
       "pe": 1,
       "pp": 0,
       "gf": 7,
-      "gc": 1
+      "gc": 3
     },
     {
-      "equipo": "Switzerland",
+      "equipo": "Canada",
       "grupo": "B",
       "pts": 4,
-      "pj": 2,
+      "pj": 3,
       "pg": 1,
       "pe": 1,
-      "pp": 0,
-      "gf": 5,
-      "gc": 2
+      "pp": 1,
+      "gf": 8,
+      "gc": 3
     },
     {
       "equipo": "Bosnia-Herzegovina",
       "grupo": "B",
-      "pts": 1,
-      "pj": 2,
-      "pg": 0,
+      "pts": 4,
+      "pj": 3,
+      "pg": 1,
       "pe": 1,
       "pp": 1,
-      "gf": 2,
-      "gc": 5
+      "gf": 5,
+      "gc": 6
     },
     {
       "equipo": "Qatar",
       "grupo": "B",
       "pts": 1,
-      "pj": 2,
+      "pj": 3,
       "pg": 0,
       "pe": 1,
-      "pp": 1,
-      "gf": 1,
-      "gc": 7
+      "pp": 2,
+      "gf": 2,
+      "gc": 10
     }
   ],
   "C": [

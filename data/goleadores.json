@@ -20,6 +20,11 @@
     "goles": 3
   },
   {
+    "jugador": "Johan Manzambi",
+    "equipo": "Switzerland",
+    "goles": 3
+  },
+  {
     "jugador": "Jonathan David",
     "equipo": "Canada",
     "goles": 3
@@ -42,11 +47,6 @@
   {
     "jugador": "Vinicius Junior",
     "equipo": "Brazil",
-    "goles": 2
-  },
-  {
-    "jugador": "Kai Havertz",
-    "equipo": "Germany",
     "goles": 2
   }
 ]
