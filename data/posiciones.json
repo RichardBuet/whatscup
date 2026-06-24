@@ -529,26 +529,26 @@
       "gc": 0
     },
     {
+      "equipo": "Croatia",
+      "grupo": "L",
+      "pts": 3,
+      "pj": 2,
+      "pg": 1,
+      "pe": 0,
+      "pp": 1,
+      "gf": 3,
+      "gc": 4
+    },
+    {
       "equipo": "Panama",
       "grupo": "L",
       "pts": 0,
-      "pj": 1,
+      "pj": 2,
       "pg": 0,
       "pe": 0,
-      "pp": 1,
+      "pp": 2,
       "gf": 0,
-      "gc": 1
-    },
-    {
-      "equipo": "Croatia",
-      "grupo": "L",
-      "pts": 0,
-      "pj": 1,
-      "pg": 0,
-      "pe": 0,
-      "pp": 1,
-      "gf": 2,
-      "gc": 4
+      "gc": 2
     }
   ]
 }

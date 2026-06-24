@@ -513,8 +513,8 @@
     "local": "Panama",
     "visitante": "Croatia",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "LIVE"
+    "golesVisitante": 1,
+    "estado": "FINISHED"
   },
   {
     "id": 537406,
@@ -525,7 +525,7 @@
     "visitante": "Congo DR",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "SCHEDULED"
   },
   {
     "id": 537337,
@@ -818,7 +818,7 @@
     "grupo": "",
     "fecha": "2026-06-29",
     "hora": "17:30",
-    "local": "",
+    "local": "Germany",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
@@ -862,7 +862,7 @@
     "grupo": "",
     "fecha": "2026-06-30",
     "hora": "22:00",
-    "local": "",
+    "local": "Mexico",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
@@ -895,7 +895,7 @@
     "grupo": "",
     "fecha": "2026-07-01",
     "hora": "21:00",
-    "local": "",
+    "local": "United States",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
@@ -950,7 +950,7 @@
     "grupo": "",
     "fecha": "2026-07-03",
     "hora": "19:00",
-    "local": "",
+    "local": "Argentina",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
