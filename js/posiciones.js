@@ -223,12 +223,29 @@ async function mostrarPlayoff() {
 
     const cruces = [
 
-        ["A", "B"],
-        ["C", "D"],
-        ["E", "F"],
-        ["G", "H"],
-        ["I", "J"],
-        ["K", "L"]
+        ["E1","3ABCDF"],
+        ["I1","3CFGH"],
+
+        ["A2","B2"],
+        ["F1","C2"],
+
+        ["K2","L2"],
+        ["H1","J2"],
+
+        ["D1","3BEFIJ"],
+        ["G1","3AEHIJ"],
+
+        ["C1","F2"],
+        ["E2","I2"],
+
+        ["A1","3GEHIJ"],
+        ["L1","3EHIJK"],
+
+        ["J1","H2"],
+        ["D2","G2"],
+
+        ["B1","3EFGHI"],
+        ["K1","3EHIJK"]
 
     ];
 
@@ -240,77 +257,84 @@ async function mostrarPlayoff() {
 
     `;
 
-    cruces.forEach(([g1,g2]) => {
+    cruces.forEach(
+        ([local,visitante]) => {
 
-        const primero1 =
-            grupos[g1][0];
+            let equipoLocal;
+            let equipoVisitante;
 
-        const segundo1 =
-            grupos[g1][1];
+            if (
+                local.startsWith("3")
+            ) {
 
-        const primero2 =
-            grupos[g2][0];
+                equipoLocal = {
+                    equipo:
+                    `Mejor tercero (${local.substring(1)})`
+                };
 
-        const segundo2 =
-            grupos[g2][1];
+            } else {
 
-        html += `
+                equipoLocal =
+                    obtenerEquipoPorCodigo(
+                        local,
+                        grupos
+                    );
 
-            <div class="partido">
+            }
 
-                <div class="resultado">
+            if (
+                visitante.startsWith("3")
+            ) {
 
-                    <span>
-                        ${obtenerBandera(
-                            primero1.equipo
-                        )}
-                        ${primero1.equipo}
-                    </span>
+                equipoVisitante = {
+                    equipo:
+                    `Mejor tercero (${visitante.substring(1)})`
+                };
 
-                    <strong>
-                        VS
-                    </strong>
+            } else {
 
-                    <span>
-                        ${obtenerBandera(
-                            segundo2.equipo
-                        )}
-                        ${segundo2.equipo}
-                    </span>
+                equipoVisitante =
+                    obtenerEquipoPorCodigo(
+                        visitante,
+                        grupos
+                    );
+
+            }
+
+            html += `
+
+                <div class="partido">
+
+                    <div class="resultado">
+
+                        <span>
+
+                            ${
+                                equipoLocal.equipo
+                            }
+
+                        </span>
+
+                        <strong>
+                            VS
+                        </strong>
+
+                        <span>
+
+                            ${
+                                equipoVisitante.equipo
+                            }
+
+                        </span>
+
+                    </div>
 
                 </div>
 
-            </div>
+            `;
 
-            <div class="partido">
-
-                <div class="resultado">
-
-                    <span>
-                        ${obtenerBandera(
-                            primero2.equipo
-                        )}
-                        ${primero2.equipo}
-                    </span>
-
-                    <strong>
-                        VS
-                    </strong>
-
-                    <span>
-                        ${obtenerBandera(
-                            segundo1.equipo
-                        )}
-                        ${segundo1.equipo}
-                    </span>
-
-                </div>
-
-            </div>
-
-        `;
-
-    });
+        }
+    );
 
     document
         .getElementById(
