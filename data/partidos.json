@@ -536,7 +536,7 @@
     "visitante": "Canada",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "PAUSED"
   },
   {
     "id": 537338,
@@ -545,9 +545,9 @@
     "hora": "16:00",
     "local": "Bosnia-Herzegovina",
     "visitante": "Qatar",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": 2,
+    "golesVisitante": 1,
+    "estado": "PAUSED"
   },
   {
     "id": 537344,
