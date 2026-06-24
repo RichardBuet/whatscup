@@ -5,6 +5,11 @@
     "goles": 5
   },
   {
+    "jugador": "Vinicius Junior",
+    "equipo": "Brazil",
+    "goles": 4
+  },
+  {
     "jugador": "Kylian Mbappé",
     "equipo": "France",
     "goles": 4
@@ -13,6 +18,11 @@
     "jugador": "Erling Haaland",
     "equipo": "Norway",
     "goles": 4
+  },
+  {
+    "jugador": "Ismael Saibari",
+    "equipo": "Morocco",
+    "goles": 3
   },
   {
     "jugador": "Deniz Undav",
@@ -37,16 +47,6 @@
   {
     "jugador": "Folarin Balogun",
     "equipo": "United States",
-    "goles": 2
-  },
-  {
-    "jugador": "Ismael Saibari",
-    "equipo": "Morocco",
-    "goles": 2
-  },
-  {
-    "jugador": "Vinicius Junior",
-    "equipo": "Brazil",
     "goles": 2
   }
 ]
