@@ -13,11 +13,16 @@ async function cargarSidebar() {
     const stats =
         await response.json();
 
+const contenedor =
     document.getElementById(
         "estadisticasSidebar"
-    ).innerHTML = `
+    );
 
-        <div class="sidebar-card">
+if (!contenedor) return;
+
+contenedor.innerHTML = `
+
+    <div class="sidebar-card">
 
             <h3>
                 🌎 Mundial 2026
