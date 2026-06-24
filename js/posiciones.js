@@ -221,63 +221,96 @@ async function mostrarPlayoff() {
     const grupos =
         await response.json();
 
-    const A1 = grupos["A"][0];
-    const A2 = grupos["A"][1];
+    const cruces = [
 
-    const B1 = grupos["B"][0];
-    const B2 = grupos["B"][1];
+        ["A", "B"],
+        ["C", "D"],
+        ["E", "F"],
+        ["G", "H"],
+        ["I", "J"],
+        ["K", "L"]
 
-    const html = `
+    ];
+
+    let html = `
 
         <div class="section-title">
             🏆 Playoff
         </div>
 
-        <div class="partido">
-
-            <div class="resultado">
-
-                <span>
-                    ${obtenerBandera(A1.equipo)}
-                    ${A1.equipo}
-                </span>
-
-                <strong>
-                    VS
-                </strong>
-
-                <span>
-                    ${obtenerBandera(B2.equipo)}
-                    ${B2.equipo}
-                </span>
-
-            </div>
-
-        </div>
-
-        <div class="partido">
-
-            <div class="resultado">
-
-                <span>
-                    ${obtenerBandera(B1.equipo)}
-                    ${B1.equipo}
-                </span>
-
-                <strong>
-                    VS
-                </strong>
-
-                <span>
-                    ${obtenerBandera(A2.equipo)}
-                    ${A2.equipo}
-                </span>
-
-            </div>
-
-        </div>
-
     `;
+
+    cruces.forEach(([g1,g2]) => {
+
+        const primero1 =
+            grupos[g1][0];
+
+        const segundo1 =
+            grupos[g1][1];
+
+        const primero2 =
+            grupos[g2][0];
+
+        const segundo2 =
+            grupos[g2][1];
+
+        html += `
+
+            <div class="partido">
+
+                <div class="resultado">
+
+                    <span>
+                        ${obtenerBandera(
+                            primero1.equipo
+                        )}
+                        ${primero1.equipo}
+                    </span>
+
+                    <strong>
+                        VS
+                    </strong>
+
+                    <span>
+                        ${obtenerBandera(
+                            segundo2.equipo
+                        )}
+                        ${segundo2.equipo}
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="partido">
+
+                <div class="resultado">
+
+                    <span>
+                        ${obtenerBandera(
+                            primero2.equipo
+                        )}
+                        ${primero2.equipo}
+                    </span>
+
+                    <strong>
+                        VS
+                    </strong>
+
+                    <span>
+                        ${obtenerBandera(
+                            segundo1.equipo
+                        )}
+                        ${segundo1.equipo}
+                    </span>
+
+                </div>
+
+            </div>
+
+        `;
+
+    });
 
     document
         .getElementById(
