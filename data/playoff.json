@@ -1,27 +1,28 @@
-const crucesFifa = [
-
-  ["E1","3ABCDF"],
-  ["I1","3CFGH"],
-
-  ["A2","B2"],
-  ["F1","C2"],
-
-  ["K2","L2"],
-  ["H1","J2"],
-
-  ["D1","3BEFIJ"],
-  ["G1","3AEHIJ"],
-
-  ["C1","F2"],
-  ["E2","I2"],
-
-  ["A1","3GEHIJ"],
-  ["L1","3EHIJK"],
-
-  ["J1","H2"],
-  ["D2","G2"],
-
-  ["B1","3EFGHI"],
-  ["K1","3EHIJK"]
-
-];
+[
+  {
+    "id": 1,
+    "ronda": "Octavos",
+    "fecha": "2026-06-29",
+    "hora": "16:00",
+    "estadio": "Boston",
+    "local": "E1",
+    "visitante": "3ABCDF",
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "siguiente": 17
+  },
+  {
+    "id": 2,
+    "ronda": "Octavos",
+    "fecha": "2026-06-30",
+    "hora": "16:00",
+    "estadio": "Nueva York",
+    "local": "I1",
+    "visitante": "3CFGH",
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "siguiente": 17
+  }
+]
