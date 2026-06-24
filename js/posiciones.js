@@ -208,57 +208,82 @@ Object.keys(grupos)
 
 async function mostrarPlayoff() {
 
+    const version =
+        Math.floor(
+            Date.now() / 900000
+        );
+
+    const response =
+        await fetch(
+            `data/posiciones.json?v=${version}`
+        );
+
+    const grupos =
+        await response.json();
+
+    const A1 = grupos["A"][0];
+    const A2 = grupos["A"][1];
+
+    const B1 = grupos["B"][0];
+    const B2 = grupos["B"][1];
+
+    const html = `
+
+        <div class="section-title">
+            🏆 Playoff
+        </div>
+
+        <div class="partido">
+
+            <div class="resultado">
+
+                <span>
+                    ${obtenerBandera(A1.equipo)}
+                    ${A1.equipo}
+                </span>
+
+                <strong>
+                    VS
+                </strong>
+
+                <span>
+                    ${obtenerBandera(B2.equipo)}
+                    ${B2.equipo}
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="partido">
+
+            <div class="resultado">
+
+                <span>
+                    ${obtenerBandera(B1.equipo)}
+                    ${B1.equipo}
+                </span>
+
+                <strong>
+                    VS
+                </strong>
+
+                <span>
+                    ${obtenerBandera(A2.equipo)}
+                    ${A2.equipo}
+                </span>
+
+            </div>
+
+        </div>
+
+    `;
+
     document
         .getElementById(
             "contenidoPosiciones"
         )
-        .innerHTML = `
-
-            <div class="section-title">
-                🏆 Playoff
-            </div>
-
-            <div class="partido">
-
-                <div class="resultado">
-
-                    <span>
-                        🇲🇽 México (A1)
-                    </span>
-
-                    <strong>
-                        vs
-                    </strong>
-
-                    <span>
-                        🇨🇭 Suiza (B2)
-                    </span>
-
-                </div>
-
-            </div>
-
-            <div class="partido">
-
-                <div class="resultado">
-
-                    <span>
-                        🇨🇦 Canadá (B1)
-                    </span>
-
-                    <strong>
-                        vs
-                    </strong>
-
-                    <span>
-                        🇰🇷 Corea (A2)
-                    </span>
-
-                </div>
-
-            </div>
-
-        `;
+        .innerHTML = html;
 
 }
 
