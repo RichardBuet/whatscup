@@ -1,4 +1,4 @@
-async function cargarPosiciones() {
+async function mostrarGrupos() {
 
     const version =
         Math.floor(
@@ -206,4 +206,85 @@ Object.keys(grupos)
 
 }
 
-cargarPosiciones();
+async function mostrarPlayoff() {
+
+    document
+        .getElementById(
+            "contenidoPosiciones"
+        )
+        .innerHTML = `
+
+            <div class="section-title">
+                🏆 Playoff
+            </div>
+
+            <div class="partido">
+
+                <div class="resultado">
+
+                    <span>
+                        🇲🇽 México (A1)
+                    </span>
+
+                    <strong>
+                        vs
+                    </strong>
+
+                    <span>
+                        🇨🇭 Suiza (B2)
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="partido">
+
+                <div class="resultado">
+
+                    <span>
+                        🇨🇦 Canadá (B1)
+                    </span>
+
+                    <strong>
+                        vs
+                    </strong>
+
+                    <span>
+                        🇰🇷 Corea (A2)
+                    </span>
+
+                </div>
+
+            </div>
+
+        `;
+
+}
+
+document
+.getElementById("btnGrupos")
+.addEventListener(
+    "click",
+    () => {
+
+        document
+        .getElementById(
+            "contenidoPosiciones"
+        )
+        .innerHTML =
+            '<div id="tablaPosiciones"></div>';
+
+        mostrarGrupos();
+
+    }
+);
+
+document
+.getElementById("btnPlayoff")
+.addEventListener(
+    "click",
+    mostrarPlayoff
+);
+
+mostrarGrupos();
