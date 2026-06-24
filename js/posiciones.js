@@ -206,6 +206,39 @@ Object.keys(grupos)
 
 }
 
+
+function obtenerEquipoPorCodigo(
+    codigo,
+    grupos
+) {
+
+    const grupo =
+        codigo.charAt(0);
+
+    const posicion =
+        parseInt(
+            codigo.charAt(1)
+        );
+
+    if (
+        !grupos[grupo]
+    ) {
+
+        return {
+            equipo: codigo
+        };
+
+    }
+
+    return grupos[grupo][
+        posicion - 1
+    ];
+
+}
+
+
+
+
 async function mostrarPlayoff() {
 
     const version =
