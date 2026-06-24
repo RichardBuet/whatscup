@@ -62,21 +62,40 @@
 
     </aside>
 
-    <main class="content">
+<main class="content">
 
-        <section class="section">
+    <section class="section">
 
-            <div class="section-title">
-                📊 Tabla de posiciones
-            </div>
+        <div class="section-title">
+            📊 Tabla de posiciones
+        </div>
 
-            <div class="tabla-scroll">
-                  <div id="tablaPosiciones"></div>
-            </div>
+        <div class="tabs-posiciones">
 
-        </section>
+            <button
+                id="btnGrupos"
+                class="tab-activa"
+            >
+                Fase de grupos
+            </button>
 
-      </main>
+            <button
+                id="btnPlayoff"
+            >
+                Playoff
+            </button>
+
+        </div>
+
+        <div id="contenidoPosiciones">
+
+            <div id="tablaPosiciones"></div>
+
+        </div>
+
+    </section>
+
+</main>
 <div id="rightbarContainer"></div>
 </div>
 
