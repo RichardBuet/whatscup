@@ -1,63 +1,39 @@
-async function verificarVersion() {
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
 
-    try {
-
-        const response =
-            await fetch(
-                `version.json?t=${Date.now()}`
-            );
-
-        const data =
-            await response.json();
-
-        const actual =
-            localStorage.getItem(
-                "appVersion"
-            );
-
-        if (
-            actual &&
-            actual !== data.version
-        ) {
-
-            localStorage.setItem(
-                "appVersion",
-                data.version
-            );
-
-            location.reload();
-
-            return;
-
-        }
-
-        localStorage.setItem(
-            "appVersion",
-            data.version
-        );
-
-        const versionDiv =
+        const div =
             document.getElementById(
                 "versionApp"
             );
 
-        if (versionDiv) {
+        if (div) {
 
-            versionDiv.textContent =
-                `WhatsCup v${data.version}`;
+            div.innerHTML =
+                "🔥 VERSION FUNCIONANDO 🔥";
+
+            div.style.position =
+                "fixed";
+
+            div.style.top =
+                "10px";
+
+            div.style.right =
+                "10px";
+
+            div.style.background =
+                "red";
+
+            div.style.color =
+                "white";
+
+            div.style.padding =
+                "10px";
+
+            div.style.zIndex =
+                "99999";
 
         }
 
     }
-    catch(error) {
-
-        console.error(
-            "Error verificando versión",
-            error
-        );
-
-    }
-
-}
-
-verificarVersion();
+);
