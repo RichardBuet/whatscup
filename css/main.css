@@ -42,6 +42,38 @@ text-decoration:none;
 color:inherit;
 }
 
+
+#versionApp{
+
+    position:fixed;
+
+    right:10px;
+
+    bottom:80px;
+
+    font-size:.7rem;
+
+    opacity:.5;
+
+    z-index:999;
+
+    pointer-events:none;
+
+}
+
+@media(min-width:1200px){
+
+    #versionApp{
+
+        bottom:10px;
+
+    }
+
+}
+
+
+
+
 /* =========================
 SIDEBAR
 ========================= */
