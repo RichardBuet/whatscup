@@ -95,46 +95,46 @@
     {
       "equipo": "Brazil",
       "grupo": "C",
-      "pts": 4,
-      "pj": 2,
-      "pg": 1,
+      "pts": 7,
+      "pj": 3,
+      "pg": 2,
       "pe": 1,
       "pp": 0,
-      "gf": 4,
+      "gf": 7,
       "gc": 1
     },
     {
       "equipo": "Morocco",
       "grupo": "C",
-      "pts": 4,
-      "pj": 2,
-      "pg": 1,
+      "pts": 7,
+      "pj": 3,
+      "pg": 2,
       "pe": 1,
       "pp": 0,
-      "gf": 2,
-      "gc": 1
+      "gf": 6,
+      "gc": 3
     },
     {
       "equipo": "Scotland",
       "grupo": "C",
       "pts": 3,
-      "pj": 2,
+      "pj": 3,
       "pg": 1,
       "pe": 0,
-      "pp": 1,
+      "pp": 2,
       "gf": 1,
-      "gc": 1
+      "gc": 4
     },
     {
       "equipo": "Haiti",
       "grupo": "C",
       "pts": 0,
-      "pj": 2,
+      "pj": 3,
       "pg": 0,
       "pe": 0,
-      "pp": 2,
-      "gf": 0,
-      "gc": 4
+      "pp": 3,
+      "gf": 2,
+      "gc": 8
     }
   ],
   "D": [
