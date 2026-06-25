@@ -76,6 +76,80 @@ async function cargarPlayoff() {
 
 }
 
+function resolverMejorTercero(
+    codigo,
+    grupos
+){
+
+    const gruposPermitidos =
+        codigo.substring(1).split("");
+
+    const terceros = [];
+
+    gruposPermitidos.forEach(grupo=>{
+
+        if(
+            grupos[grupo] &&
+            grupos[grupo][2]
+        ){
+
+            terceros.push({
+
+                grupo,
+
+                ...grupos[grupo][2]
+
+            });
+
+        }
+
+    });
+
+    terceros.sort((a,b)=>{
+
+        const dgA =
+            a.gf-a.gc;
+
+        const dgB =
+            b.gf-b.gc;
+
+        if(
+            b.pts!==a.pts
+        ){
+
+            return b.pts-a.pts;
+
+        }
+
+        if(
+            dgB!==dgA
+        ){
+
+            return dgB-dgA;
+
+        }
+
+        return b.gf-a.gf;
+
+    });
+
+    if(
+        terceros.length===0
+    ){
+
+        return "🟨 "+codigo;
+
+    }
+
+    return `
+        ${obtenerBandera(
+            terceros[0].equipo
+        )}
+        ${terceros[0].equipo}
+    `;
+
+}
+
 function resolverEquipo(
     codigo,
     grupos
@@ -88,11 +162,14 @@ function resolverEquipo(
     }
 
     if(
-        codigo.startsWith("3")
+    codigo.startsWith("3")
     ){
-
-        return `🟨 ${codigo}`;
-
+    
+        return resolverMejorTercero(
+            codigo,
+            grupos
+        );
+    
     }
 
     if(
