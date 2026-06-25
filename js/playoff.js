@@ -2,16 +2,28 @@ let rondaActual =
     "Eliminatoria de 32";
 
 function cambiarRonda(
-    ronda
+    ronda,
+    boton
 ){
 
     rondaActual =
         ronda;
 
+    document
+        .querySelectorAll(".btn-ronda")
+        .forEach(
+            b => b.classList.remove("activo")
+        );
+
+    if(boton){
+
+        boton.classList.add("activo");
+
+    }
+
     cargarPlayoff();
 
 }
-
 async function cargarPlayoff(ronda = "32") {
 
     const version =
@@ -42,42 +54,42 @@ async function cargarPlayoff(ronda = "32") {
     <button
     id="btn32"
     class="btn-ronda activo"
-    onclick="mostrarRonda('32',this)">
+    onclick="cambiarRonda('32',this)">
     1/32
 </button>
 
 <button
     id="btnOctavos"
     class="btn-ronda"
-    onclick="mostrarRonda('Octavos',this)">
+    onclick="cambiarRonda('Octavos',this)">
     Octavos
 </button>
 
 <button
     id="btnCuartos"
     class="btn-ronda"
-    onclick="mostrarRonda('Cuartos',this)">
+    onclick="cambiarRonda('Cuartos',this)">
     Cuartos
 </button>
 
 <button
     id="btnSemis"
     class="btn-ronda"
-    onclick="mostrarRonda('Semifinal',this)">
+    onclick="cambiarRonda('Semifinal',this)">
     Semis
 </button>
 
 <button
     id="btnTercero"
     class="btn-ronda"
-    onclick="mostrarRonda('Tercer',this)">
+    onclick="cambiarRonda('Tercer',this)">
     3°
 </button>
 
 <button
     id="btnFinal"
     class="btn-ronda"
-    onclick="mostrarRonda('Final',this)">
+    onclick="cambiarRonda('Final',this)">
     Final
 </button>
 </div>
@@ -297,18 +309,3 @@ return `
 }
 
 
-function mostrarRonda(ronda, boton){
-
-    document
-        .querySelectorAll(".btn-ronda")
-        .forEach(b => b.classList.remove("activo"));
-
-    if(boton){
-
-        boton.classList.add("activo");
-
-    }
-
-    cargarPlayoff(ronda);
-
-}
