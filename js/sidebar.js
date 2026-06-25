@@ -44,26 +44,6 @@ contenedor.innerHTML = `
                 🟢 ${stats.envivo} en vivo
             </p>
 
-        </div>
-
-        <div class="sidebar-card">
-
-            <h3>
-                🔥 Récord
-            </h3>
-
-            <p>
-                ${stats.mayorGoleada}
-            </p>
-
-        </div>
-
-        <div class="sidebar-card">
-
-            <h3>
-                📊 Promedio
-            </h3>
-
             <p>
                 ${stats.promedioGol}
                 goles/partido
