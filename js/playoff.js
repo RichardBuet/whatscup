@@ -37,13 +37,59 @@ async function cargarPlayoff() {
 
     let html = `
 
-        <div class="section-title">
-            🏆 Playoff
-        </div>
+<div class="tabs-playoff">
 
-    `;
+    <button
+        onclick="cambiarRonda('Eliminatoria de 32')"
+        class="${rondaActual === 'Eliminatoria de 32' ? 'tab-activa' : ''}"
+    >
+        1/32
+    </button>
 
-    playoff.forEach(partido => {
+    <button
+        onclick="cambiarRonda('Octavos')"
+        class="${rondaActual === 'Octavos' ? 'tab-activa' : ''}"
+    >
+        Octavos
+    </button>
+
+    <button
+        onclick="cambiarRonda('Cuartos')"
+        class="${rondaActual === 'Cuartos' ? 'tab-activa' : ''}"
+    >
+        Cuartos
+    </button>
+
+    <button
+        onclick="cambiarRonda('Semifinales')"
+        class="${rondaActual === 'Semifinales' ? 'tab-activa' : ''}"
+    >
+        Semis
+    </button>
+
+    <button
+        onclick="cambiarRonda('Final')"
+        class="${rondaActual === 'Final' ? 'tab-activa' : ''}"
+    >
+        Final
+    </button>
+
+</div>
+
+<div class="section-title">
+    🏆 Playoff
+</div>
+
+`;
+    
+
+    const partidosMostrar =
+    playoff.filter(
+        partido =>
+            partido.ronda === rondaActual
+    );
+
+partidosMostrar.forEach(partido => {
 
         html += `
 
