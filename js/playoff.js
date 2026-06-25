@@ -117,6 +117,12 @@ function resolverEquipo(
 
     }
 
+    if(typeof codigo !== "string"){
+    
+        return "A definir";
+    
+    }
+    
     const grupo =
         codigo.charAt(0);
 
