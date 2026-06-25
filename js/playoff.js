@@ -13,6 +13,119 @@ async function cargarPlayoff() {
     const playoff =
         await response.json();
 
-    console.log(playoff);
+    const responsePos =
+        await fetch(
+            `data/posiciones.json?v=${version}`
+        );
+
+    const grupos =
+        await responsePos.json();
+
+    let html = `
+
+        <div class="section-title">
+            🏆 Playoff
+        </div>
+
+    `;
+
+    playoff.forEach(partido => {
+
+        html += `
+
+            <div class="partido">
+
+                <div class="resultado">
+
+                    <span>
+                        ${resolverEquipo(
+                            partido.local,
+                            grupos
+                        )}
+                    </span>
+
+                    <strong>
+                        VS
+                    </strong>
+
+                    <span>
+                        ${resolverEquipo(
+                            partido.visitante,
+                            grupos
+                        )}
+                    </span>
+
+                </div>
+
+            </div>
+
+        `;
+
+    });
+
+    document
+        .getElementById(
+            "contenidoPosiciones"
+        )
+        .innerHTML = html;
+
+}
+
+function resolverEquipo(
+    codigo,
+    grupos
+){
+
+    if(
+        codigo.startsWith("3")
+    ){
+
+        return `🟨 ${codigo}`;
+
+    }
+
+    if(
+        codigo.startsWith("W")
+    ){
+
+        return `🏆 Ganador ${codigo.substring(1)}`;
+
+    }
+
+    if(
+        codigo.startsWith("L")
+    ){
+
+        return `🥉 Perdedor ${codigo.substring(1)}`;
+
+    }
+
+    const grupo =
+        codigo.charAt(0);
+
+    const posicion =
+        parseInt(
+            codigo.charAt(1)
+        );
+
+    if(
+        !grupos[grupo]
+    ){
+
+        return codigo;
+
+    }
+
+    const equipo =
+        grupos[grupo][
+            posicion-1
+        ];
+
+    return `
+        ${obtenerBandera(
+            equipo.equipo
+        )}
+        ${equipo.equipo}
+    `;
 
 }
