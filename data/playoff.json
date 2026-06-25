@@ -290,22 +290,22 @@
   {
     "id": 25,
     "ronda": "Semifinal",
-    "fecha": "2026-07-09",
-    "estadio": "Boston",
+    "fecha": "2026-07-14",
+    "estadio": "Dallas",
     "local": "W17",
     "visitante": "W18",
     "ganador": null,
-    "siguiente": 31
+    "siguiente": 30
   },
   {
     "id": 26,
     "ronda": "Semifinal",
-    "fecha": "2026-07-10",
-    "estadio": "Los Ángeles",
+    "fecha": "2026-07-15",
+    "estadio": "Atlanta",
     "local": "W19",
     "visitante": "W20",
     "ganador": null,
-    "siguiente": 31
+    "siguiente": 30
   },
   {
     "id": 27,
@@ -315,7 +315,7 @@
     "local": "W21",
     "visitante": "W22",
     "ganador": null,
-    "siguiente": 32
+    "siguiente": 29
   },
   {
     "id": 28,
@@ -325,45 +325,25 @@
     "local": "W23",
     "visitante": "W24",
     "ganador": null,
-    "siguiente": 32
+    "siguiente": 29
   },
   {
     "id": 29,
-    "ronda": "Semifinal",
-    "fecha": "2026-07-14",
-    "estadio": "Dallas",
+    "ronda": "Final",
+    "fecha": "2026-07-19",
+    "estadio": "Nueva York",
     "local": "W25",
     "visitante": "W26",
-    "ganador": null,
-    "siguiente": 33
-  },
-  {
-    "id": 30,
-    "ronda": "Semifinal",
-    "fecha": "2026-07-15",
-    "estadio": "Atlanta",
-    "local": "W27",
-    "visitante": "W28",
-    "ganador": null,
-    "siguiente": 33
-  },
-  {
-    "id": 31,
-    "ronda": "Tercer Puesto",
-    "fecha": "2026-07-18",
-    "estadio": "Miami",
-    "local": "L29",
-    "visitante": "L30",
     "ganador": null,
     "siguiente": null
   },
   {
-    "id": 33,
-    "ronda": "Final",
-    "fecha": "2026-07-19",
-    "estadio": "Nueva York",
-    "local": "W29",
-    "visitante": "W30",
+    "id": 30,
+    "ronda": "Tercer Puesto",
+    "fecha": "2026-07-18",
+    "estadio": "Miami",
+    "local": "L25",
+    "visitante": "L26",
     "ganador": null,
     "siguiente": null
   }
