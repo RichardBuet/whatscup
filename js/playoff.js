@@ -54,11 +54,22 @@ async function cargarPlayoff() {
                             grupos
                         )}
                     </span>
-
-                </div>
-
             </div>
-
+        
+            <div class="partido-info">
+        
+                📅 ${partido.fecha}
+        
+                ${partido.hora ? "🕒 " + partido.hora : ""}
+        
+                <br>
+        
+                🏟 ${partido.estadio}
+        
+            </div>
+        
+        </div>
+        
         `;
 
     });
@@ -75,6 +86,12 @@ function resolverEquipo(
     codigo,
     grupos
 ){
+
+    if(!codigo){
+
+        return "A definir";
+
+    }
 
     if(
         codigo.startsWith("3")
@@ -116,12 +133,18 @@ function resolverEquipo(
 
     }
 
-    const equipo =
-        grupos[grupo][
-            posicion-1
-        ];
+const equipo =
+    grupos[grupo][
+        posicion-1
+    ];
 
-    return `
+if(!equipo){
+
+    return codigo;
+
+}
+
+return `
         ${obtenerBandera(
             equipo.equipo
         )}
