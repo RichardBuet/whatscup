@@ -623,8 +623,8 @@
     "local": "Tunisia",
     "visitante": "Netherlands",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesVisitante": 2,
+    "estado": "IN_PLAY"
   },
   {
     "id": 537362,
@@ -635,7 +635,7 @@
     "visitante": "Sweden",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "IN_PLAY"
   },
   {
     "id": 537349,
