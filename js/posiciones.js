@@ -239,7 +239,11 @@ function obtenerEquipoPorCodigo(
 
 
 
-async function mostrarPlayoff() {
+async function mostrarPlayoff(){
+
+    cargarPlayoff();
+
+}
 
     const version =
         Math.floor(
