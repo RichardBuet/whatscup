@@ -1,5 +1,5 @@
 let rondaActual =
-    "Eliminatoria de 32";
+    "Eliminatoria de 1/16";
 
 function cambiarRonda(
     ronda,
@@ -24,7 +24,7 @@ function cambiarRonda(
     cargarPlayoff();
 
 }
-async function cargarPlayoff(ronda = "32") {
+async function cargarPlayoff(ronda = "1/16") {
 
     const version =
         Math.floor(
@@ -52,9 +52,9 @@ async function cargarPlayoff(ronda = "32") {
 <div class="tabs-playoff">
 
     <button
-    id="btn32"
+    id="btn16"
     class="btn-ronda activo"
-    onclick="cambiarRonda('32',this)">
+    onclick="cambiarRonda('1/16',this)">
     1/32
 </button>
 
