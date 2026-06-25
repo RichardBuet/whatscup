@@ -239,11 +239,35 @@ function obtenerEquipoPorCodigo(
 
 
 
-async function mostrarPlayoff(){
+async function mostrarPlayoff() {
 
     cargarPlayoff();
 
 }
 
-    const version =
-        Math.floor(
+document
+.getElementById("btnGrupos")
+.addEventListener(
+    "click",
+    () => {
+
+        document
+        .getElementById(
+            "contenidoPosiciones"
+        )
+        .innerHTML =
+            '<div id="tablaPosiciones"></div>';
+
+        mostrarGrupos();
+
+    }
+);
+
+document
+.getElementById("btnPlayoff")
+.addEventListener(
+    "click",
+    mostrarPlayoff
+);
+
+mostrarGrupos();
