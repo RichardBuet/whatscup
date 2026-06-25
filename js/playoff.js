@@ -58,13 +58,7 @@ async function cargarPlayoff() {
         
             <div class="partido-info">
         
-                📅 ${partido.fecha}
-        
-                ${partido.hora ? "🕒 " + partido.hora : ""}
-        
-                <br>
-        
-                🏟 ${partido.estadio}
+                📅 ${partido.fecha} ${partido.hora ? "🕒 " + partido.hora : ""} 🏟 ${partido.estadio}
         
             </div>
         
