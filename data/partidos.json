@@ -600,9 +600,9 @@
     "hora": "17:00",
     "local": "Ecuador",
     "visitante": "Germany",
-    "golesLocal": 1,
+    "golesLocal": 2,
     "golesVisitante": 1,
-    "estado": "LIVE"
+    "estado": "FINISHED"
   },
   {
     "id": 537356,
@@ -612,8 +612,8 @@
     "local": "Curaçao",
     "visitante": "Ivory Coast",
     "golesLocal": 0,
-    "golesVisitante": 1,
-    "estado": "LIVE"
+    "golesVisitante": 2,
+    "estado": "FINISHED"
   },
   {
     "id": 537361,

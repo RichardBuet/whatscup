@@ -188,45 +188,45 @@
       "equipo": "Germany",
       "grupo": "E",
       "pts": 6,
-      "pj": 2,
+      "pj": 3,
       "pg": 2,
       "pe": 0,
-      "pp": 0,
-      "gf": 9,
-      "gc": 2
+      "pp": 1,
+      "gf": 10,
+      "gc": 4
     },
     {
       "equipo": "Ivory Coast",
       "grupo": "E",
-      "pts": 3,
-      "pj": 2,
-      "pg": 1,
+      "pts": 6,
+      "pj": 3,
+      "pg": 2,
       "pe": 0,
       "pp": 1,
-      "gf": 2,
+      "gf": 4,
       "gc": 2
     },
     {
       "equipo": "Ecuador",
       "grupo": "E",
-      "pts": 1,
-      "pj": 2,
-      "pg": 0,
+      "pts": 4,
+      "pj": 3,
+      "pg": 1,
       "pe": 1,
       "pp": 1,
-      "gf": 0,
-      "gc": 1
+      "gf": 2,
+      "gc": 2
     },
     {
       "equipo": "Curaçao",
       "grupo": "E",
       "pts": 1,
-      "pj": 2,
+      "pj": 3,
       "pg": 0,
       "pe": 1,
-      "pp": 1,
+      "pp": 2,
       "gf": 1,
-      "gc": 7
+      "gc": 9
     }
   ],
   "F": [
