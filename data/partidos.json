@@ -579,8 +579,8 @@
     "local": "Czechia",
     "visitante": "Mexico",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesVisitante": 3,
+    "estado": "FINISHED"
   },
   {
     "id": 537332,
@@ -589,9 +589,9 @@
     "hora": "22:00",
     "local": "South Africa",
     "visitante": "South Korea",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "FINISHED"
   },
   {
     "id": 537355,
@@ -818,7 +818,7 @@
     "grupo": "",
     "fecha": "2026-06-29",
     "hora": "17:30",
-    "local": "Germany",
+    "local": "",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
@@ -862,7 +862,7 @@
     "grupo": "",
     "fecha": "2026-06-30",
     "hora": "22:00",
-    "local": "Mexico",
+    "local": "",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
@@ -895,7 +895,7 @@
     "grupo": "",
     "fecha": "2026-07-01",
     "hora": "21:00",
-    "local": "United States",
+    "local": "",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,
@@ -950,7 +950,7 @@
     "grupo": "",
     "fecha": "2026-07-03",
     "hora": "19:00",
-    "local": "Argentina",
+    "local": "",
     "visitante": "",
     "golesLocal": 0,
     "golesVisitante": 0,

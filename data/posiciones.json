@@ -3,46 +3,46 @@
     {
       "equipo": "Mexico",
       "grupo": "A",
-      "pts": 6,
-      "pj": 2,
-      "pg": 2,
+      "pts": 9,
+      "pj": 3,
+      "pg": 3,
       "pe": 0,
       "pp": 0,
-      "gf": 3,
+      "gf": 6,
       "gc": 0
+    },
+    {
+      "equipo": "South Africa",
+      "grupo": "A",
+      "pts": 4,
+      "pj": 3,
+      "pg": 1,
+      "pe": 1,
+      "pp": 1,
+      "gf": 2,
+      "gc": 3
     },
     {
       "equipo": "South Korea",
       "grupo": "A",
       "pts": 3,
-      "pj": 2,
+      "pj": 3,
       "pg": 1,
       "pe": 0,
-      "pp": 1,
+      "pp": 2,
       "gf": 2,
-      "gc": 2
+      "gc": 3
     },
     {
       "equipo": "Czechia",
       "grupo": "A",
       "pts": 1,
-      "pj": 2,
+      "pj": 3,
       "pg": 0,
       "pe": 1,
-      "pp": 1,
+      "pp": 2,
       "gf": 2,
-      "gc": 3
-    },
-    {
-      "equipo": "South Africa",
-      "grupo": "A",
-      "pts": 1,
-      "pj": 2,
-      "pg": 0,
-      "pe": 1,
-      "pp": 1,
-      "gf": 1,
-      "gc": 3
+      "gc": 6
     }
   ],
   "B": [
