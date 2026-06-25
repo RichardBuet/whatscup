@@ -25,7 +25,14 @@ function cambiarRonda(
 
 }
 async function cargarPlayoff(ronda = "1/16") {
+document
+    .getElementById("btnGrupos")
+    .classList.remove("activo");
 
+document
+    .getElementById("btnPlayoff")
+    .classList.add("activo");
+    
     const version =
         Math.floor(
             Date.now() / 900000
