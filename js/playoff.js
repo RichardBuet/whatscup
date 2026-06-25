@@ -1,5 +1,5 @@
 let rondaActual =
-    "Eliminatoria de 1/16";
+    "1/16";
 
 function cambiarRonda(
     ronda,
@@ -55,7 +55,7 @@ async function cargarPlayoff(ronda = "1/16") {
     id="btn16"
     class="btn-ronda activo"
     onclick="cambiarRonda('1/16',this)">
-    1/32
+    1/16
 </button>
 
 <button
@@ -82,7 +82,7 @@ async function cargarPlayoff(ronda = "1/16") {
 <button
     id="btnTercero"
     class="btn-ronda"
-    onclick="cambiarRonda('Tercer',this)">
+    onclick="cambiarRonda('Tercer Puesto',this)">
     3°
 </button>
 
