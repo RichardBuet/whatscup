@@ -12,7 +12,7 @@ function cambiarRonda(
 
 }
 
-async function cargarPlayoff() {
+async function cargarPlayoff(ronda = "32") {
 
     const version =
         Math.floor(
@@ -40,40 +40,46 @@ async function cargarPlayoff() {
 <div class="tabs-playoff">
 
     <button
-        onclick="cambiarRonda('Eliminatoria de 32')"
-        class="${rondaActual === 'Eliminatoria de 32' ? 'tab-activa' : ''}"
-    >
-        1/32
-    </button>
+    id="btn32"
+    class="btn-ronda activo"
+    onclick="mostrarRonda('32',this)">
+    1/32
+</button>
 
-    <button
-        onclick="cambiarRonda('Octavos')"
-        class="${rondaActual === 'Octavos' ? 'tab-activa' : ''}"
-    >
-        Octavos
-    </button>
+<button
+    id="btnOctavos"
+    class="btn-ronda"
+    onclick="mostrarRonda('Octavos',this)">
+    Octavos
+</button>
 
-    <button
-        onclick="cambiarRonda('Cuartos')"
-        class="${rondaActual === 'Cuartos' ? 'tab-activa' : ''}"
-    >
-        Cuartos
-    </button>
+<button
+    id="btnCuartos"
+    class="btn-ronda"
+    onclick="mostrarRonda('Cuartos',this)">
+    Cuartos
+</button>
 
-    <button
-        onclick="cambiarRonda('Semifinales')"
-        class="${rondaActual === 'Semifinales' ? 'tab-activa' : ''}"
-    >
-        Semis
-    </button>
+<button
+    id="btnSemis"
+    class="btn-ronda"
+    onclick="mostrarRonda('Semifinal',this)">
+    Semis
+</button>
 
-    <button
-        onclick="cambiarRonda('Final')"
-        class="${rondaActual === 'Final' ? 'tab-activa' : ''}"
-    >
-        Final
-    </button>
+<button
+    id="btnTercero"
+    class="btn-ronda"
+    onclick="mostrarRonda('Tercer',this)">
+    3°
+</button>
 
+<button
+    id="btnFinal"
+    class="btn-ronda"
+    onclick="mostrarRonda('Final',this)">
+    Final
+</button>
 </div>
 
 <div class="section-title">
@@ -287,5 +293,22 @@ return `
         )}
         ${equipo.equipo}
     `;
+
+}
+
+
+function mostrarRonda(ronda, boton){
+
+    document
+        .querySelectorAll(".btn-ronda")
+        .forEach(b => b.classList.remove("activo"));
+
+    if(boton){
+
+        boton.classList.add("activo");
+
+    }
+
+    cargarPlayoff(ronda);
 
 }
