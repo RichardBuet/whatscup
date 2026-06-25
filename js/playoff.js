@@ -27,11 +27,11 @@ function cambiarRonda(
 async function cargarPlayoff(ronda = "1/16") {
 document
     .getElementById("btnGrupos")
-    .classList.remove("activo");
+    .classList.remove("tab-activa");
 
 document
     .getElementById("btnPlayoff")
-    .classList.add("activo");
+    .classList.add("tab-activa");
     
     const version =
         Math.floor(
