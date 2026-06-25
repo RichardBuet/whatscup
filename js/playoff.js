@@ -1,3 +1,17 @@
+let rondaActual =
+    "Eliminatoria de 32";
+
+function cambiarRonda(
+    ronda
+){
+
+    rondaActual =
+        ronda;
+
+    cargarPlayoff();
+
+}
+
 async function cargarPlayoff() {
 
     const version =
