@@ -107,11 +107,41 @@ async function cargarPlayoff(ronda = "1/16") {
             partido.ronda === rondaActual
     );
 
-partidosMostrar.forEach(partido => {
-
+    partidosMostrar.forEach(partido => {
+    
+        let estado = "";
+    
+    if(
+        partido.golesLocal != null &&
+        partido.golesVisitante != null
+    ){
+    
+        estado = `
+            <div class="estado-finalizado">
+                FINAL
+            </div>
+        `;
+    
+    }else{
+    
+        estado = `
+            <div class="estado-programado">
+                ${partido.hora ?? ""}
+            </div>
+        `;
+    
+    }
+    
         html += `
 
-            <div class="partido">
+            <div
+                class="partido"
+                onclick="
+                    location.href=
+                    'partido.html?id=' +
+                    ${partido.id}
+                "
+            >
 
                 <div class="resultado">
                     <span
@@ -173,8 +203,11 @@ partidosMostrar.forEach(partido => {
         
             <div class="partido-info">
         
-                📅 ${partido.fecha} ${partido.hora ? "🕒 " + partido.hora : ""} 🏟 ${partido.estadio}
-        
+               <!-- 📅 ${partido.fecha} ${partido.hora ? "🕒 " + partido.hora : ""} 🏟 ${partido.estadio} -->
+                ${estado}
+                📅 ${partido.fecha}
+                🏟 ${partido.estadio}
+
             </div>
         
         </div>
