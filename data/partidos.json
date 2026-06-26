@@ -667,8 +667,8 @@
     "local": "Norway",
     "visitante": "France",
     "golesLocal": 1,
-    "golesVisitante": 3,
-    "estado": "IN_PLAY"
+    "golesVisitante": 4,
+    "estado": "FINISHED"
   },
   {
     "id": 537396,
@@ -677,9 +677,9 @@
     "hora": "16:00",
     "local": "Senegal",
     "visitante": "Iraq",
-    "golesLocal": 4,
+    "golesLocal": 5,
     "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537373,
