@@ -238,7 +238,7 @@ function obtenerEquipoPorCodigo(
 
 async function mostrarPlayoff() {
 
-    cargarPlayoff();
+   await cargarPlayoff();
 
 }
 
