@@ -252,22 +252,19 @@ document
     () => {
 
         document
-        .getElementById(
-            "contenidoPosiciones"
-        )
-        .innerHTML =
+            .getElementById("btnGrupos")
+            .classList.add("tab-activa");
+
+        document
+            .getElementById("btnPlayoff")
+            .classList.remove("tab-activa");
+
+        document
+            .getElementById("contenidoPosiciones")
+            .innerHTML =
             '<div id="tablaPosiciones"></div>';
 
         mostrarGrupos();
 
     }
 );
-
-document
-.getElementById("btnPlayoff")
-.addEventListener(
-    "click",
-    mostrarPlayoff
-);
-
-mostrarGrupos();
