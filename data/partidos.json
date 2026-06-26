@@ -622,9 +622,9 @@
     "hora": "20:00",
     "local": "Tunisia",
     "visitante": "Netherlands",
-    "golesLocal": 0,
-    "golesVisitante": 2,
-    "estado": "IN_PLAY"
+    "golesLocal": 1,
+    "golesVisitante": 3,
+    "estado": "FINISHED"
   },
   {
     "id": 537362,
@@ -633,9 +633,9 @@
     "hora": "20:00",
     "local": "Japan",
     "visitante": "Sweden",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "golesLocal": 1,
+    "golesVisitante": 1,
+    "estado": "FINISHED"
   },
   {
     "id": 537349,
