@@ -600,9 +600,9 @@
     "hora": "17:00",
     "local": "Ecuador",
     "visitante": "Germany",
-    "golesLocal": 2,
-    "golesVisitante": 1,
-    "estado": "FINISHED"
+    "golesLocal": 0,
+    "golesVisitante": 0,
+    "estado": "TIMED"
   },
   {
     "id": 537356,
@@ -612,8 +612,8 @@
     "local": "Curaçao",
     "visitante": "Ivory Coast",
     "golesLocal": 0,
-    "golesVisitante": 2,
-    "estado": "FINISHED"
+    "golesVisitante": 0,
+    "estado": "TIMED"
   },
   {
     "id": 537361,
@@ -622,9 +622,9 @@
     "hora": "20:00",
     "local": "Tunisia",
     "visitante": "Netherlands",
-    "golesLocal": 1,
-    "golesVisitante": 3,
-    "estado": "FINISHED"
+    "golesLocal": 0,
+    "golesVisitante": 0,
+    "estado": "TIMED"
   },
   {
     "id": 537362,
@@ -633,9 +633,9 @@
     "hora": "20:00",
     "local": "Japan",
     "visitante": "Sweden",
-    "golesLocal": 1,
-    "golesVisitante": 1,
-    "estado": "FINISHED"
+    "golesLocal": 0,
+    "golesVisitante": 0,
+    "estado": "TIMED"
   },
   {
     "id": 537349,

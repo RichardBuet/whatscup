@@ -188,91 +188,91 @@
       "equipo": "Germany",
       "grupo": "E",
       "pts": 6,
-      "pj": 3,
+      "pj": 2,
       "pg": 2,
       "pe": 0,
-      "pp": 1,
-      "gf": 10,
-      "gc": 4
+      "pp": 0,
+      "gf": 9,
+      "gc": 2
     },
     {
       "equipo": "Ivory Coast",
       "grupo": "E",
-      "pts": 6,
-      "pj": 3,
-      "pg": 2,
-      "pe": 0,
-      "pp": 1,
-      "gf": 4,
-      "gc": 2
-    },
-    {
-      "equipo": "Ecuador",
-      "grupo": "E",
-      "pts": 4,
-      "pj": 3,
+      "pts": 3,
+      "pj": 2,
       "pg": 1,
-      "pe": 1,
+      "pe": 0,
       "pp": 1,
       "gf": 2,
       "gc": 2
     },
     {
+      "equipo": "Ecuador",
+      "grupo": "E",
+      "pts": 1,
+      "pj": 2,
+      "pg": 0,
+      "pe": 1,
+      "pp": 1,
+      "gf": 0,
+      "gc": 1
+    },
+    {
       "equipo": "Curaçao",
       "grupo": "E",
       "pts": 1,
-      "pj": 3,
+      "pj": 2,
       "pg": 0,
       "pe": 1,
-      "pp": 2,
+      "pp": 1,
       "gf": 1,
-      "gc": 9
+      "gc": 7
     }
   ],
   "F": [
     {
       "equipo": "Netherlands",
       "grupo": "F",
-      "pts": 7,
-      "pj": 3,
-      "pg": 2,
-      "pe": 1,
-      "pp": 0,
-      "gf": 10,
-      "gc": 4
-    },
-    {
-      "equipo": "Japan",
-      "grupo": "F",
-      "pts": 5,
-      "pj": 3,
+      "pts": 4,
+      "pj": 2,
       "pg": 1,
-      "pe": 2,
+      "pe": 1,
       "pp": 0,
       "gf": 7,
       "gc": 3
     },
     {
-      "equipo": "Sweden",
+      "equipo": "Japan",
       "grupo": "F",
       "pts": 4,
-      "pj": 3,
+      "pj": 2,
       "pg": 1,
       "pe": 1,
+      "pp": 0,
+      "gf": 6,
+      "gc": 2
+    },
+    {
+      "equipo": "Sweden",
+      "grupo": "F",
+      "pts": 3,
+      "pj": 2,
+      "pg": 1,
+      "pe": 0,
       "pp": 1,
-      "gf": 7,
-      "gc": 7
+      "gf": 6,
+      "gc": 6
     },
     {
       "equipo": "Tunisia",
       "grupo": "F",
       "pts": 0,
-      "pj": 3,
+      "pj": 2,
       "pg": 0,
       "pe": 0,
-      "pp": 3,
-      "gf": 2,
-      "gc": 12
+      "pp": 2,
+      "gf": 1,
+      "gc": 9
     }
   ],
   "G": [
