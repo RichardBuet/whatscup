@@ -53,7 +53,7 @@ async function cargarPlayoff(ronda = "1/16") {
 
     <button
     id="btn16"
-    class="btn-ronda activo"
+    class="btn-ronda"
     onclick="cambiarRonda('1/16',this)">
     1/16
 </button>
@@ -222,6 +222,36 @@ async function cargarPlayoff(ronda = "1/16") {
         )
         .innerHTML = html;
 
+    
+document.querySelectorAll(".btn-ronda")
+.forEach(b=>b.classList.remove("activo"));
+
+const mapaBotones = {
+
+    "1/16":"btn16",
+
+    "Octavos":"btnOctavos",
+
+    "Cuartos":"btnCuartos",
+
+    "Semifinal":"btnSemis",
+
+    "Tercer Puesto":"btnTercero",
+
+    "Final":"btnFinal"
+
+};
+
+const botonActivo =
+    document.getElementById(
+        mapaBotones[rondaActual]
+    );
+
+if(botonActivo){
+
+    botonActivo.classList.add("activo");
+
+}
 }
 
 function resolverMejorTercero(
