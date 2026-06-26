@@ -114,25 +114,62 @@ partidosMostrar.forEach(partido => {
             <div class="partido">
 
                 <div class="resultado">
-
-                    <span>
+                    <span
+                        class="${
+                            partido.ganador &&
+                            resolverEquipo(
+                                partido.local,
+                                grupos,
+                                playoff
+                            ).includes(partido.ganador)
+                    
+                            ? "ganador"
+                    
+                            : ""
+                        }"
+                    >
+                    
                         ${resolverEquipo(
                             partido.local,
-                            grupos
+                            grupos,
+                            playoff
                         )}
-                    </span>
-
-                    <strong>
-                        VS
-                    </strong>
-
-                    <span>
+                    
+                    </span>             
+                    <strong>                
+                        ${
+                            partido.golesLocal != null
+                            &&
+                            partido.golesVisitante != null                
+                            ?                
+                            `${partido.golesLocal} - ${partido.golesVisitante}`                
+                            :                
+                            "VS"                
+                        }                
+                    </strong>                
+                    <span
+                        class="${
+                            partido.ganador &&
+                            resolverEquipo(
+                                partido.visitante,
+                                grupos,
+                                playoff
+                            ).includes(partido.ganador)
+                    
+                            ? "ganador"
+                    
+                            : ""
+                        }"
+                    >
+                    
                         ${resolverEquipo(
                             partido.visitante,
-                            grupos
+                            grupos,
+                            playoff
                         )}
-                    </span>
-            </div>
+                    
+                    </span>              
+                </div>
         
             <div class="partido-info">
         
@@ -230,7 +267,8 @@ function resolverMejorTercero(
 
 function resolverEquipo(
     codigo,
-    grupos
+    grupos,
+    playoff
 ){
 
     if(!codigo){
@@ -253,17 +291,70 @@ function resolverEquipo(
     if(
         codigo.startsWith("W")
     ){
-
-        return `🏆 Ganador ${codigo.substring(1)}`;
-
+    
+        const id =
+            parseInt(
+                codigo.substring(1)
+            );
+    
+        const partido =
+            playoff.find(
+                p => p.id === id
+            );
+    
+        if(
+            partido &&
+            partido.ganador
+        ){
+    
+            return `
+                ${obtenerBandera(
+                    partido.ganador
+                )}
+                ${partido.ganador}
+            `;
+    
+        }
+    
+        return `🏆 Ganador ${id}`;
+    
     }
 
     if(
-        codigo.startsWith("L")
+    codigo.startsWith("L")
     ){
-
-        return `🥉 Perdedor ${codigo.substring(1)}`;
-
+    
+        const id =
+            parseInt(
+                codigo.substring(1)
+            );
+    
+        const partido =
+            playoff.find(
+                p => p.id === id
+            );
+    
+        if(
+            partido &&
+            partido.ganador
+        ){
+    
+            const perdedor =
+                partido.local === partido.ganador
+                    ? partido.visitante
+                    : partido.local;
+    
+            return `
+                ${obtenerBandera(
+                    perdedor
+                )}
+                ${perdedor}
+            `;
+    
+        }
+    
+        return `🥉 Perdedor ${id}`;
+    
     }
 
     if(typeof codigo !== "string"){
