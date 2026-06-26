@@ -461,6 +461,11 @@ overflow-x:auto;
 -webkit-overflow-scrolling:touch;
 }
 
+.ganador{
+    color:#6BE675;
+    font-weight:700;
+}
+
 /* =========================
 EQUIPOS
 ========================= */
@@ -758,7 +763,9 @@ font-weight:700;
 }
 
 
-/* ESTADOS DEL FIXTURE Y PARTIDOS*/
+/* ===========================
+ESTADOS DEL FIXTURE Y PARTIDOS
+============================ */
 
 .partido-vivo{
     box-shadow:0 0 10px rgba(34,197,94,.25);
@@ -773,25 +780,17 @@ font-weight:700;
 
 
 .estado-vivo{
-
     color:#22c55e;
-
     font-weight:700;
-
     animation:pulse 1.2s infinite;
-
 }
 
 .estado-finalizado{
-
     color:#94a3b8;
-
 }
 
 .estado-programado{
-
     color:#facc15;
-
 }
 
 @keyframes pulse{
