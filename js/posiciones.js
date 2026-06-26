@@ -280,7 +280,11 @@ document
             .getElementById("btnGrupos")
             .classList.remove("tab-activa");
 
-        mostrarPlayoff();
+        setTimeout(() => {
+
+    mostrarPlayoff();
+
+}, 0);
 
     }
 );
