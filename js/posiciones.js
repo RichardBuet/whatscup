@@ -236,9 +236,6 @@ function obtenerEquipoPorCodigo(
 
 }
 
-
-
-
 async function mostrarPlayoff() {
 
     cargarPlayoff();
@@ -268,3 +265,34 @@ document
 
     }
 );
+
+document
+.getElementById("btnPlayoff")
+.addEventListener(
+    "click",
+    () => {
+
+        document
+            .getElementById("btnPlayoff")
+            .classList.add("tab-activa");
+
+        document
+            .getElementById("btnGrupos")
+            .classList.remove("tab-activa");
+
+        mostrarPlayoff();
+
+    }
+);
+
+document
+    .getElementById("btnGrupos")
+    .classList.add("tab-activa");
+
+document
+    .getElementById("btnPlayoff")
+    .classList.remove("tab-activa");
+
+mostrarGrupos();
+
+
