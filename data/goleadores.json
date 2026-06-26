@@ -20,6 +20,11 @@
     "goles": 4
   },
   {
+    "jugador": "Ousmane Dembélé",
+    "equipo": "France",
+    "goles": 4
+  },
+  {
     "jugador": "Ismael Saibari",
     "equipo": "Morocco",
     "goles": 3
@@ -42,11 +47,6 @@
   {
     "jugador": "Matheus Cunha",
     "equipo": "Brazil",
-    "goles": 3
-  },
-  {
-    "jugador": "Brian Brobbey",
-    "equipo": "Netherlands",
     "goles": 3
   }
 ]
