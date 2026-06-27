@@ -114,23 +114,32 @@ document
         partido =>
             partido.ronda === rondaActual
     );
-
+    const mitad =
+    Math.ceil(
+        partidosMostrar.length / 2
+    );
+    
     partidosMostrar.forEach((partido, index) => {
 
-        if(index === 8){
-    
+        if(index === mitad){
+        
             html += `
                 <div class="separador-llave">
-                    LLAVE 2
+                   << Llave 2 >>
                 </div>
             `;
-    
+        
         }
         
+        const indiceLlave =
+            index < mitad
+                ? index
+                : index - mitad;
+        
         const claseGrupo =
-        (index % 2 === 1)
-            ? "grupo-fin"
-            : "";
+            (indiceLlave % 2 === 1)
+                ? "grupo-fin"
+                : "";
         
         let estado = "";
     
