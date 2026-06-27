@@ -734,7 +734,7 @@
     "visitante": "England",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "IN_PLAY"
   },
   {
     "id": 537414,
@@ -743,9 +743,9 @@
     "hora": "18:00",
     "local": "Croatia",
     "visitante": "Ghana",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "LIVE"
   },
   {
     "id": 537407,
