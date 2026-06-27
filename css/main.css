@@ -483,15 +483,13 @@ transition:.2s;
     display:none;
 }
 
-#contenidoPosiciones{
+#contenidoPosiciones, .fixture, listaEquipos{
     flex:1;
     min-height:0;
-
     overflow-y:auto;
     overflow-x:hidden;
-
     padding-right:4px;
-    padding-bottom:90px;
+    /* padding-bottom:90px; */
 }
 
 .btn-ronda{
