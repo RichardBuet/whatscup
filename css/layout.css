@@ -52,6 +52,40 @@
 }
 
 /* =========================
+   SCROLLBAR
+========================= */
+
+/* Firefox */
+*{
+    scrollbar-width:thin;
+    scrollbar-color:rgba(255,255,255,.18) transparent;
+}
+
+/* Chrome, Edge, Opera */
+::-webkit-scrollbar{
+    width:6px;
+    height:6px;
+}
+
+::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,.08);
+    border-radius:999px;
+    transition:.25s;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:rgba(107,230,117,.45);
+}
+
+::-webkit-scrollbar-corner{
+    background:transparent;
+}
+
+/* =========================
    TABLET
 ========================= */
 
