@@ -515,9 +515,9 @@ POSICIONES
     transition:.2s;
 }
 
-.tabs-posiciones button:hover{
+/* .tabs-posiciones button:hover{
     background:#1f2d55;
-}
+} */
 
 .tabs-posiciones .tab-activa{
     background:#6BE675;
