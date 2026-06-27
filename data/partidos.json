@@ -689,8 +689,8 @@
     "local": "Uruguay",
     "visitante": "Spain",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesVisitante": 1,
+    "estado": "IN_PLAY"
   },
   {
     "id": 537374,
@@ -701,7 +701,7 @@
     "visitante": "Saudi Arabia",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "IN_PLAY"
   },
   {
     "id": 537367,
