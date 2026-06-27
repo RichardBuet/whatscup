@@ -733,7 +733,7 @@
     "local": "Panama",
     "visitante": "England",
     "golesLocal": 0,
-    "golesVisitante": 0,
+    "golesVisitante": 2,
     "estado": "IN_PLAY"
   },
   {
@@ -744,8 +744,8 @@
     "local": "Croatia",
     "visitante": "Ghana",
     "golesLocal": 1,
-    "golesVisitante": 0,
-    "estado": "LIVE"
+    "golesVisitante": 1,
+    "estado": "IN_PLAY"
   },
   {
     "id": 537407,
