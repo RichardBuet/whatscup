@@ -121,24 +121,34 @@ const mitad =
     );
 
 /* ---------- LLAVE 1 ---------- */
+if(
+    rondaActual !== "Final" &&
+    rondaActual !== "Tercer Puesto"
+){
 
-html += `
-    <div class="separador-llave">
-        << LLAVE 1 >>
-    </div>
-`;
+    html += `
+        <div class="separador-llave">
+            << LLAVE 1 >>
+        </div>
+    `;
+
+}
 
 partidosMostrar.forEach((partido, index) => {
+/* ---------- LLAVE 2 ---------- */
+if(
+    rondaActual !== "Final" &&
+    rondaActual !== "Tercer Puesto" &&
+    index === mitad
+){
 
-    if(index === mitad){
+    html += `
+        <div class="separador-llave">
+            << LLAVE 2 >>
+        </div>
+    `;
 
-        html += `
-            <div class="separador-llave">
-                << LLAVE 2 >>
-            </div>
-        `;
-
-    }
+}
 
     const indiceLlave =
         index < mitad
