@@ -109,65 +109,74 @@ document
 `;
     
 
-    const partidosMostrar =
+const partidosMostrar =
     playoff.filter(
         partido =>
             partido.ronda === rondaActual
     );
-    const mitad =
+
+const mitad =
     Math.ceil(
         partidosMostrar.length / 2
     );
-    
-    partidosMostrar.forEach((partido, index) => {
 
-        if(index === mitad){
-        
-            html += `
-                <div class="separador-llave">
-                   << Llave 2 >>
-                </div>
-            `;
-        
-        }
-        
-        const indiceLlave =
-            index < mitad
-                ? index
-                : index - mitad;
-        
-        const claseGrupo =
-            (indiceLlave % 2 === 1)
-                ? "grupo-fin"
-                : "";
-        
-        let estado = "";
-    
+/* ---------- LLAVE 1 ---------- */
+
+html += `
+    <div class="separador-llave">
+        << LLAVE 1 >>
+    </div>
+`;
+
+partidosMostrar.forEach((partido, index) => {
+
+    if(index === mitad){
+
+        html += `
+            <div class="separador-llave">
+                << LLAVE 2 >>
+            </div>
+        `;
+
+    }
+
+    const indiceLlave =
+        index < mitad
+            ? index
+            : index - mitad;
+
+    const claseGrupo =
+        (indiceLlave % 2 === 1)
+            ? "grupo-fin"
+            : "";
+
+    let estado = "";
+
     if(
         partido.golesLocal != null &&
         partido.golesVisitante != null
     ){
-    
+
         estado = `
             <div class="estado-finalizado">
                 FINAL
             </div>
         `;
-    
+
     }else{
-    
+
         estado = `
             <div class="estado-programado">
                 ${partido.hora ?? ""}
             </div>
         `;
-    
-    }
-    
-        html += `
 
-            <div
-                class="partido ${claseGrupo}"
+    }
+
+    html += `
+
+        <div
+            class="partido ${claseGrupo}"
                 onclick="
                     location.href=
                     'partido.html?id=' +
