@@ -174,7 +174,7 @@ box-shadow:
 0 8px 24px rgba(0,0,0,.25);
 	display:flex;
     flex-direction:column;
-    height:calc(100dvh - 110px);
+    height:calc(100dvh - 90px);
     overflow:hidden;
 }
 
@@ -430,37 +430,23 @@ transition:.2s;
 }
 
 .resultado strong{
-
     font-size:1.35rem;
-
     font-weight:800;
-
     color:#ffffff;
-
     width:70px;
-
     text-align:center;
-
     flex-shrink:0;
 
 }
 
 .partido-info{
-
     margin-top:8px;
-
     font-size:.80rem;
-
     color:#94a3b8;
-
     display:flex;
-
     gap:12px;
-
     flex-wrap:wrap;
-
     align-items:center;
-
 }
 
 
@@ -472,7 +458,7 @@ transition:.2s;
     display:flex;
     justify-content:space-between;
     gap:12px;
-    margin:20px 0;
+    margin:5px 0;
     padding-bottom:4px;
     /* overflow-x:auto; */
     scroll-behavior:smooth;
@@ -555,7 +541,7 @@ POSICIONES
 	
     display:flex;
     gap:10px;
-    margin-bottom:20px;
+    /* margin-bottom:20px; */
 }
 
 .tabs-posiciones button{
