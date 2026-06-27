@@ -35,6 +35,11 @@
     "goles": 3
   },
   {
+    "jugador": "Elijah Just",
+    "equipo": "New Zealand",
+    "goles": 3
+  },
+  {
     "jugador": "Johan Manzambi",
     "equipo": "Switzerland",
     "goles": 3
@@ -42,11 +47,6 @@
   {
     "jugador": "Jonathan David",
     "equipo": "Canada",
-    "goles": 3
-  },
-  {
-    "jugador": "Matheus Cunha",
-    "equipo": "Brazil",
     "goles": 3
   }
 ]

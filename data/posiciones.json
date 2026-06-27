@@ -277,91 +277,91 @@
   ],
   "G": [
     {
+      "equipo": "Belgium",
+      "grupo": "G",
+      "pts": 5,
+      "pj": 3,
+      "pg": 1,
+      "pe": 2,
+      "pp": 0,
+      "gf": 6,
+      "gc": 2
+    },
+    {
       "equipo": "Egypt",
       "grupo": "G",
-      "pts": 4,
-      "pj": 2,
+      "pts": 5,
+      "pj": 3,
       "pg": 1,
-      "pe": 1,
+      "pe": 2,
       "pp": 0,
-      "gf": 4,
-      "gc": 2
+      "gf": 5,
+      "gc": 3
     },
     {
       "equipo": "Iran",
       "grupo": "G",
-      "pts": 2,
-      "pj": 2,
+      "pts": 3,
+      "pj": 3,
       "pg": 0,
-      "pe": 2,
+      "pe": 3,
       "pp": 0,
-      "gf": 2,
-      "gc": 2
-    },
-    {
-      "equipo": "Belgium",
-      "grupo": "G",
-      "pts": 2,
-      "pj": 2,
-      "pg": 0,
-      "pe": 2,
-      "pp": 0,
-      "gf": 1,
-      "gc": 1
+      "gf": 3,
+      "gc": 3
     },
     {
       "equipo": "New Zealand",
       "grupo": "G",
       "pts": 1,
-      "pj": 2,
+      "pj": 3,
       "pg": 0,
       "pe": 1,
-      "pp": 1,
-      "gf": 3,
-      "gc": 5
+      "pp": 2,
+      "gf": 4,
+      "gc": 10
     }
   ],
   "H": [
     {
       "equipo": "Spain",
       "grupo": "H",
-      "pts": 4,
-      "pj": 2,
-      "pg": 1,
+      "pts": 7,
+      "pj": 3,
+      "pg": 2,
       "pe": 1,
       "pp": 0,
-      "gf": 4,
+      "gf": 5,
       "gc": 0
-    },
-    {
-      "equipo": "Uruguay",
-      "grupo": "H",
-      "pts": 2,
-      "pj": 2,
-      "pg": 0,
-      "pe": 2,
-      "pp": 0,
-      "gf": 3,
-      "gc": 3
     },
     {
       "equipo": "Cape Verde Islands",
       "grupo": "H",
-      "pts": 2,
-      "pj": 2,
+      "pts": 3,
+      "pj": 3,
       "pg": 0,
-      "pe": 2,
+      "pe": 3,
       "pp": 0,
       "gf": 2,
       "gc": 2
     },
     {
+      "equipo": "Uruguay",
+      "grupo": "H",
+      "pts": 2,
+      "pj": 3,
+      "pg": 0,
+      "pe": 2,
+      "pp": 1,
+      "gf": 3,
+      "gc": 4
+    },
+    {
       "equipo": "Saudi Arabia",
       "grupo": "H",
-      "pts": 1,
-      "pj": 2,
+      "pts": 2,
+      "pj": 3,
       "pg": 0,
-      "pe": 1,
+      "pe": 2,
       "pp": 1,
       "gf": 1,
       "gc": 5
