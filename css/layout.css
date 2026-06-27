@@ -107,7 +107,7 @@
     }
     .content{
       min-height:0;
-      padding-bottom:90px;
+      padding-bottom:0px;
     }
     .rightbar{
         display:none;
