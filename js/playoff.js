@@ -115,8 +115,23 @@ document
             partido.ronda === rondaActual
     );
 
-    partidosMostrar.forEach(partido => {
+    partidosMostrar.forEach((partido, index) => {
+
+        if(index === 8){
     
+            html += `
+                <div class="separador-llave">
+                    LLAVE 2
+                </div>
+            `;
+    
+        }
+        
+        const claseGrupo =
+        (index % 2 === 1)
+            ? "grupo-fin"
+            : "";
+        
         let estado = "";
     
     if(
@@ -143,7 +158,7 @@ document
         html += `
 
             <div
-                class="partido"
+                class="partido ${claseGrupo}"
                 onclick="
                     location.href=
                     'partido.html?id=' +
