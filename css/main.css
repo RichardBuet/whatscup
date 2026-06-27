@@ -335,14 +335,14 @@ transition:.2s;
 }
 
 /* Agrupa los partidos de dos en dos */
-.partido:nth-child(2n){
+/* .partido:nth-child(2n){
     margin-bottom:26px;
-}
+} */
 
 /* Cada llave ocupa dos partidos */
-.partido:nth-of-type(2n){
+/* .partido:nth-of-type(2n){
     margin-bottom:28px;
-}
+} */
 
 .partido:hover{
 	transform:
