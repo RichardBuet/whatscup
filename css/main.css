@@ -483,7 +483,7 @@ transition:.2s;
     display:none;
 }
 
-#contenidoPosiciones, .fixture, listaEquipos{
+#contenidoPosiciones, #fixture, #listaEquipos{
     flex:1;
     min-height:0;
     overflow-y:auto;
