@@ -19,7 +19,21 @@ async function mostrarGrupos() {
         );
 
 let html = "";
-
+	
+    <div class="tabs-posiciones">
+	    <button
+	        class="tab-activa"
+	        onclick="mostrarGrupos()">
+	        Fase de grupos
+	    </button>
+	
+	    <button
+	        onclick="mostrarPlayoff()">
+	        Playoff
+	    </button>
+	</div>
+	`;
+	
 const terceros = [];
 
 Object.keys(grupos)
