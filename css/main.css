@@ -172,6 +172,10 @@ border-radius:28px;
 padding:12px;
 box-shadow:
 0 8px 24px rgba(0,0,0,.25);
+	display:flex;
+    flex-direction:column;
+    height:calc(100dvh - 110px);
+    overflow:hidden;
 }
 
 .section-title{
@@ -319,9 +323,12 @@ PARTIDOS
 ========================= */
 
 #fixtureCompleto{
-display:flex;
-flex-direction:column;
-gap:10px;
+    flex:1;
+    overflow-y:auto;
+    overflow-x:hidden;
+	display:flex;
+	flex-direction:column;
+	gap:10px;
 }
 
 .partido{
@@ -472,9 +479,14 @@ transition:.2s;
 }
 
 .tabs-playoff::-webkit-scrollbar{
-
     display:none;
+}
 
+#contenidoPosiciones{
+    flex:1;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-right:4px;
 }
 
 .btn-ronda{
@@ -535,6 +547,12 @@ border-bottom:1px solid rgba(255,255,255,.08);
 POSICIONES
 ========================= */
 .tabs-posiciones{
+    position:sticky;
+    top:0;
+    z-index:21;
+    background:#09132d;
+    padding-bottom:10px;
+	
     display:flex;
     gap:10px;
     margin-bottom:20px;
@@ -808,19 +826,17 @@ font-weight:700;
 ========================= */
 
 #selectorFechas{
-
     display:flex;
-
     gap:10px;
-
     overflow-x:auto;
-
     overflow-y:hidden;
-
     white-space:nowrap;
-
     padding:10px 0 16px;
-
+	position:sticky;
+	top:0;
+	z-index:20;
+	background:#09132d;
+	padding-top:8px;
     scrollbar-width:none;
 }
 
@@ -1185,6 +1201,11 @@ MOBILE
     }
 
     .tabs-playoff{
+		position:sticky;
+	    top:0;
+	    z-index:20;
+	    background:#09132d;
+		
         overflow-x:auto;
         justify-content:flex-start;
         padding-bottom:6px;
