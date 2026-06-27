@@ -49,17 +49,12 @@ color:inherit;
     font-size:.75rem;
     padding:8px;
     color:#94a3b8; */
-	    position:fixed;
-
+	position:fixed;
     right:12px;
-    bottom:82px;
-
+    bottom:70px;
     opacity:.45;
-
     font-size:.70rem;
-
     color:#94a3b8;
-
     z-index:500;
 }
 
