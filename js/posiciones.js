@@ -18,21 +18,24 @@ async function mostrarGrupos() {
             "tablaPosiciones"
         );
 
-let html = "";
-	
-    <div class="tabs-posiciones">
-	    <button
-	        class="tab-activa"
-	        onclick="mostrarGrupos()">
-	        Fase de grupos
-	    </button>
-	
-	    <button
-	        onclick="mostrarPlayoff()">
-	        Playoff
-	    </button>
-	</div>
-	`;
+let html = `
+
+<div class="tabs-posiciones">
+
+    <button
+        class="tab-activa"
+        onclick="mostrarGrupos()">
+        Fase de grupos
+    </button>
+
+    <button
+        onclick="mostrarPlayoff()">
+        Playoff
+    </button>
+
+</div>
+
+`;
 	
 const terceros = [];
 
