@@ -15,7 +15,12 @@ for (const partido of partidos) {
         continue;
     }
 
-    const grupo = partido.grupo || "SIN_GRUPO";
+    if (!partido.grupo) {
+        continue;
+    }
+
+    
+    const grupo = partido.grupo;
 
     if (!grupos[grupo]) {
         grupos[grupo] = {};
