@@ -799,8 +799,8 @@
     "local": "South Africa",
     "visitante": "Canada",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "PAUSED"
+    "golesVisitante": 1,
+    "estado": "FINISHED"
   },
   {
     "id": 537423,
