@@ -417,56 +417,56 @@
     {
       "equipo": "Argentina",
       "grupo": "J",
-      "pts": 6,
-      "pj": 2,
-      "pg": 2,
+      "pts": 9,
+      "pj": 3,
+      "pg": 3,
       "pe": 0,
       "pp": 0,
-      "gf": 5,
-      "gc": 0
+      "gf": 8,
+      "gc": 1
     },
     {
       "equipo": "Austria",
       "grupo": "J",
-      "pts": 3,
-      "pj": 2,
+      "pts": 4,
+      "pj": 3,
       "pg": 1,
-      "pe": 0,
+      "pe": 1,
       "pp": 1,
-      "gf": 3,
-      "gc": 3
+      "gf": 6,
+      "gc": 6
     },
     {
       "equipo": "Algeria",
       "grupo": "J",
-      "pts": 3,
-      "pj": 2,
+      "pts": 4,
+      "pj": 3,
       "pg": 1,
-      "pe": 0,
+      "pe": 1,
       "pp": 1,
-      "gf": 2,
-      "gc": 4
+      "gf": 5,
+      "gc": 7
     },
     {
       "equipo": "Jordan",
       "grupo": "J",
       "pts": 0,
-      "pj": 2,
+      "pj": 3,
       "pg": 0,
       "pe": 0,
-      "pp": 2,
-      "gf": 2,
-      "gc": 5
+      "pp": 3,
+      "gf": 3,
+      "gc": 8
     }
   ],
   "K": [
     {
       "equipo": "Colombia",
       "grupo": "K",
-      "pts": 6,
-      "pj": 2,
+      "pts": 7,
+      "pj": 3,
       "pg": 2,
-      "pe": 0,
+      "pe": 1,
       "pp": 0,
       "gf": 4,
       "gc": 1
@@ -474,10 +474,10 @@
     {
       "equipo": "Portugal",
       "grupo": "K",
-      "pts": 4,
-      "pj": 2,
+      "pts": 5,
+      "pj": 3,
       "pg": 1,
-      "pe": 1,
+      "pe": 2,
       "pp": 0,
       "gf": 6,
       "gc": 1
@@ -485,24 +485,24 @@
     {
       "equipo": "Congo DR",
       "grupo": "K",
-      "pts": 1,
-      "pj": 2,
-      "pg": 0,
+      "pts": 4,
+      "pj": 3,
+      "pg": 1,
       "pe": 1,
       "pp": 1,
-      "gf": 1,
-      "gc": 2
+      "gf": 4,
+      "gc": 3
     },
     {
       "equipo": "Uzbekistan",
       "grupo": "K",
       "pts": 0,
-      "pj": 2,
+      "pj": 3,
       "pg": 0,
       "pe": 0,
-      "pp": 2,
-      "gf": 1,
-      "gc": 8
+      "pp": 3,
+      "gf": 2,
+      "gc": 11
     }
   ],
   "L": [

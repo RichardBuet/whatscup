@@ -2,7 +2,7 @@
   {
     "jugador": "Lionel Messi",
     "equipo": "Argentina",
-    "goles": 5
+    "goles": 6
   },
   {
     "jugador": "Vinicius Junior",
@@ -40,13 +40,13 @@
     "goles": 3
   },
   {
-    "jugador": "Harry Kane",
-    "equipo": "England",
+    "jugador": "Yoane Wissa",
+    "equipo": "Congo DR",
     "goles": 3
   },
   {
-    "jugador": "Johan Manzambi",
-    "equipo": "Switzerland",
+    "jugador": "Harry Kane",
+    "equipo": "England",
     "goles": 3
   }
 ]
