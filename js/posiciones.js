@@ -248,16 +248,14 @@ document
     "click",
     () => {
 
-        document
-            .getElementById("btnGrupos")
-            .classList.add("tab-activa");
+        activarTab(
+            "btnGrupos"
+        );
 
         document
-            .getElementById("btnPlayoff")
-            .classList.remove("tab-activa");
-
-        document
-            .getElementById("contenidoPosiciones")
+            .getElementById(
+                "contenidoPosiciones"
+            )
             .innerHTML =
             '<div id="tablaPosiciones"></div>';
 
@@ -272,30 +270,18 @@ document
     "click",
     () => {
 
-        document
-            .getElementById("btnPlayoff")
-            .classList.add("tab-activa");
+        activarTab(
+            "btnPlayoff"
+        );
 
-        document
-            .getElementById("btnGrupos")
-            .classList.remove("tab-activa");
-
-        setTimeout(() => {
-
-    mostrarPlayoff();
-
-}, 0);
+        mostrarPlayoff();
 
     }
 );
 
-document
-    .getElementById("btnGrupos")
-    .classList.add("tab-activa");
-
-document
-    .getElementById("btnPlayoff")
-    .classList.remove("tab-activa");
+activarTab(
+    "btnGrupos"
+);
 
 mostrarGrupos();
 
