@@ -435,8 +435,8 @@ function resolverEquipo(
     }
 
     if(
-    codigo.startsWith("L")
-    ){
+    /^L\d{2}$/.test(codigo)
+){
     
         const id =
             parseInt(
