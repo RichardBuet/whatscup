@@ -1,5 +1,4 @@
-let rondaActual =
-    "1/16";
+let rondaActual = "";
 
 function cambiarRonda(
     ronda,
@@ -24,6 +23,49 @@ function cambiarRonda(
     cargarPlayoff();
 
 }
+
+function obtenerRondaActual(playoff){
+
+    const rondas = [
+        "1/16",
+        "Octavos",
+        "Cuartos",
+        "Semifinal",
+        "Final"
+    ];
+
+    for(const ronda of rondas){
+
+        const pendientes =
+            playoff.some(partido => {
+
+                const pendiente =
+                    partido.estado
+                        ? partido.estado !== "FINISHED"
+                        : (
+                            partido.golesLocal == null ||
+                            partido.golesVisitante == null
+                        );
+
+                return (
+                    partido.ronda === ronda &&
+                    pendiente
+                );
+
+            });
+
+        if(pendientes){
+
+            return ronda;
+
+        }
+
+    }
+
+    return "Final";
+
+}
+
 async function cargarPlayoff(ronda = "1/16") {
 document
     .getElementById("btnGrupos")
@@ -46,7 +88,11 @@ document
 
     const playoff =
         await response.json();
-
+        if(!rondaActual){        
+            rondaActual =
+                obtenerRondaActual(playoff);
+        }
+    
     const responsePos =
         await fetch(
             `data/posiciones.json?v=${version}`
