@@ -30,6 +30,11 @@
     "goles": 3
   },
   {
+    "jugador": "Kai Havertz",
+    "equipo": "Germany",
+    "goles": 3
+  },
+  {
     "jugador": "Deniz Undav",
     "equipo": "Germany",
     "goles": 3
@@ -42,11 +47,6 @@
   {
     "jugador": "Yoane Wissa",
     "equipo": "Congo DR",
-    "goles": 3
-  },
-  {
-    "jugador": "Harry Kane",
-    "equipo": "England",
     "goles": 3
   }
 ]
