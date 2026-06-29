@@ -16,6 +16,13 @@ const playoff = JSON.parse(
     )
 );
 
+const grupos = JSON.parse(
+    fs.readFileSync(
+        "./data/posiciones.json",
+        "utf8"
+    )
+);
+
 for (const partidoPlayoff of playoff) {
 
     // Sólo buscamos partidos que ya tienen equipos definidos
@@ -24,14 +31,24 @@ for (const partidoPlayoff of playoff) {
         partidoPlayoff.visitante.length > 2
     ) {
 
-        const partidoReal =
-            partidos.find(p =>
+        const local =
+    resolverEquipo(
+        partidoPlayoff.local,
+        grupos
+    );
 
-                p.local === partidoPlayoff.local &&
+const visitante =
+    resolverEquipo(
+        partidoPlayoff.visitante,
+        grupos
+    );
 
-                p.visitante === partidoPlayoff.visitante
-
-            );
+const partidoReal =
+    partidos.find(
+        p =>
+            p.local === local &&
+            p.visitante === visitante
+    );
 
         if (!partidoReal) {
 
