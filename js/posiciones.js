@@ -185,4 +185,13 @@ document
 
 mostrarGrupos();
 
+document
+    .getElementById("btnPlayoff")
+    .classList.add("tab-activa");
+
+document
+    .getElementById("btnGrupos")
+    .classList.remove("tab-activa");
+
+mostrarPlayoff();
 
