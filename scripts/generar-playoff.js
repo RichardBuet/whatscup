@@ -1,3 +1,5 @@
+import { resolverEquipo } from "./utils.js";
+
 import fs from "fs";
 
 const partidos = JSON.parse(
