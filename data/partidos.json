@@ -809,9 +809,9 @@
     "hora": "14:00",
     "local": "Brazil",
     "visitante": "Japan",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "IN_PLAY"
+    "golesLocal": 2,
+    "golesVisitante": 1,
+    "estado": "FINISHED"
   },
   {
     "id": 537415,
