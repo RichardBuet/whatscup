@@ -4,6 +4,6 @@
   "description": "WhatsCup - Mundial 2026",
   "type": "module",
   "scripts": {
-    "update": "node scripts/import-worldcup.js"
+    "update": "node scripts/import-worldcup.js && node scripts/generar-posiciones.js && node scripts/generar-estadisticas.js && node scripts/generar-playoff.js"
   }
 }
