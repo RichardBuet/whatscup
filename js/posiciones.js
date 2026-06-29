@@ -175,6 +175,7 @@ mostrarPlayoff();
     }
 );
 
+/*
 document
     .getElementById("btnGrupos")
     .classList.add("tab-activa");
@@ -184,6 +185,7 @@ document
     .classList.remove("tab-activa");
 
 mostrarGrupos();
+*/
 
 document
     .getElementById("btnPlayoff")
