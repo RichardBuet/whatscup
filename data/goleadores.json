@@ -5,6 +5,11 @@
     "goles": 6
   },
   {
+    "jugador": "Erling Haaland",
+    "equipo": "Norway",
+    "goles": 5
+  },
+  {
     "jugador": "Vinicius Junior",
     "equipo": "Brazil",
     "goles": 4
@@ -12,11 +17,6 @@
   {
     "jugador": "Kylian Mbappé",
     "equipo": "France",
-    "goles": 4
-  },
-  {
-    "jugador": "Erling Haaland",
-    "equipo": "Norway",
     "goles": 4
   },
   {
