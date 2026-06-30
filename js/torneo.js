@@ -175,6 +175,17 @@ mostrarPlayoff();
     }
 );
 
+
+document
+    .getElementById("btnGrupos")
+    .classList.add("tab-activa");
+
+document
+    .getElementById("btnPlayoff")
+    .classList.remove("tab-activa");
+
+mostrarGrupos();
+
 /*
 document
     .getElementById("btnGrupos")
@@ -187,12 +198,3 @@ document
 mostrarGrupos();
 */
 
-document
-    .getElementById("btnPlayoff")
-    .classList.add("tab-activa");
-
-document
-    .getElementById("btnGrupos")
-    .classList.remove("tab-activa");
-
-mostrarPlayoff();
