@@ -1,5 +1,4 @@
 import { resolverEquipo } from "./utils.js";
-
 import fs from "fs";
 
 const partidos = JSON.parse(
@@ -25,39 +24,21 @@ const grupos = JSON.parse(
 
 for (const partidoPlayoff of playoff) {
 
-    // Sólo buscamos partidos que ya tienen equipos definidos
-    const local =
-    resolverEquipo(
+    const local = resolverEquipo(
         partidoPlayoff.local,
         grupos
     );
 
-const visitante =
-    resolverEquipo(
+    const visitante = resolverEquipo(
         partidoPlayoff.visitante,
         grupos
     );
 
-if (!local || !visitante) {
+    if (!local || !visitante) {
+        continue;
+    }
 
-    continue;
-
-}
-
-        const local =
-    resolverEquipo(
-        partidoPlayoff.local,
-        grupos
-    );
-
-const visitante =
-    resolverEquipo(
-        partidoPlayoff.visitante,
-        grupos
-    );
-
-const partidoReal =
-    partidos.find(
+    const partidoReal = partidos.find(
         p =>
             (
                 p.local === local &&
@@ -68,49 +49,29 @@ const partidoReal =
                 p.visitante === local
             )
     );
-        if (!partidoReal) {
 
-            continue;
-
-        }
-
-        partidoPlayoff.fecha =
-            partidoReal.fecha;
-
-        partidoPlayoff.hora =
-            partidoReal.hora;
-
-        partidoPlayoff.estadio =
-            partidoReal.estadio;
-
-        partidoPlayoff.estado =
-            partidoReal.estado;
-
-        partidoPlayoff.golesLocal =
-            partidoReal.golesLocal;
-
-        partidoPlayoff.local =
-    local;
-
-partidoPlayoff.visitante =
-    visitante;
-
+    if (!partidoReal) {
+        continue;
     }
 
+    partidoPlayoff.local = local;
+    partidoPlayoff.visitante = visitante;
+
+    partidoPlayoff.fecha = partidoReal.fecha;
+    partidoPlayoff.hora = partidoReal.hora;
+    partidoPlayoff.estadio = partidoReal.estadio;
+    partidoPlayoff.estado = partidoReal.estado;
+    partidoPlayoff.golesLocal = partidoReal.golesLocal;
+    partidoPlayoff.golesVisitante = partidoReal.golesVisitante;
 }
 
 fs.writeFileSync(
-
     "./data/playoff.json",
-
     JSON.stringify(
         playoff,
         null,
         2
     )
-
 );
 
-console.log(
-    "Playoff actualizado correctamente."
-);
+console.log("Playoff actualizado correctamente.");
