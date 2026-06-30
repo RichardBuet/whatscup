@@ -75,9 +75,14 @@ async function cargarPlayoff() {
                     </td>
 
                     <td>
-                        ${obtenerBandera(partido.local)}
-                        ${partido.local || "—"}
-                    </td>
+    <span
+        class="equipo-link"
+        onclick="location.href='equipo.html?equipo=${encodeURIComponent(partido.local)}'"
+    >
+        ${obtenerBandera(partido.local)}
+        ${partido.local || "—"}
+    </span>
+</td>
 
                     <td style="
                         text-align:center;
@@ -88,9 +93,14 @@ async function cargarPlayoff() {
                     </td>
 
                     <td>
-                        ${obtenerBandera(partido.visitante)}
-                        ${partido.visitante || "—"}
-                    </td>
+    <span
+        class="equipo-link"
+        onclick="location.href='equipo.html?equipo=${encodeURIComponent(partido.visitante)}'"
+    >
+        ${obtenerBandera(partido.visitante)}
+        ${partido.visitante || "—"}
+    </span>
+</td>
 
                 </tr>
             `;
