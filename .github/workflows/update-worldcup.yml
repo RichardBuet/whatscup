@@ -33,6 +33,7 @@ jobs:
         run: node scripts/import-worldcup.js
       
       - name: Import Scorers
+        continue-on-error: true
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: node scripts/import-scorers.js
