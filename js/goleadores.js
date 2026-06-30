@@ -14,9 +14,10 @@ async function cargarGoleadores() {
         await response.json();
 
     const contenedor =
-        document.getElementById(
-            "goleadores"
-        );
+    document.getElementById("goleadores") ||
+    document.getElementById("contenidoEstadisticas");
+
+if (!contenedor) return;
 
     contenedor.innerHTML = "";
 
@@ -73,4 +74,6 @@ async function cargarGoleadores() {
 
 }
 
-cargarGoleadores();
+if (document.getElementById("goleadores")) {
+    cargarGoleadores();
+}
