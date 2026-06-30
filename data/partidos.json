@@ -2224,17 +2224,17 @@
     "fecha": "2026-06-30",
     "hora": "14:00",
     "utcDate": "2026-06-30T17:00:00Z",
-    "estado": "TIMED",
+    "estado": "IN_PLAY",
     "estadio": "",
     "local": "Ivory Coast",
     "visitante": "Norway",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 0,
+    "golesVisitante": 0,
+    "ganador": "DRAW",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "entretiempo": {
       "home": null,
@@ -2242,7 +2242,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-06-29T15:20:12Z"
+    "ultimaActualizacion": "2026-06-30T17:21:25Z"
   },
   {
     "id": 537416,
