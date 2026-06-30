@@ -19,6 +19,8 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -50,5 +52,7 @@ jobs:
 
           git diff --staged --quiet || git commit -m "Update World Cup data"
 
-          git push
+          git pull --rebase origin main
+
+          git push origin HEAD:main
 
