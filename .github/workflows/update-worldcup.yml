@@ -8,9 +8,8 @@ on:
 
 permissions:
   contents: write
-  
-jobs:
 
+jobs:
   update:
 
     runs-on: ubuntu-latest
@@ -27,38 +26,40 @@ jobs:
         with:
           node-version: 20
 
-      - name: Run Import Script
+      - name: Import World Cup
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: node scripts/import-worldcup.js
-      
+
       - name: Import Scorers
         continue-on-error: true
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: node scripts/import-scorers.js
-  
+
       - name: Generate Standings
         run: node scripts/generar-posiciones.js
 
-      - name: Generate Stats
+      - name: Generate Statistics
         run: node scripts/generar-estadisticas.js
-  
+
+      - name: Generate Playoff
+        run: node scripts/generar-playoff.js
+
       - name: Commit Changes
-  run: |
-    git config user.name "WhatsCup Bot"
-    git config user.email "bot@whatscup.com"
+        run: |
+          git config user.name "WhatsCup Bot"
+          git config user.email "bot@whatscup.com"
 
-    git add data/*.json
+          git add data/*.json
 
-    git diff --staged --quiet || git commit -m "Update World Cup data"
+          if git diff --staged --quiet; then
+            echo "No changes."
+            exit 0
+          fi
 
-    echo "ANTES DEL PULL"
+          git commit -m "Update World Cup data"
 
-    git pull --rebase origin main
+          git pull --rebase origin main || true
 
-    echo "DESPUES DEL PULL"
-
-    git push origin HEAD:main
-
-    echo "FIN"
+          git push origin HEAD:main || true
