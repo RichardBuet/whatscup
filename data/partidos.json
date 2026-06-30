@@ -2257,21 +2257,21 @@
     "estadio": "",
     "local": "France",
     "visitante": "Sweden",
-    "golesLocal": 0,
+    "golesLocal": 3,
     "golesVisitante": 0,
-    "ganador": "DRAW",
+    "ganador": "HOME_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": 0,
+      "home": 3,
       "away": 0
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-06-30T21:13:09Z"
+    "ultimaActualizacion": "2026-06-30T22:40:30Z"
   },
   {
     "id": 537425,
