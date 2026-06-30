@@ -1,3 +1,15 @@
+function activarTab(id){
+
+    document
+        .querySelectorAll(".tabs-posiciones button")
+        .forEach(b => b.classList.remove("tab-activa"));
+
+    document
+        .getElementById(id)
+        .classList.add("tab-activa");
+
+}
+
 document
 .getElementById("btnEquipos")
 .addEventListener("click", () => {
@@ -12,20 +24,43 @@ document
 .addEventListener("click", () => {
 
     activarTab("btnGoleadores");
-    cargarGoleadores();
+
+    if (typeof cargarGoleadores === "function") {
+        cargarGoleadores();
+    }
 
 });
 
-function activarTab(id){
+document
+.getElementById("btnAsistencias")
+.addEventListener("click", () => {
 
-    document
-    .querySelectorAll(".tabs-posiciones button")
-    .forEach(b=>b.classList.remove("tab-activa"));
+    activarTab("btnAsistencias");
 
-    document
-    .getElementById(id)
-    .classList.add("tab-activa");
+});
 
-}
+document
+.getElementById("btnTarjetas")
+.addEventListener("click", () => {
+
+    activarTab("btnTarjetas");
+
+});
+
+document
+.getElementById("btnVallas")
+.addEventListener("click", () => {
+
+    activarTab("btnVallas");
+
+});
+
+document
+.getElementById("btnRecords")
+.addEventListener("click", () => {
+
+    activarTab("btnRecords");
+
+});
 
 cargarEquipos();
