@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#020617">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+<title>📊 Estadísticas | WhatsCup</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://assets.football-logos.cc/logos/tournaments/256x256/fifa-world-cup-2026--white.bb78d21f.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">🏆 WhatsCup</div>
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="fixture.html">📅 Fixture</a>
+    <a href="torneo.html">🏆 Torneo</a>
+    <a href="estadisticas.html">📊 Estadísticas</a>
+</nav>
+    </aside>
+    <main class="content">
+        <section class="section">
+            <div class="section-title"> 📊 Estadísticas </div>
+            <div class="tabs-posiciones">
+                  
+                <div class="tabs-posiciones">
+
+<button id="btnEquipos" class="tab-activa">
+Equipos
+</button>
+
+<button id="btnGoleadores">
+Goleadores
+</button>
+
+<button id="btnAsistencias">
+Asistencias
+</button>
+
+<button id="btnTarjetas">
+Tarjetas
+</button>
+
+<button id="btnVallas">
+Vallas
+</button>
+
+<button id="btnRecords">
+Récords
+</button>
+
+</div>
+                  
+                <!-- <button id="btnGoleadores">
+                  ⚽ Goleadores
+                </button> -->
+                  
+            </div>
+            <div id="contenidoEstadisticas">
+                
+            </div>
+        </section>
+    </main>
+    <div id="rightbarContainer"></div>
+</div>
+<div id="versionApp"></div>
+
+<script src="js/version.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/clasificados.js"></script>
+<script src="js/banderas.js"></script>
+      
+<script src="js/estadisticas.js"></script>
+<script src="js/torneo.js"></script>
+
+    
+</body>
+</html>
