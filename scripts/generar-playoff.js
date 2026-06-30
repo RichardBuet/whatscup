@@ -24,19 +24,20 @@ const grupos = JSON.parse(
 
 for (const partidoPlayoff of playoff) {
 
-    const local = resolverEquipo(
-        partidoPlayoff.local,
-        grupos
-    );
+    let local = partidoPlayoff.local;
+let visitante = partidoPlayoff.visitante;
 
-    const visitante = resolverEquipo(
-        partidoPlayoff.visitante,
-        grupos
-    );
+if (!local.startsWith("W")) {
+    local = resolverEquipo(local, grupos);
+}
 
-    if (!local || !visitante) {
-        continue;
-    }
+if (!visitante.startsWith("W")) {
+    visitante = resolverEquipo(visitante, grupos);
+}
+
+if (!local || !visitante) {
+    continue;
+}
 
     const partidoReal = partidos.find(
         p =>
@@ -96,7 +97,7 @@ for (const partido of playoff) {
     }
 
     if (
-        siguiente.local.startsWith("G")
+        siguiente.local === `W${partido.id}`
     ) {
 
         siguiente.local =
@@ -105,7 +106,7 @@ for (const partido of playoff) {
     }
 
     if (
-        siguiente.visitante.startsWith("G")
+        siguiente.visitante === `W${partido.id}`
     ) {
 
         siguiente.visitante =
