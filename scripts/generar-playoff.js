@@ -63,7 +63,58 @@ for (const partidoPlayoff of playoff) {
     partidoPlayoff.estado = partidoReal.estado;
     partidoPlayoff.golesLocal = partidoReal.golesLocal;
     partidoPlayoff.golesVisitante = partidoReal.golesVisitante;
+    if (
+    partidoReal.estado === "FINISHED"
+) {
+
+    partidoPlayoff.ganador =
+        partidoReal.golesLocal >
+        partidoReal.golesVisitante
+            ? local
+            : visitante;
+
 }
+}
+
+
+for (const partido of playoff) {
+
+    if (!partido.ganador) {
+
+        continue;
+
+    }
+
+    const siguiente = playoff.find(
+        p => p.id === partido.siguiente
+    );
+
+    if (!siguiente) {
+
+        continue;
+
+    }
+
+    if (
+        siguiente.local.startsWith("G")
+    ) {
+
+        siguiente.local =
+            partido.ganador;
+
+    }
+
+    if (
+        siguiente.visitante.startsWith("G")
+    ) {
+
+        siguiente.visitante =
+            partido.ganador;
+
+    }
+
+}
+
 
 fs.writeFileSync(
     "./data/playoff.json",
