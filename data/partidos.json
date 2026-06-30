@@ -820,9 +820,9 @@
     "hora": "17:30",
     "local": "Germany",
     "visitante": "Paraguay",
-    "golesLocal": 5,
+    "golesLocal": 4,
     "golesVisitante": 5,
-    "estado": "IN_PLAY"
+    "estado": "FINISHED"
   },
   {
     "id": 537418,
@@ -833,7 +833,7 @@
     "visitante": "Morocco",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "TIMED"
+    "estado": "IN_PLAY"
   },
   {
     "id": 537424,
