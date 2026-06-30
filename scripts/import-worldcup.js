@@ -26,55 +26,89 @@ async function importar() {
     const fechaLocal =
         new Date(match.utcDate);
 
-    return {
+return {
 
-        id: match.id,
+    id: match.id,
 
-        grupo:
-            match.group?.replace(
-                "GROUP_",
-                ""
-            ) || "",
+    competencia:
+        match.competition?.name || "",
 
-        fecha:
-            fechaLocal.toLocaleDateString(
-                "en-CA",
-                {
-                    timeZone:
-                    "America/Argentina/Buenos_Aires"
-                }
-            ),
+    fase:
+        match.stage || "",
 
-        hora:
-            fechaLocal.toLocaleTimeString(
-                "es-AR",
-                {
-                    timeZone:
-                    "America/Argentina/Buenos_Aires",
+    grupo:
+        match.group?.replace(
+            "GROUP_",
+            ""
+        ) || "",
 
-                    hour:"2-digit",
-                    minute:"2-digit",
+    jornada:
+        match.matchday || 0,
 
-                    hour12:false
-                }
-            ),
+    fecha:
+        fechaLocal.toLocaleDateString(
+            "en-CA",
+            {
+                timeZone:
+                "America/Argentina/Buenos_Aires"
+            }
+        ),
 
-        local:
-            match.homeTeam?.name || "",
+    hora:
+        fechaLocal.toLocaleTimeString(
+            "es-AR",
+            {
+                timeZone:
+                "America/Argentina/Buenos_Aires",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false
+            }
+        ),
 
-        visitante:
-            match.awayTeam?.name || "",
+    utcDate:
+        match.utcDate,
 
-        golesLocal:
-            match.score?.fullTime?.home ?? 0,
+    estado:
+        match.status,
 
-        golesVisitante:
-            match.score?.fullTime?.away ?? 0,
+    estadio:
+        match.venue || "",
 
-        estado:
-            match.status
+    local:
+        match.homeTeam?.name || "",
 
-    };
+    visitante:
+        match.awayTeam?.name || "",
+
+    golesLocal:
+        match.score?.fullTime?.home ?? null,
+
+    golesVisitante:
+        match.score?.fullTime?.away ?? null,
+
+    ganador:
+        match.score?.winner || null,
+
+    duracion:
+        match.score?.duration || null,
+
+    tiempoCompleto:
+        match.score?.fullTime || {},
+
+    entretiempo:
+        match.score?.halfTime || {},
+
+    alargue:
+        match.score?.extraTime || {},
+
+    penales:
+        match.score?.penalties || {},
+
+    ultimaActualizacion:
+        match.lastUpdated || null
+
+};
 
 });
     
