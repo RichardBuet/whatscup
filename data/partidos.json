@@ -1,1146 +1,3030 @@
 [
   {
     "id": 537327,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "A",
+    "jornada": 1,
     "fecha": "2026-06-11",
     "hora": "16:00",
+    "utcDate": "2026-06-11T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Mexico",
     "visitante": "South Africa",
     "golesLocal": 2,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537328,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "A",
+    "jornada": 1,
     "fecha": "2026-06-11",
     "hora": "23:00",
+    "utcDate": "2026-06-12T02:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "South Korea",
     "visitante": "Czechia",
     "golesLocal": 2,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537333,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "B",
+    "jornada": 1,
     "fecha": "2026-06-12",
     "hora": "16:00",
+    "utcDate": "2026-06-12T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Canada",
     "visitante": "Bosnia-Herzegovina",
     "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537345,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "D",
+    "jornada": 1,
     "fecha": "2026-06-12",
     "hora": "22:00",
+    "utcDate": "2026-06-13T01:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "United States",
     "visitante": "Paraguay",
     "golesLocal": 4,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 4,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 3,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537334,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "B",
+    "jornada": 1,
     "fecha": "2026-06-13",
     "hora": "16:00",
+    "utcDate": "2026-06-13T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Qatar",
     "visitante": "Switzerland",
     "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537339,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "C",
+    "jornada": 1,
     "fecha": "2026-06-13",
     "hora": "19:00",
+    "utcDate": "2026-06-13T22:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Brazil",
     "visitante": "Morocco",
     "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537340,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "C",
+    "jornada": 1,
     "fecha": "2026-06-13",
     "hora": "22:00",
+    "utcDate": "2026-06-14T01:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Haiti",
     "visitante": "Scotland",
     "golesLocal": 0,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537346,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "D",
+    "jornada": 1,
     "fecha": "2026-06-14",
     "hora": "01:00",
+    "utcDate": "2026-06-14T04:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Australia",
     "visitante": "Turkey",
     "golesLocal": 2,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537351,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "E",
+    "jornada": 1,
     "fecha": "2026-06-14",
     "hora": "14:00",
+    "utcDate": "2026-06-14T17:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Germany",
     "visitante": "Curaçao",
     "golesLocal": 7,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 7,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 3,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537357,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "F",
+    "jornada": 1,
     "fecha": "2026-06-14",
     "hora": "17:00",
+    "utcDate": "2026-06-14T20:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Netherlands",
     "visitante": "Japan",
     "golesLocal": 2,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537352,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "E",
+    "jornada": 1,
     "fecha": "2026-06-14",
     "hora": "20:00",
+    "utcDate": "2026-06-14T23:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Ivory Coast",
     "visitante": "Ecuador",
     "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537358,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "F",
+    "jornada": 1,
     "fecha": "2026-06-14",
     "hora": "23:00",
+    "utcDate": "2026-06-15T02:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Sweden",
     "visitante": "Tunisia",
     "golesLocal": 5,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 5,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 2,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537369,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "H",
+    "jornada": 1,
     "fecha": "2026-06-15",
     "hora": "13:00",
+    "utcDate": "2026-06-15T16:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Spain",
     "visitante": "Cape Verde Islands",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537363,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "G",
+    "jornada": 1,
     "fecha": "2026-06-15",
     "hora": "16:00",
+    "utcDate": "2026-06-15T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Belgium",
     "visitante": "Egypt",
     "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537370,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "H",
+    "jornada": 1,
     "fecha": "2026-06-15",
     "hora": "19:00",
+    "utcDate": "2026-06-15T22:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Saudi Arabia",
     "visitante": "Uruguay",
     "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537364,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "G",
+    "jornada": 1,
     "fecha": "2026-06-15",
     "hora": "22:00",
+    "utcDate": "2026-06-16T01:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Iran",
     "visitante": "New Zealand",
     "golesLocal": 2,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537391,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "I",
+    "jornada": 1,
     "fecha": "2026-06-16",
     "hora": "16:00",
+    "utcDate": "2026-06-16T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "France",
     "visitante": "Senegal",
     "golesLocal": 3,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537392,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "I",
+    "jornada": 1,
     "fecha": "2026-06-16",
     "hora": "19:00",
+    "utcDate": "2026-06-16T22:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Iraq",
     "visitante": "Norway",
     "golesLocal": 1,
     "golesVisitante": 4,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 4
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 2
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537397,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "J",
+    "jornada": 1,
     "fecha": "2026-06-16",
     "hora": "22:00",
+    "utcDate": "2026-06-17T01:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Argentina",
     "visitante": "Algeria",
     "golesLocal": 3,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537398,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "J",
+    "jornada": 1,
     "fecha": "2026-06-17",
     "hora": "01:00",
+    "utcDate": "2026-06-17T04:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Austria",
     "visitante": "Jordan",
     "golesLocal": 3,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537403,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "K",
+    "jornada": 1,
     "fecha": "2026-06-17",
     "hora": "14:00",
+    "utcDate": "2026-06-17T17:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Portugal",
     "visitante": "Congo DR",
     "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537409,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "L",
+    "jornada": 1,
     "fecha": "2026-06-17",
     "hora": "17:00",
+    "utcDate": "2026-06-17T20:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "England",
     "visitante": "Croatia",
     "golesLocal": 4,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 4,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 2,
+      "away": 2
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537410,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "L",
+    "jornada": 1,
     "fecha": "2026-06-17",
     "hora": "20:00",
+    "utcDate": "2026-06-17T23:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Ghana",
     "visitante": "Panama",
     "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537404,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "K",
+    "jornada": 1,
     "fecha": "2026-06-17",
     "hora": "23:00",
+    "utcDate": "2026-06-18T02:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Uzbekistan",
     "visitante": "Colombia",
     "golesLocal": 1,
     "golesVisitante": 3,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 3
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537329,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "A",
+    "jornada": 2,
     "fecha": "2026-06-18",
     "hora": "13:00",
+    "utcDate": "2026-06-18T16:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Czechia",
     "visitante": "South Africa",
     "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537335,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "B",
+    "jornada": 2,
     "fecha": "2026-06-18",
     "hora": "16:00",
+    "utcDate": "2026-06-18T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Switzerland",
     "visitante": "Bosnia-Herzegovina",
     "golesLocal": 4,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 4,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537336,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "B",
+    "jornada": 2,
     "fecha": "2026-06-18",
     "hora": "19:00",
+    "utcDate": "2026-06-18T22:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Canada",
     "visitante": "Qatar",
     "golesLocal": 6,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 6,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 3,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537330,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "A",
+    "jornada": 2,
     "fecha": "2026-06-18",
     "hora": "22:00",
+    "utcDate": "2026-06-19T01:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Mexico",
     "visitante": "South Korea",
     "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537348,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "D",
+    "jornada": 2,
     "fecha": "2026-06-19",
     "hora": "16:00",
+    "utcDate": "2026-06-19T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "United States",
     "visitante": "Australia",
     "golesLocal": 2,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 2,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537342,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "C",
+    "jornada": 2,
     "fecha": "2026-06-19",
     "hora": "19:00",
+    "utcDate": "2026-06-19T22:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Scotland",
     "visitante": "Morocco",
     "golesLocal": 0,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537341,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "C",
+    "jornada": 2,
     "fecha": "2026-06-19",
     "hora": "21:30",
+    "utcDate": "2026-06-20T00:30:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Brazil",
     "visitante": "Haiti",
     "golesLocal": 3,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 3,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537347,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "D",
+    "jornada": 2,
     "fecha": "2026-06-20",
     "hora": "24:00",
+    "utcDate": "2026-06-20T03:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Turkey",
     "visitante": "Paraguay",
     "golesLocal": 0,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537359,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "F",
+    "jornada": 2,
     "fecha": "2026-06-20",
     "hora": "14:00",
+    "utcDate": "2026-06-20T17:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Netherlands",
     "visitante": "Sweden",
     "golesLocal": 5,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 5,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 2,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537353,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "E",
+    "jornada": 2,
     "fecha": "2026-06-20",
     "hora": "17:00",
+    "utcDate": "2026-06-20T20:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Germany",
     "visitante": "Ivory Coast",
     "golesLocal": 2,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537354,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "E",
+    "jornada": 2,
     "fecha": "2026-06-20",
     "hora": "21:00",
+    "utcDate": "2026-06-21T00:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Ecuador",
     "visitante": "Curaçao",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537360,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "F",
+    "jornada": 2,
     "fecha": "2026-06-21",
     "hora": "01:00",
+    "utcDate": "2026-06-21T04:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Tunisia",
     "visitante": "Japan",
     "golesLocal": 0,
     "golesVisitante": 4,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 4
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 2
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537371,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "H",
+    "jornada": 2,
     "fecha": "2026-06-21",
     "hora": "13:00",
+    "utcDate": "2026-06-21T16:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Spain",
     "visitante": "Saudi Arabia",
     "golesLocal": 4,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 4,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 3,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537365,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "G",
+    "jornada": 2,
     "fecha": "2026-06-21",
     "hora": "16:00",
+    "utcDate": "2026-06-21T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Belgium",
     "visitante": "Iran",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537372,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "H",
+    "jornada": 2,
     "fecha": "2026-06-21",
     "hora": "19:00",
+    "utcDate": "2026-06-21T22:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Uruguay",
     "visitante": "Cape Verde Islands",
     "golesLocal": 2,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 2,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537366,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "G",
+    "jornada": 2,
     "fecha": "2026-06-21",
     "hora": "22:00",
+    "utcDate": "2026-06-22T01:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "New Zealand",
     "visitante": "Egypt",
     "golesLocal": 1,
     "golesVisitante": 3,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 3
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537399,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "J",
+    "jornada": 2,
     "fecha": "2026-06-22",
     "hora": "14:00",
+    "utcDate": "2026-06-22T17:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Argentina",
     "visitante": "Austria",
     "golesLocal": 2,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537393,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "I",
+    "jornada": 2,
     "fecha": "2026-06-22",
     "hora": "18:00",
+    "utcDate": "2026-06-22T21:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "France",
     "visitante": "Iraq",
     "golesLocal": 3,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537394,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "I",
+    "jornada": 2,
     "fecha": "2026-06-22",
     "hora": "21:00",
+    "utcDate": "2026-06-23T00:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Norway",
     "visitante": "Senegal",
     "golesLocal": 3,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537400,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "J",
+    "jornada": 2,
     "fecha": "2026-06-23",
     "hora": "24:00",
+    "utcDate": "2026-06-23T03:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Jordan",
     "visitante": "Algeria",
     "golesLocal": 1,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537405,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "K",
+    "jornada": 2,
     "fecha": "2026-06-23",
     "hora": "14:00",
+    "utcDate": "2026-06-23T17:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Portugal",
     "visitante": "Uzbekistan",
     "golesLocal": 5,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 5,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 3,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537411,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "L",
+    "jornada": 2,
     "fecha": "2026-06-23",
     "hora": "17:00",
+    "utcDate": "2026-06-23T20:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "England",
     "visitante": "Ghana",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537412,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "L",
+    "jornada": 2,
     "fecha": "2026-06-23",
     "hora": "20:00",
+    "utcDate": "2026-06-23T23:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Panama",
     "visitante": "Croatia",
     "golesLocal": 0,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537406,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "K",
+    "jornada": 2,
     "fecha": "2026-06-23",
     "hora": "23:00",
+    "utcDate": "2026-06-24T02:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Colombia",
     "visitante": "Congo DR",
     "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537337,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "B",
+    "jornada": 3,
     "fecha": "2026-06-24",
     "hora": "16:00",
+    "utcDate": "2026-06-24T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Switzerland",
     "visitante": "Canada",
     "golesLocal": 2,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537338,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "B",
+    "jornada": 3,
     "fecha": "2026-06-24",
     "hora": "16:00",
+    "utcDate": "2026-06-24T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Bosnia-Herzegovina",
     "visitante": "Qatar",
     "golesLocal": 3,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 2,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537344,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "C",
+    "jornada": 3,
     "fecha": "2026-06-24",
     "hora": "19:00",
+    "utcDate": "2026-06-24T22:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Morocco",
     "visitante": "Haiti",
     "golesLocal": 4,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 4,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 2,
+      "away": 2
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537343,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "C",
+    "jornada": 3,
     "fecha": "2026-06-24",
     "hora": "19:00",
+    "utcDate": "2026-06-24T22:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Scotland",
     "visitante": "Brazil",
     "golesLocal": 0,
     "golesVisitante": 3,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 3
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 2
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537331,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "A",
+    "jornada": 3,
     "fecha": "2026-06-24",
     "hora": "22:00",
+    "utcDate": "2026-06-25T01:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Czechia",
     "visitante": "Mexico",
     "golesLocal": 0,
     "golesVisitante": 3,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 3
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537332,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "A",
+    "jornada": 3,
     "fecha": "2026-06-24",
     "hora": "22:00",
+    "utcDate": "2026-06-25T01:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "South Africa",
     "visitante": "South Korea",
     "golesLocal": 1,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537355,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "E",
+    "jornada": 3,
     "fecha": "2026-06-25",
     "hora": "17:00",
+    "utcDate": "2026-06-25T20:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Ecuador",
     "visitante": "Germany",
     "golesLocal": 2,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537356,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "E",
+    "jornada": 3,
     "fecha": "2026-06-25",
     "hora": "17:00",
+    "utcDate": "2026-06-25T20:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Curaçao",
     "visitante": "Ivory Coast",
     "golesLocal": 0,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537361,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "F",
+    "jornada": 3,
     "fecha": "2026-06-25",
     "hora": "20:00",
+    "utcDate": "2026-06-25T23:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Tunisia",
     "visitante": "Netherlands",
     "golesLocal": 1,
     "golesVisitante": 3,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 3
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 2
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537362,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "F",
+    "jornada": 3,
     "fecha": "2026-06-25",
     "hora": "20:00",
+    "utcDate": "2026-06-25T23:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Japan",
     "visitante": "Sweden",
     "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537349,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "D",
+    "jornada": 3,
     "fecha": "2026-06-25",
     "hora": "23:00",
+    "utcDate": "2026-06-26T02:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Turkey",
     "visitante": "United States",
     "golesLocal": 3,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 2,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537350,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "D",
+    "jornada": 3,
     "fecha": "2026-06-25",
     "hora": "23:00",
+    "utcDate": "2026-06-26T02:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Paraguay",
     "visitante": "Australia",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537395,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "I",
+    "jornada": 3,
     "fecha": "2026-06-26",
     "hora": "16:00",
+    "utcDate": "2026-06-26T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Norway",
     "visitante": "France",
     "golesLocal": 1,
     "golesVisitante": 4,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 4
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 3
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537396,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "I",
+    "jornada": 3,
     "fecha": "2026-06-26",
     "hora": "16:00",
+    "utcDate": "2026-06-26T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Senegal",
     "visitante": "Iraq",
     "golesLocal": 5,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 5,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T08:25:01Z"
   },
   {
     "id": 537373,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "H",
+    "jornada": 3,
     "fecha": "2026-06-26",
     "hora": "21:00",
+    "utcDate": "2026-06-27T00:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Uruguay",
     "visitante": "Spain",
     "golesLocal": 0,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537374,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "H",
+    "jornada": 3,
     "fecha": "2026-06-26",
     "hora": "21:00",
+    "utcDate": "2026-06-27T00:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Cape Verde Islands",
     "visitante": "Saudi Arabia",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537367,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "G",
+    "jornada": 3,
     "fecha": "2026-06-27",
     "hora": "24:00",
+    "utcDate": "2026-06-27T03:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "New Zealand",
     "visitante": "Belgium",
     "golesLocal": 1,
     "golesVisitante": 5,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 5
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537368,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "G",
+    "jornada": 3,
     "fecha": "2026-06-27",
     "hora": "24:00",
+    "utcDate": "2026-06-27T03:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Egypt",
     "visitante": "Iran",
     "golesLocal": 1,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537413,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "L",
+    "jornada": 3,
     "fecha": "2026-06-27",
     "hora": "18:00",
+    "utcDate": "2026-06-27T21:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Panama",
     "visitante": "England",
     "golesLocal": 0,
     "golesVisitante": 2,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 2
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537414,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "L",
+    "jornada": 3,
     "fecha": "2026-06-27",
     "hora": "18:00",
+    "utcDate": "2026-06-27T21:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Croatia",
     "visitante": "Ghana",
     "golesLocal": 2,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537407,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "K",
+    "jornada": 3,
     "fecha": "2026-06-27",
     "hora": "20:30",
+    "utcDate": "2026-06-27T23:30:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Colombia",
     "visitante": "Portugal",
     "golesLocal": 0,
     "golesVisitante": 0,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 0
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537408,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "K",
+    "jornada": 3,
     "fecha": "2026-06-27",
     "hora": "20:30",
+    "utcDate": "2026-06-27T23:30:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Congo DR",
     "visitante": "Uzbekistan",
     "golesLocal": 3,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537401,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "J",
+    "jornada": 3,
     "fecha": "2026-06-27",
     "hora": "23:00",
+    "utcDate": "2026-06-28T02:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Jordan",
     "visitante": "Argentina",
     "golesLocal": 1,
     "golesVisitante": 3,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 1,
+      "away": 3
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 2
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537402,
+    "competencia": "FIFA World Cup",
+    "fase": "GROUP_STAGE",
     "grupo": "J",
+    "jornada": 3,
     "fecha": "2026-06-27",
     "hora": "23:00",
+    "utcDate": "2026-06-28T02:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Algeria",
     "visitante": "Austria",
     "golesLocal": 3,
     "golesVisitante": 3,
-    "estado": "FINISHED"
+    "ganador": "DRAW",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 3
+    },
+    "entretiempo": {
+      "home": 1,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537417,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-06-28",
     "hora": "16:00",
+    "utcDate": "2026-06-28T19:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "South Africa",
     "visitante": "Canada",
     "golesLocal": 0,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "AWAY_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 0,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537423,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-06-29",
     "hora": "14:00",
+    "utcDate": "2026-06-29T17:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Brazil",
     "visitante": "Japan",
     "golesLocal": 2,
     "golesVisitante": 1,
-    "estado": "FINISHED"
+    "ganador": "HOME_TEAM",
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": 2,
+      "away": 1
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T19:09:03Z"
   },
   {
     "id": 537415,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-06-29",
     "hora": "17:30",
+    "utcDate": "2026-06-29T20:30:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Germany",
     "visitante": "Paraguay",
     "golesLocal": 4,
     "golesVisitante": 5,
-    "estado": "FINISHED"
+    "ganador": null,
+    "duracion": "PENALTY_SHOOTOUT",
+    "tiempoCompleto": {
+      "home": 4,
+      "away": 5
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 1
+    },
+    "alargue": {
+      "home": 0,
+      "away": 0
+    },
+    "penales": {
+      "home": 4,
+      "away": 4
+    },
+    "ultimaActualizacion": "2026-06-30T00:27:13Z"
   },
   {
     "id": 537418,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-06-29",
     "hora": "22:00",
+    "utcDate": "2026-06-30T01:00:00Z",
+    "estado": "FINISHED",
+    "estadio": "",
     "local": "Netherlands",
     "visitante": "Morocco",
-    "golesLocal": 4,
+    "golesLocal": 3,
     "golesVisitante": 4,
-    "estado": "FINISHED"
+    "ganador": null,
+    "duracion": "PENALTY_SHOOTOUT",
+    "tiempoCompleto": {
+      "home": 3,
+      "away": 4
+    },
+    "entretiempo": {
+      "home": 0,
+      "away": 0
+    },
+    "alargue": {
+      "home": 0,
+      "away": 0
+    },
+    "penales": {
+      "home": 3,
+      "away": 3
+    },
+    "ultimaActualizacion": "2026-06-30T04:08:17Z"
   },
   {
     "id": 537424,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-06-30",
     "hora": "14:00",
+    "utcDate": "2026-06-30T17:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Ivory Coast",
     "visitante": "Norway",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537416,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-06-30",
     "hora": "18:00",
+    "utcDate": "2026-06-30T21:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "France",
     "visitante": "Sweden",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537425,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-06-30",
     "hora": "22:00",
+    "utcDate": "2026-07-01T01:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Mexico",
     "visitante": "Ecuador",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537426,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-01",
     "hora": "13:00",
+    "utcDate": "2026-07-01T16:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "England",
     "visitante": "Congo DR",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537422,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-01",
     "hora": "17:00",
+    "utcDate": "2026-07-01T20:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Belgium",
     "visitante": "Senegal",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537421,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-01",
     "hora": "21:00",
+    "utcDate": "2026-07-02T00:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "United States",
     "visitante": "Bosnia-Herzegovina",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537420,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-02",
     "hora": "16:00",
+    "utcDate": "2026-07-02T19:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Spain",
     "visitante": "Austria",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537419,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-02",
     "hora": "20:00",
+    "utcDate": "2026-07-02T23:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Portugal",
     "visitante": "Croatia",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537429,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-03",
     "hora": "24:00",
+    "utcDate": "2026-07-03T03:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Switzerland",
     "visitante": "Algeria",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537428,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-03",
     "hora": "15:00",
+    "utcDate": "2026-07-03T18:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Australia",
     "visitante": "Egypt",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537427,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-03",
     "hora": "19:00",
+    "utcDate": "2026-07-03T22:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Argentina",
     "visitante": "Cape Verde Islands",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537430,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_32",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-03",
     "hora": "22:30",
+    "utcDate": "2026-07-04T01:30:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Colombia",
     "visitante": "Ghana",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537376,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_16",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-04",
     "hora": "14:00",
+    "utcDate": "2026-07-04T17:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "Canada",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537375,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_16",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-04",
     "hora": "18:00",
+    "utcDate": "2026-07-04T21:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537377,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_16",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-05",
     "hora": "17:00",
+    "utcDate": "2026-07-05T20:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537378,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_16",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-05",
     "hora": "21:00",
+    "utcDate": "2026-07-06T00:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537379,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_16",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-06",
     "hora": "16:00",
+    "utcDate": "2026-07-06T19:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537380,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_16",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-06",
     "hora": "21:00",
+    "utcDate": "2026-07-07T00:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537381,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_16",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-07",
     "hora": "13:00",
+    "utcDate": "2026-07-07T16:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537382,
+    "competencia": "FIFA World Cup",
+    "fase": "LAST_16",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-07",
     "hora": "17:00",
+    "utcDate": "2026-07-07T20:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537383,
+    "competencia": "FIFA World Cup",
+    "fase": "QUARTER_FINALS",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-09",
     "hora": "17:00",
+    "utcDate": "2026-07-09T20:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537384,
+    "competencia": "FIFA World Cup",
+    "fase": "QUARTER_FINALS",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-10",
     "hora": "16:00",
+    "utcDate": "2026-07-10T19:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537385,
+    "competencia": "FIFA World Cup",
+    "fase": "QUARTER_FINALS",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-11",
     "hora": "18:00",
+    "utcDate": "2026-07-11T21:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537386,
+    "competencia": "FIFA World Cup",
+    "fase": "QUARTER_FINALS",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-11",
     "hora": "22:00",
+    "utcDate": "2026-07-12T01:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537387,
+    "competencia": "FIFA World Cup",
+    "fase": "SEMI_FINALS",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-14",
     "hora": "16:00",
+    "utcDate": "2026-07-14T19:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537388,
+    "competencia": "FIFA World Cup",
+    "fase": "SEMI_FINALS",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-15",
     "hora": "16:00",
+    "utcDate": "2026-07-15T19:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537389,
+    "competencia": "FIFA World Cup",
+    "fase": "THIRD_PLACE",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-18",
     "hora": "18:00",
+    "utcDate": "2026-07-18T21:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   },
   {
     "id": 537390,
+    "competencia": "FIFA World Cup",
+    "fase": "FINAL",
     "grupo": "",
+    "jornada": 0,
     "fecha": "2026-07-19",
     "hora": "16:00",
+    "utcDate": "2026-07-19T19:00:00Z",
+    "estado": "TIMED",
+    "estadio": "",
     "local": "",
     "visitante": "",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "estado": "TIMED"
+    "golesLocal": null,
+    "golesVisitante": null,
+    "ganador": null,
+    "duracion": "REGULAR",
+    "tiempoCompleto": {
+      "home": null,
+      "away": null
+    },
+    "entretiempo": {
+      "home": null,
+      "away": null
+    },
+    "alargue": {},
+    "penales": {},
+    "ultimaActualizacion": "2026-06-29T05:20:12Z"
   }
 ]
