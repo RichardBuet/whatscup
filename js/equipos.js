@@ -14,9 +14,10 @@ async function cargarEquipos() {
         await response.json();
 
     const lista =
-        document.getElementById(
-            "listaEquipos"
-        );
+    document.getElementById("listaEquipos") ||
+    document.getElementById("contenidoEstadisticas");
+
+if (!lista) return;
 
     let html =
         '<div class="grupos-grid">';
@@ -65,4 +66,6 @@ async function cargarEquipos() {
 
 }
 
-cargarEquipos();
+if (document.getElementById("listaEquipos")) {
+    cargarEquipos();
+}
