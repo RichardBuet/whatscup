@@ -129,19 +129,28 @@ function obtenerEquipoPorCodigo(
 
 async function mostrarPlayoff() { await cargarPlayoff(); }
 
+function activarTab(id){
+
+    document
+    .querySelectorAll(".tabs-posiciones button")
+    .forEach(
+        b => b.classList.remove("tab-activa")
+    );
+
+    document
+    .getElementById(id)
+    .classList.add("tab-activa");
+
+}
+
+
 document
 .getElementById("btnGrupos")
 .addEventListener(
     "click",
     () => {
 
-        document
-            .getElementById("btnGrupos")
-            .classList.add("tab-activa");
-
-        document
-            .getElementById("btnPlayoff")
-            .classList.remove("tab-activa");
+        activarTab("btnGrupos");
 
         document
             .getElementById("contenidoPosiciones")
@@ -153,48 +162,39 @@ document
     }
 );
 
+
 document
 .getElementById("btnPlayoff")
 .addEventListener(
     "click",
     () => {
 
-        document
-            .getElementById("btnPlayoff")
-            .classList.add("tab-activa");
+        activarTab("btnPlayoff");
 
-        document
-            .getElementById("btnGrupos")
-            .classList.remove("tab-activa");
-
-setTimeout(() => {
-mostrarPlayoff();
-
-}, 0);
+        setTimeout(() => {
+            mostrarPlayoff();
+        }, 0);
 
     }
 );
 
 
 document
-    .getElementById("btnGrupos")
-    .classList.add("tab-activa");
+.getElementById("btnTop10")
+.addEventListener(
+    "click",
+    () => {
 
-document
-    .getElementById("btnPlayoff")
-    .classList.remove("tab-activa");
+        activarTab("btnTop10");
 
-mostrarGrupos();
+        cargarTop10();
 
-/*
-document
-    .getElementById("btnGrupos")
-    .classList.add("tab-activa");
+    }
+);
 
-document
-    .getElementById("btnPlayoff")
-    .classList.remove("tab-activa");
+
+activarTab("btnGrupos");
 
 mostrarGrupos();
-*/
+
 
