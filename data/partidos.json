@@ -2344,21 +2344,21 @@
     "estadio": "",
     "local": "Belgium",
     "visitante": "Senegal",
-    "golesLocal": 0,
-    "golesVisitante": 0,
+    "golesLocal": 2,
+    "golesVisitante": 2,
     "ganador": "DRAW",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": 0,
-      "away": 0
+      "home": 2,
+      "away": 2
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 1
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-01T20:21:30Z"
+    "ultimaActualizacion": "2026-07-01T21:56:43Z"
   },
   {
     "id": 537421,

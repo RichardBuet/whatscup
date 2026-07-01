@@ -30,6 +30,11 @@
     "goles": 4
   },
   {
+    "jugador": "Ismaïla Sarr",
+    "equipo": "Senegal",
+    "goles": 4
+  },
+  {
     "jugador": "Julián Quiñones",
     "equipo": "Mexico",
     "goles": 3
@@ -41,11 +46,6 @@
   },
   {
     "jugador": "Kai Havertz",
-    "equipo": "Germany",
-    "goles": 3
-  },
-  {
-    "jugador": "Deniz Undav",
     "equipo": "Germany",
     "goles": 3
   }
