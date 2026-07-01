@@ -2340,25 +2340,28 @@
     "fecha": "2026-07-01",
     "hora": "17:00",
     "utcDate": "2026-07-01T20:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Belgium",
     "visitante": "Senegal",
-    "golesLocal": 2,
+    "golesLocal": 3,
     "golesVisitante": 2,
-    "ganador": "DRAW",
-    "duracion": "REGULAR",
+    "ganador": "HOME_TEAM",
+    "duracion": "EXTRA_TIME",
     "tiempoCompleto": {
-      "home": 2,
+      "home": 3,
       "away": 2
     },
     "entretiempo": {
       "home": 0,
       "away": 1
     },
-    "alargue": {},
+    "alargue": {
+      "home": 1,
+      "away": 0
+    },
     "penales": {},
-    "ultimaActualizacion": "2026-07-01T21:56:43Z"
+    "ultimaActualizacion": "2026-07-01T23:03:13Z"
   },
   {
     "id": 537421,
