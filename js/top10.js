@@ -1,0 +1,89 @@
+async function cargarTop10() {
+
+    const version =
+        Math.floor(Date.now()/900000);
+
+    const response =
+        await fetch(
+            `data/goleadores.json?v=${version}`
+        );
+
+    const goleadores =
+        await response.json();
+
+    const contenedor =
+        document.getElementById(
+            "contenidoTorneo"
+        );
+
+    let html = `
+
+<h2 class="grupo-titulo">
+
+⚽ Top 10 Goleadores
+
+</h2>
+
+<table class="tabla-grupo">
+
+<tbody>
+
+`;
+
+    goleadores
+        .slice(0,10)
+        .forEach((g,index)=>{
+
+        html += `
+
+<tr>
+
+<td style="width:45px">
+
+${index+1}
+
+</td>
+
+<td>
+
+${obtenerBandera(g.equipo)}
+${g.jugador}
+
+<br>
+
+<small>
+
+${g.equipo}
+
+</small>
+
+</td>
+
+<td
+style="
+font-weight:bold;
+text-align:center;
+width:60px;
+">
+
+${g.goles}
+
+</td>
+
+</tr>
+
+`;
+
+    });
+
+    html += `
+
+</tbody>
+
+</table>
+
+`;
+
+    contenedor.innerHTML = html;
+
+}
