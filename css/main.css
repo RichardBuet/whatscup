@@ -36,7 +36,8 @@ a{
 #fixture,
 #contenidoPosiciones,
 #equiposGrid,
-#goleadoresContainer{
+#goleadoresContainer,
+#contenidoEstadisticas {
     scrollbar-width:thin;
     scrollbar-color:rgba(255,255,255,.12) transparent;
 }
@@ -44,6 +45,7 @@ a{
 #fixture::-webkit-scrollbar,
 #contenidoPosiciones::-webkit-scrollbar,
 #equiposGrid::-webkit-scrollbar,
+#contenidoEstadisticas::-webkit-scrollbar,
 #goleadoresContainer::-webkit-scrollbar{
     width:5px;
 }
@@ -51,6 +53,7 @@ a{
 #fixture::-webkit-scrollbar-thumb,
 #contenidoPosiciones::-webkit-scrollbar-thumb,
 #equiposGrid::-webkit-scrollbar-thumb,
+#contenidoEstadisticas::-webkit-scrollbar-thumb,
 #goleadoresContainer::-webkit-scrollbar-thumb{
     background:nrgba(255,255,255,.12);
     border-radius:999px;
@@ -60,8 +63,17 @@ a{
 #fixture::-webkit-scrollbar-thumb:hover,
 #contenidoPosiciones::-webkit-scrollbar-thumb:hover,
 #equiposGrid::-webkit-scrollbar-thumb:hover,
+#contenidoEstadisticas::-webkit-scrollbar-thumb:hover,
 #goleadoresContainer::-webkit-scrollbar-thumb:hover{
     background: rgba(107,230,117,.45);
+}
+
+#contenidoPosiciones, #fixture, #listaEquipos, #goleadoresContainer, #contenidoEstadisticas {
+    flex:1;
+    min-height:0;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-right:4px;
 }
 
 #versionApp{
@@ -381,13 +393,7 @@ PARTIDOS
 
 .tabs-playoff::-webkit-scrollbar{display:none;}
 
-#contenidoPosiciones, #fixture, #listaEquipos, #contenidoEstadisticas, {
-    flex:1;
-    min-height:0;
-    overflow-y:auto;
-    overflow-x:hidden;
-    padding-right:4px;
-}
+
 
 .btn-ronda{
     border:none;
