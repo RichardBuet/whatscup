@@ -1,3 +1,19 @@
+//--------------------------------------------------
+// WhatsCup
+// Estadísticas
+//--------------------------------------------------
+//
+// Activos:
+// ✔ Equipos
+// ✔ Goleadores
+// ✔ Récords
+//
+// Pendientes:
+// □ Asistencias
+// □ Tarjetas
+// □ Vallas invictas
+//--------------------------------------------------
+
 function activarTab(id){
 
     document
@@ -32,6 +48,16 @@ document
 });
 
 document
+.getElementById("btnRecords")
+.addEventListener("click", () => {
+
+    activarTab("btnRecords");
+    cargarRecords();
+
+});
+
+
+document
 .getElementById("btnAsistencias")
 .addEventListener("click", () => {
 
@@ -55,12 +81,5 @@ document
 
 });
 
-document
-.getElementById("btnRecords")
-.addEventListener("click", () => {
-
-    activarTab("btnRecords");
-
-});
 
 cargarEquipos();
