@@ -18,7 +18,7 @@ async function cargarTop10() {
 
 <h2 class="grupo-titulo">
 
-⚽ Top 10 Goleadores
+⚽ Goleadores
 
 </h2>
 
@@ -29,7 +29,7 @@ async function cargarTop10() {
 `;
 
     goleadores
-        .slice(0,10)
+        .slice(0,20)
         .forEach((g,index)=>{
 
         html += `
@@ -42,14 +42,14 @@ ${index+1}
 
 </td>
 
-<td>
+<td style="text-align:left">
 
 ${obtenerBandera(g.equipo)}
 ${g.jugador}
 
 <br>
 
-<small>
+<small style="padding-left:36px">
 
 ${g.equipo}
 
