@@ -15,6 +15,11 @@
     "goles": 5
   },
   {
+    "jugador": "Harry Kane",
+    "equipo": "England",
+    "goles": 5
+  },
+  {
     "jugador": "Vinicius Junior",
     "equipo": "Brazil",
     "goles": 4
@@ -42,11 +47,6 @@
   {
     "jugador": "Deniz Undav",
     "equipo": "Germany",
-    "goles": 3
-  },
-  {
-    "jugador": "Elijah Just",
-    "equipo": "New Zealand",
     "goles": 3
   }
 ]

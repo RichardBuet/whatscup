@@ -2311,25 +2311,25 @@
     "fecha": "2026-07-01",
     "hora": "13:00",
     "utcDate": "2026-07-01T16:00:00Z",
-    "estado": "LIVE",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "England",
     "visitante": "Congo DR",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "ganador": "DRAW",
+    "golesLocal": 2,
+    "golesVisitante": 1,
+    "ganador": "HOME_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": 0,
-      "away": 0
+      "home": 2,
+      "away": 1
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 1
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-01T16:09:48Z"
+    "ultimaActualizacion": "2026-07-01T18:06:21Z"
   },
   {
     "id": 537422,
