@@ -25,6 +25,11 @@
     "goles": 4
   },
   {
+    "jugador": "Julián Quiñones",
+    "equipo": "Mexico",
+    "goles": 3
+  },
+  {
     "jugador": "Ismael Saibari",
     "equipo": "Morocco",
     "goles": 3
@@ -42,11 +47,6 @@
   {
     "jugador": "Elijah Just",
     "equipo": "New Zealand",
-    "goles": 3
-  },
-  {
-    "jugador": "Yoane Wissa",
-    "equipo": "Congo DR",
     "goles": 3
   }
 ]

@@ -2282,17 +2282,17 @@
     "fecha": "2026-06-30",
     "hora": "22:00",
     "utcDate": "2026-07-01T01:00:00Z",
-    "estado": "TIMED",
+    "estado": "LIVE",
     "estadio": "",
     "local": "Mexico",
     "visitante": "Ecuador",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 2,
+    "golesVisitante": 0,
+    "ganador": "HOME_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 2,
+      "away": 0
     },
     "entretiempo": {
       "home": null,
@@ -2300,7 +2300,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-06-29T15:20:12Z"
+    "ultimaActualizacion": "2026-07-01T02:48:24Z"
   },
   {
     "id": 537426,
