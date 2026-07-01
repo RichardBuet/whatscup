@@ -49,7 +49,7 @@ ${g.jugador}
 
 <br>
 
-<small style="padding-left:36px">
+<small style="color: darkgray;">
 
 ${g.equipo}
 
