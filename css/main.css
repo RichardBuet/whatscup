@@ -381,7 +381,7 @@ PARTIDOS
 
 .tabs-playoff::-webkit-scrollbar{display:none;}
 
-#contenidoPosiciones, #fixture, #listaEquipos{
+#contenidoPosiciones, #fixture, #listaEquipos, #contenidoEstadisticas, {
     flex:1;
     min-height:0;
     overflow-y:auto;
