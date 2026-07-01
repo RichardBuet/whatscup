@@ -12,9 +12,7 @@ async function cargarTop10() {
         await response.json();
 
     const contenedor =
-        document.getElementById(
-            "contenidoTorneo"
-        );
+        document.getElementById("contenidoPosiciones");
 
     let html = `
 
