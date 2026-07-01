@@ -2224,25 +2224,25 @@
     "fecha": "2026-06-30",
     "hora": "14:00",
     "utcDate": "2026-06-30T17:00:00Z",
-    "estado": "TIMED",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Ivory Coast",
     "visitante": "Norway",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 1,
+    "golesVisitante": 2,
+    "ganador": "AWAY_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 2
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 1
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-06-30T19:12:59Z"
+    "ultimaActualizacion": "2026-06-30T19:04:39Z"
   },
   {
     "id": 537416,
@@ -2282,7 +2282,7 @@
     "fecha": "2026-06-30",
     "hora": "22:00",
     "utcDate": "2026-07-01T01:00:00Z",
-    "estado": "LIVE",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Mexico",
     "visitante": "Ecuador",
@@ -2295,12 +2295,12 @@
       "away": 0
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 2,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-01T02:48:24Z"
+    "ultimaActualizacion": "2026-07-01T04:07:36Z"
   },
   {
     "id": 537426,
