@@ -2280,8 +2280,8 @@
     "grupo": "",
     "jornada": 0,
     "fecha": "2026-06-30",
-    "hora": "22:00",
-    "utcDate": "2026-07-01T01:00:00Z",
+    "hora": "23:00",
+    "utcDate": "2026-07-01T02:00:00Z",
     "estado": "FINISHED",
     "estadio": "",
     "local": "Mexico",
@@ -2300,7 +2300,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-01T08:25:01Z"
+    "ultimaActualizacion": "2026-07-02T03:25:01Z"
   },
   {
     "id": 537426,
@@ -2329,7 +2329,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-01T18:06:21Z"
+    "ultimaActualizacion": "2026-07-02T03:25:01Z"
   },
   {
     "id": 537422,
@@ -2347,7 +2347,7 @@
     "golesLocal": 3,
     "golesVisitante": 2,
     "ganador": "HOME_TEAM",
-    "duracion": "EXTRA_TIME",
+    "duracion": "REGULAR",
     "tiempoCompleto": {
       "home": 3,
       "away": 2
@@ -2361,7 +2361,7 @@
       "away": 0
     },
     "penales": {},
-    "ultimaActualizacion": "2026-07-01T23:03:12Z"
+    "ultimaActualizacion": "2026-07-02T03:25:01Z"
   },
   {
     "id": 537421,
@@ -2372,16 +2372,16 @@
     "fecha": "2026-07-01",
     "hora": "21:00",
     "utcDate": "2026-07-02T00:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "United States",
     "visitante": "Bosnia-Herzegovina",
-    "golesLocal": 1,
+    "golesLocal": 2,
     "golesVisitante": 0,
     "ganador": "HOME_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": 1,
+      "home": 2,
       "away": 0
     },
     "entretiempo": {
@@ -2390,7 +2390,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-02T01:30:09Z"
+    "ultimaActualizacion": "2026-07-02T03:25:01Z"
   },
   {
     "id": 537420,
