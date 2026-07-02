@@ -2401,16 +2401,16 @@
     "fecha": "2026-07-02",
     "hora": "16:00",
     "utcDate": "2026-07-02T19:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Spain",
     "visitante": "Austria",
-    "golesLocal": 1,
+    "golesLocal": 3,
     "golesVisitante": 0,
     "ganador": "HOME_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": 1,
+      "home": 3,
       "away": 0
     },
     "entretiempo": {
@@ -2419,7 +2419,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-02T20:15:33Z"
+    "ultimaActualizacion": "2026-07-02T21:08:24Z"
   },
   {
     "id": 537419,

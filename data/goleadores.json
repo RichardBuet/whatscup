@@ -25,6 +25,11 @@
     "goles": 4
   },
   {
+    "jugador": "Mikel Oyarzabal",
+    "equipo": "Spain",
+    "goles": 4
+  },
+  {
     "jugador": "Ousmane Dembélé",
     "equipo": "France",
     "goles": 4
@@ -42,11 +47,6 @@
   {
     "jugador": "Folarin Balogun",
     "equipo": "United States",
-    "goles": 3
-  },
-  {
-    "jugador": "Ismael Saibari",
-    "equipo": "Morocco",
     "goles": 3
   }
 ]
