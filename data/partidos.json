@@ -2492,21 +2492,24 @@
     "estadio": "",
     "local": "Australia",
     "visitante": "Egypt",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 1,
-    "ganador": "AWAY_TEAM",
-    "duracion": "REGULAR",
+    "ganador": "DRAW",
+    "duracion": "EXTRA_TIME",
     "tiempoCompleto": {
-      "home": 0,
+      "home": 1,
       "away": 1
     },
     "entretiempo": {
       "home": 0,
       "away": 1
     },
-    "alargue": {},
+    "alargue": {
+      "home": 0,
+      "away": 0
+    },
     "penales": {},
-    "ultimaActualizacion": "2026-07-03T18:56:45Z"
+    "ultimaActualizacion": "2026-07-03T20:31:54Z"
   },
   {
     "id": 537427,
