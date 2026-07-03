@@ -1,6 +1,6 @@
 const APP = {
 
-    competition: "worldcup",
+    competition: "f1",
 
     name: "WhatsCup",
 
