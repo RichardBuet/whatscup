@@ -35,15 +35,65 @@
 
 }
 
+/* =====================================================
+   FORMULA 1 THEME
+   ===================================================== */
+
 :root[data-competition="f1"] {
 
-    --color-fondo: #120000;
-    --color-fondo-secundario: #1b0000;
-    --color-card: #220000;
+    /* Fondos */
+    --color-fondo: #0b0d10;
+    --color-fondo-secundario: #13171c;
+    --color-card: #161a1f;
+    --color-card-hover: #1d2127;
 
-    --color-principal: #ff1801;
+    /* Bordes */
+    --color-borde: #2a2f36;
+    --color-borde-hover: #3a4048;
+
+    /* Marca F1 */
+    --color-principal: #e10600;
+    --color-principal-hover: #ff1801;
+
+    /* Colores auxiliares */
+    --color-secundario: #00d2be;
+    --color-acento: #ffcc00;
+    --color-info: #1e90ff;
+
+    /* Estados */
+    --color-exito: #00e676;
+    --color-warning: #ffb300;
+    --color-error: #ff1744;
+
+    /* Texto */
+    --color-texto: #f3f5f7;
+    --color-texto-secundario: #b8c0cc;
+    --color-texto-apagado: #7d8794;
+
+    /* Sombras */
+    --shadow-card:
+        0 8px 25px rgba(0,0,0,.45);
+
+    --shadow-principal:
+        0 0 20px rgba(225,6,0,.25);
+
+    /* Gradientes */
+    --gradient-principal:
+        linear-gradient(
+            135deg,
+            #e10600,
+            #ff1801
+        );
+
+    --gradient-card:
+        linear-gradient(
+            180deg,
+            #171b20,
+            #101418
+        );
 
 }
+
 
 :root[data-competition="libertadores"] {
 
