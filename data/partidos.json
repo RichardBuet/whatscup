@@ -2528,20 +2528,20 @@
     "local": "Argentina",
     "visitante": "Cape Verde Islands",
     "golesLocal": 1,
-    "golesVisitante": 0,
-    "ganador": "HOME_TEAM",
+    "golesVisitante": 1,
+    "ganador": "DRAW",
     "duracion": "REGULAR",
     "tiempoCompleto": {
       "home": 1,
-      "away": 0
+      "away": 1
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-03T22:42:54Z"
+    "ultimaActualizacion": "2026-07-03T23:43:30Z"
   },
   {
     "id": 537430,
