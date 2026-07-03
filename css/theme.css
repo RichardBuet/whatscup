@@ -1,60 +1,58 @@
 /* Variables por defecto */
 
-:root{
+:root {
 
-    --bg:#020617;
+    /* Fondo */
+    --color-fondo: #020617;
+    --color-fondo-secundario: #0f172a;
 
-    --card:#0f172a;
+    /* Tarjetas */
+    --color-card: #10192d;
+    --color-card-hover: #16213c;
 
-    --card-hover:#18213d;
+    /* Bordes */
+    --color-borde: #233253;
 
-    --border:#26324d;
+    /* Colores principales */
+    --color-principal: #67e86f;
+    --color-principal-hover: #56d65d;
 
-    --text:#ffffff;
+    /* Texto */
+    --color-texto: #ffffff;
+    --color-texto-secundario: #9ca3af;
 
-    --text-secondary:#94a3b8;
+    /* Estados */
+    --color-exito: #22c55e;
+    --color-alerta: #f59e0b;
+    --color-error: #ef4444;
 
-    --primary:#67e86f;
+}
 
-    --primary-hover:#59d760;
 
-    --success:#22c55e;
+:root[data-competition="worldcup"] {
 
-    --warning:#facc15;
+    --color-principal: #67e86f;
 
-    --danger:#ef4444;
+}
+
+:root[data-competition="f1"] {
+
+    --color-fondo: #120000;
+    --color-fondo-secundario: #1b0000;
+    --color-card: #220000;
+
+    --color-principal: #ff1801;
+
+}
+
+:root[data-competition="libertadores"] {
+
+    --color-principal: #d4af37;
 
 }
 
 
 
-:root[data-competition="worldcup"]{
-
-    --primary:#67e86f;
-
-    --bg:#020617;
-
-}
-
-
-
-:root[data-competition="f1"]{
-
-    --primary:#ff1801;
-
-    --bg:#090909;
-
-}
-
-
-
-:root[data-competition="libertadores"]{
-
-    --primary:#d6b44a;
-
-    --bg:#041320;
-
-}
 
 
 
