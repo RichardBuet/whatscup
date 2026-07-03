@@ -1,17 +1,10 @@
 /* =========================
    LAYOUT PRINCIPAL
-========================= */
-/* .app{
-    display:grid;
-    grid-template-columns:
-        260px
-        minmax(0,1fr);
-    gap:24px;
-    min-height:100vh;
-    max-width:1800px;
-    margin:0 auto;
-    padding:24px;
-} */
+========================= */ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+}
 
 .app{
     display:grid;
