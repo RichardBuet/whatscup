@@ -1,0 +1,60 @@
+/* Variables por defecto */
+
+:root{
+
+    --bg:#020617;
+
+    --card:#0f172a;
+
+    --card-hover:#18213d;
+
+    --border:#26324d;
+
+    --text:#ffffff;
+
+    --text-secondary:#94a3b8;
+
+    --primary:#67e86f;
+
+    --primary-hover:#59d760;
+
+    --success:#22c55e;
+
+    --warning:#facc15;
+
+    --danger:#ef4444;
+
+}
+
+
+
+:root[data-competition="worldcup"]{
+
+    --primary:#67e86f;
+
+    --bg:#020617;
+
+}
+
+
+
+:root[data-competition="f1"]{
+
+    --primary:#ff1801;
+
+    --bg:#090909;
+
+}
+
+
+
+:root[data-competition="libertadores"]{
+
+    --primary:#d6b44a;
+
+    --bg:#041320;
+
+}
+
+
+
