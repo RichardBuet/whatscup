@@ -2488,25 +2488,25 @@
     "fecha": "2026-07-03",
     "hora": "15:00",
     "utcDate": "2026-07-03T18:00:00Z",
-    "estado": "TIMED",
+    "estado": "PAUSED",
     "estadio": "",
     "local": "Australia",
     "visitante": "Egypt",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 0,
+    "golesVisitante": 1,
+    "ganador": "AWAY_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 1
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 1
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-02T15:20:12Z"
+    "ultimaActualizacion": "2026-07-03T18:56:45Z"
   },
   {
     "id": 537427,
