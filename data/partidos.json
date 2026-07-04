@@ -2613,7 +2613,7 @@
     "fecha": "2026-07-04",
     "hora": "18:00",
     "utcDate": "2026-07-04T21:00:00Z",
-    "estado": "LIVE",
+    "estado": "IN_PLAY",
     "estadio": "",
     "local": "Paraguay",
     "visitante": "France",
@@ -2626,12 +2626,12 @@
       "away": 0
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-04T21:55:47Z"
+    "ultimaActualizacion": "2026-07-04T22:38:06Z"
   },
   {
     "id": 537377,
