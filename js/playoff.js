@@ -7,17 +7,37 @@ function marcador(partido) {
         return "vs";
     }
 
-    let texto =
-        `${partido.golesLocal} - ${partido.golesVisitante}`;
+    // Resultado normal
+    let local =
+        `${partido.golesLocal}`;
 
-    if (partido.duracion === "PENALTY_SHOOTOUT") {
-        texto += " (Pen.)";
-    }
-    else if (partido.duracion === "EXTRA_TIME") {
-        texto += " (ET)";
+    let visitante =
+        `${partido.golesVisitante}`;
+
+    // Si hubo penales
+    if (
+        partido.duracion === "PENALTY_SHOOTOUT"
+    ) {
+
+        local += ` (${partido.penales.home})`;
+        visitante += ` (${partido.penales.away})`;
+
     }
 
-    return texto;
+    // Si hubo alargue
+    if (
+        partido.duracion === "EXTRA_TIME"
+    ) {
+
+        visitante += " ET";
+
+    }
+
+    return `
+        <div>${local}</div>
+        <div>${visitante}</div>
+    `;
+
 }
 
 async function cargarPlayoff() {
@@ -85,12 +105,13 @@ async function cargarPlayoff() {
 </td>
 
                     <td style="
-                        text-align:center;
-                        font-weight:bold;
-                        width:90px;
-                    ">
-                        ${marcador(partido)}
-                    </td>
+    text-align:center;
+    font-weight:bold;
+    width:70px;
+    line-height:1.4;
+">
+    ${marcador(partido)}
+</td>
 
                     <td>
     <span
