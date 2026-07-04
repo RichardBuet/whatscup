@@ -82,4 +82,8 @@ document
 });
 
 
-cargarEquipos();
+// cargarEquipos();
+
+
+cargarRecords();
+activarTab("btnRecords");
