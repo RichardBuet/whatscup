@@ -2523,25 +2523,28 @@
     "fecha": "2026-07-03",
     "hora": "19:00",
     "utcDate": "2026-07-03T22:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Argentina",
     "visitante": "Cape Verde Islands",
-    "golesLocal": 1,
-    "golesVisitante": 1,
-    "ganador": "DRAW",
-    "duracion": "REGULAR",
+    "golesLocal": 3,
+    "golesVisitante": 2,
+    "ganador": "HOME_TEAM",
+    "duracion": "EXTRA_TIME",
     "tiempoCompleto": {
-      "home": 1,
-      "away": 1
+      "home": 3,
+      "away": 2
     },
     "entretiempo": {
       "home": 1,
       "away": 0
     },
-    "alargue": {},
+    "alargue": {
+      "home": 2,
+      "away": 1
+    },
     "penales": {},
-    "ultimaActualizacion": "2026-07-03T23:43:30Z"
+    "ultimaActualizacion": "2026-07-04T00:50:06Z"
   },
   {
     "id": 537430,
