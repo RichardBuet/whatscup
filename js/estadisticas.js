@@ -87,24 +87,24 @@ setTimeout(() => {
     }
 }, 100);
 
-document
-.getElementById("btnPlayoff")
-.addEventListener(
-    "click",
-    () => {
+// document
+// .getElementById("btnPlayoff")
+// .addEventListener(
+//     "click",
+//     () => {
 
-        document
-            .getElementById("btnPlayoff")
-            .classList.add("tab-activa");
+//         document
+//             .getElementById("btnPlayoff")
+//             .classList.add("tab-activa");
 
-        document
-            .getElementById("btnGrupos")
-            .classList.remove("tab-activa");
+//         document
+//             .getElementById("btnGrupos")
+//             .classList.remove("tab-activa");
 
-setTimeout(() => {
-mostrarEquipos();
+// setTimeout(() => {
+// mostrarEquipos();
 
-}, 0);
+// }, 0);
 
-    }
-);
+//     }
+// );
