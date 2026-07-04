@@ -9,7 +9,7 @@
     /* Tarjetas */
     --color-card: #10192d;
     --color-card-hover: #16213c;
-
+    --color-evento-live: #00e112;
     /* Bordes */
     --color-borde: #233253;
 
@@ -23,7 +23,8 @@
     
     /* Sombras */
     --shadow-card: 0 8px 25px rgba(0,0,0,.45);
-
+    --shadow-live-border: 0 0 10px rgba(34, 197, 94, .25);
+    --shadow-live-background: linear-gradient(90deg, rgba(34, 197, 94, .12), rgba(0, 0, 0, 0));
     --shadow-principal-fecha-btn-activo: 0 0 15px var(--color-principal);
     
     /* Estados */
@@ -51,6 +52,7 @@
     --color-fondo-secundario: #13171c;
     --color-card: #161a1f;
     --color-card-hover: #1d2127;
+    --color-evento-live: #EC0374;
 
     /* Bordes */
     --color-borde: #2a2f36;
@@ -76,9 +78,9 @@
     --color-texto-apagado: #7d8794;
 
     /* Sombras */
-    --shadow-card:
-        0 8px 25px rgba(0,0,0,.45);
-
+    --shadow-card: 0 8px 25px rgba(0,0,0,.45);
+    --shadow-live-border: 0 0 10px rgb(197 34 34 / 25%);
+    --shadow-live-background: linear-gradient(90deg, rgb(197 34 34 / 12%), rgba(0, 0, 0, 0));
     --shadow-principal-fecha-btn-activo: 0 0 15px var(--color-principal);
 
     /* Gradientes */
