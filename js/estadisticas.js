@@ -84,10 +84,8 @@ document
 
 // cargarEquipos();
 
-
 //cargarRecords();
 //activarTab("btnRecords");
-
 
 console.log("Inicio estadisticas.js");
 
