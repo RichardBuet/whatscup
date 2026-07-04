@@ -96,3 +96,10 @@ alert("Records: " + typeof cargarRecords);
 
 activarTab("btnRecords");
 cargarRecords();
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    activarTab("btnEquipos");
+    cargarEquipos();
+
+});
