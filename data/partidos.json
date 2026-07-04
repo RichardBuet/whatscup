@@ -2555,25 +2555,25 @@
     "fecha": "2026-07-03",
     "hora": "22:30",
     "utcDate": "2026-07-04T01:30:00Z",
-    "estado": "TIMED",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Colombia",
     "visitante": "Ghana",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 1,
+    "golesVisitante": 0,
+    "ganador": "HOME_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-02T15:20:12Z"
+    "ultimaActualizacion": "2026-07-04T03:45:01Z"
   },
   {
     "id": 537376,
