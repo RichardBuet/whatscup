@@ -85,8 +85,12 @@ document
 // Pantalla inicial
 //--------------------------------------
 
-activarTab("btnGoleadores");
+setTimeout(() => {
 
-if (typeof cargarGoleadores === "function") {
-    cargarGoleadores();
-}
+    activarTab("btnGoleadores");
+
+    if (typeof cargarGoleadores === "function") {
+        cargarGoleadores();
+    }
+
+}, 100);
