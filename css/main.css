@@ -662,7 +662,7 @@ EQUIPO INDIVIDUAL
 .fecha-btn.activo{
     background:var(--color-principal);
     color:var(--color-fondo);
-    box-shadow: 0 0 15px rgba(107,230,117,.4);
+    box-shadow:var(--shadow-principal-fecha-btn-activo);
 }
 
 #resumenFixture{
