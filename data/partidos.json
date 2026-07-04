@@ -2584,17 +2584,17 @@
     "fecha": "2026-07-04",
     "hora": "14:00",
     "utcDate": "2026-07-04T17:00:00Z",
-    "estado": "PAUSED",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Canada",
     "visitante": "Morocco",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "ganador": "DRAW",
+    "golesVisitante": 3,
+    "ganador": "AWAY_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
       "home": 0,
-      "away": 0
+      "away": 3
     },
     "entretiempo": {
       "home": 0,
@@ -2602,7 +2602,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-04T17:58:30Z"
+    "ultimaActualizacion": "2026-07-04T19:09:21Z"
   },
   {
     "id": 537375,
