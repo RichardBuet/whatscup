@@ -2613,17 +2613,17 @@
     "fecha": "2026-07-04",
     "hora": "18:00",
     "utcDate": "2026-07-04T21:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Paraguay",
     "visitante": "France",
     "golesLocal": 0,
-    "golesVisitante": 0,
-    "ganador": "DRAW",
+    "golesVisitante": 1,
+    "ganador": "AWAY_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
       "home": 0,
-      "away": 0
+      "away": 1
     },
     "entretiempo": {
       "home": 0,
@@ -2631,7 +2631,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-04T22:38:06Z"
+    "ultimaActualizacion": "2026-07-04T23:10:57Z"
   },
   {
     "id": 537377,
