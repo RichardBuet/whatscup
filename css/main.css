@@ -294,7 +294,7 @@ PARTIDOS
 }
 
 .separador-llave{
-    color:#6BE675;
+    color:var(--color-principal);
 	margin:14px 0 24px;
     text-align:center;
 	font-size:.95rem;
@@ -391,7 +391,7 @@ PARTIDOS
 .btn-ronda{
     border:none;
     background:var(--color-fondo-secundario);
-    color:#cbd5e1;
+    color:var(--color-texto);
     border-radius:999px;
     cursor:pointer;
     font-size:.82rem;
@@ -436,7 +436,7 @@ POSICIONES
 
 .tabs-posiciones button{
     background:var(--color-fondo-secundario);
-    /* color:#cbd5e1; */
+    color:var(--color-texto);
     border:none;
 	padding:10px 18px;
     border-radius:14px;
@@ -446,7 +446,7 @@ POSICIONES
 }
 
 /* .tabs-posiciones button:hover{
-    background:#1f2d55;
+    background: #1f2d55;
 } */
 
 .tabs-posiciones .tab-activa{
@@ -649,7 +649,7 @@ EQUIPO INDIVIDUAL
 
 .fecha-btn{
     background:var(--color-fondo-secundario);
-    color:#cbd5e1;
+    color:var(--color-texto);
 	flex:0 0 auto;
     border:none;
     border-radius:20px;
@@ -785,7 +785,7 @@ GOLEADORES V2
 }
 
 .goleador-goals{
-    color:#7CFF72;
+    color:var(--color-principal);
 	text-align:right;
     font-size:1.4rem;
     font-weight:700;
