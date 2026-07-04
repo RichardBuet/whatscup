@@ -20,7 +20,12 @@
     /* Texto */
     --color-texto: #ffffff;
     --color-texto-secundario: #9ca3af;
+    
+    /* Sombras */
+    --shadow-card: 0 8px 25px rgba(0,0,0,.45);
 
+    --shadow-principal-fecha-btn-activo: 0 0 15px var(--color-principal);
+    
     /* Estados */
     --color-exito: #22c55e;
     --color-alerta: #f59e0b;
@@ -74,8 +79,7 @@
     --shadow-card:
         0 8px 25px rgba(0,0,0,.45);
 
-    --shadow-principal:
-        0 0 20px rgba(225,6,0,.25);
+    --shadow-principal-fecha-btn-activo: 0 0 15px var(--color-principal);
 
     /* Gradientes */
     --gradient-principal:
