@@ -85,5 +85,14 @@ document
 // cargarEquipos();
 
 
-cargarRecords();
+//cargarRecords();
+//activarTab("btnRecords");
+
+
+console.log("Inicio estadisticas.js");
+
+alert("Equipos: " + typeof cargarEquipos);
+alert("Records: " + typeof cargarRecords);
+
 activarTab("btnRecords");
+cargarRecords();
