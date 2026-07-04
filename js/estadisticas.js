@@ -40,7 +40,6 @@ document
 .addEventListener("click", () => {
 
     activarTab("btnGoleadores");
-
     if (typeof cargarGoleadores === "function") {
         cargarGoleadores();
     }
@@ -56,29 +55,25 @@ document
 
 });
 
-document
-.getElementById("btnAsistencias")
-.addEventListener("click", () => {
+//--------------------------------------
+// Parametros no usados
+//--------------------------------------
 
-    activarTab("btnAsistencias");
-
-});
-
-document
-.getElementById("btnTarjetas")
-.addEventListener("click", () => {
-
-    activarTab("btnTarjetas");
-
-});
-
-document
-.getElementById("btnVallas")
-.addEventListener("click", () => {
-
-    activarTab("btnVallas");
-
-});
+// document
+// .getElementById("btnAsistencias")
+// .addEventListener("click", () => {
+//     activarTab("btnAsistencias");
+// });
+// document
+// .getElementById("btnTarjetas")
+// .addEventListener("click", () => {
+//     activarTab("btnTarjetas");
+// });
+// document
+// .getElementById("btnVallas")
+// .addEventListener("click", () => {
+//     activarTab("btnVallas");
+// });
 
 
 //--------------------------------------
@@ -86,11 +81,30 @@ document
 //--------------------------------------
 
 setTimeout(() => {
-
-    activarTab("btnGoleadores");
-
-    if (typeof cargarGoleadores === "function") {
-        cargarGoleadores();
+    activarTab("btnEquipos");
+    if (typeof cargarEquipos === "function") {
+        cargarEquipos();
     }
-
 }, 100);
+
+document
+.getElementById("btnPlayoff")
+.addEventListener(
+    "click",
+    () => {
+
+        document
+            .getElementById("btnPlayoff")
+            .classList.add("tab-activa");
+
+        document
+            .getElementById("btnGrupos")
+            .classList.remove("tab-activa");
+
+setTimeout(() => {
+mostrarEquipos();
+
+}, 0);
+
+    }
+);
