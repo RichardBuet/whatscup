@@ -351,7 +351,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.local
                         )}
-                        ${nombreCorto(p.local)}
+                        ${p.local}
                     </span>
 
                     <strong>
@@ -364,7 +364,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.visitante
                         )}
-                        ${nombreCorto(p.visitante)}
+                        ${p.visitante}
                     </span>
 
                 </div>
