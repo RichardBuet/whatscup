@@ -167,6 +167,51 @@ async function cargarEquipo() {
     const proximos =
         partidos.filter(p =>
 
+let estadoActual = "❌ Eliminado en Fase de Grupos";
+
+if (proximos.length) {
+
+    const siguiente = proximos[0];
+
+    estadoActual =
+        `⏳ Juega ${nombreFase(siguiente.fase)}`;
+
+}
+else if (jugados.length) {
+
+    const ultimo = jugados[jugados.length - 1];
+
+    if (ultimo.fase === "FINAL") {
+
+        estadoActual =
+            ultimo.ganador === "HOME_TEAM" && ultimo.local === nombreEquipo ||
+            ultimo.ganador === "AWAY_TEAM" && ultimo.visitante === nombreEquipo
+
+            ? "🏆 Campeón"
+            : "🥈 Subcampeón";
+
+    }
+    else {
+
+        const gano =
+
+            ultimo.ganador === "HOME_TEAM" && ultimo.local === nombreEquipo ||
+
+            ultimo.ganador === "AWAY_TEAM" && ultimo.visitante === nombreEquipo;
+
+        estadoActual = gano
+
+            ? `✅ Clasificado a ${nombreFase(ultimo.fase)}`
+
+            : `❌ Eliminado en ${nombreFase(ultimo.fase)}`;
+
+    }
+
+}
+
+
+
+            
             (
                 p.local === nombreEquipo ||
                 p.visitante === nombreEquipo
@@ -177,7 +222,9 @@ async function cargarEquipo() {
             p.estado !== "FINISHED"
 
         );
+    
 
+    let estadoActual = "⏳ En desarrollo";
     html.innerHTML = `
 
         <a
@@ -223,7 +270,7 @@ async function cargarEquipo() {
 
 🏆 Estado actual:
 
-⏳ En desarrollo
+${estadoActual}
 
 </p>
 
