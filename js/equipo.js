@@ -351,7 +351,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.local
                         )}
-                        ${p.local}
+                        ${nombreEquipo(p.local)}
                     </span>
 
                     <strong>
@@ -364,7 +364,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.visitante
                         )}
-                        ${p.visitante}
+                        ${nombreEquipo(p.visitante)}
                     </span>
 
                 </div>
@@ -396,7 +396,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.local
                         )}
-                        ${p.local}
+                        ${nombreEquipo(p.local)}
                     </span>
 
                     <strong>
@@ -413,7 +413,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.visitante
                         )}
-                        ${p.visitante}
+                        ${nombreEquipo(p.visitante)}
                     </span>
 
                 </div>
