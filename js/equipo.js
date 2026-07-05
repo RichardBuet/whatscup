@@ -1,55 +1,54 @@
-const MODO_COMPACTO =
-    window.innerWidth <= 900;
+const FIFA = {
+
+    "Argentina":"ARG",
+    "Algeria":"ALG",
+    "Australia":"AUS",
+    "Austria":"AUT",
+    "Belgium":"BEL",
+    "Bosnia-Herzegovina":"BIH",
+    "Brazil":"BRA",
+    "Canada":"CAN",
+    "Cape Verde Islands":"CPV",
+    "Colombia":"COL",
+    "Croatia":"CRO",
+    "Czechia":"CZE",
+    "Congo DR":"COD",
+    "Ecuador":"ECU",
+    "Egypt":"EGY",
+    "England":"ENG",
+    "France":"FRA",
+    "Germany":"GER",
+    "Ghana":"GHA",
+    "Ivory Coast":"CIV",
+    "Japan":"JPN",
+    "Mexico":"MEX",
+    "Morocco":"MAR",
+    "Netherlands":"NED",
+    "Norway":"NOR",
+    "Paraguay":"PAR",
+    "Portugal":"POR",
+    "Senegal":"SEN",
+    "South Africa":"RSA",
+    "Spain":"ESP",
+    "Sweden":"SWE",
+    "Switzerland":"SUI",
+    "United States":"USA"
+
+};
 
 function nombreCorto(nombre){
 
-    if(!MODO_COMPACTO){
-        return nombre;
+    if(window.innerWidth <= 900){
+
+        return FIFA[nombre] || nombre;
+
     }
 
-    const FIFA={
-
-        "Argentina":"ARG",
-        "Australia":"AUS",
-        "Austria":"AUT",
-        "Belgium":"BEL",
-        "Bosnia and Herzegovina":"BIH",
-        "Bosnia-Herzegovina":"BIH",
-        "Brazil":"BRA",
-        "Canada":"CAN",
-        "Cape Verde":"CPV",
-        "Cape Verde Islands":"CPV",
-        "Colombia":"COL",
-        "Croatia":"CRO",
-        "Czechia":"CZE",
-        "DR Congo":"COD",
-        "Congo DR":"COD",
-        "Ecuador":"ECU",
-        "Egypt":"EGY",
-        "England":"ENG",
-        "France":"FRA",
-        "Germany":"GER",
-        "Ghana":"GHA",
-        "Ivory Coast":"CIV",
-        "Japan":"JPN",
-        "Mexico":"MEX",
-        "Morocco":"MAR",
-        "Netherlands":"NED",
-        "Norway":"NOR",
-        "Paraguay":"PAR",
-        "Portugal":"POR",
-        "Senegal":"SEN",
-        "South Africa":"RSA",
-        "Spain":"ESP",
-        "Sweden":"SWE",
-        "Switzerland":"SUI",
-        "United States":"USA"
-
-    };
-
-    return FIFA[nombre] || nombre;
+    return nombre;
 
 }
+
+
 
 function nombreFase(fase){
 
