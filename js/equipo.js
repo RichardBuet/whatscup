@@ -166,7 +166,18 @@ async function cargarEquipo() {
 
     const proximos =
         partidos.filter(p =>
+            
+            (
+                p.local === nombreEquipo ||
+                p.visitante === nombreEquipo
+            )
 
+            &&
+
+            p.estado !== "FINISHED"
+
+        );
+    
 let estadoActual = "❌ Eliminado en Fase de Grupos";
 
 if (proximos.length) {
@@ -210,21 +221,7 @@ else if (jugados.length) {
 }
 
 
-
-            
-            (
-                p.local === nombreEquipo ||
-                p.visitante === nombreEquipo
-            )
-
-            &&
-
-            p.estado !== "FINISHED"
-
-        );
     
-
-    let estadoActual = "⏳ En desarrollo";
     html.innerHTML = `
 
         <a
