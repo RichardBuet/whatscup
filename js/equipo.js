@@ -1,3 +1,76 @@
+const MODO_COMPACTO =
+    window.innerWidth <= 900;
+
+function nombreEquipo(nombre){
+
+    if(!MODO_COMPACTO){
+        return nombre;
+    }
+
+    const FIFA={
+
+        "Argentina":"ARG",
+        "Australia":"AUS",
+        "Austria":"AUT",
+        "Belgium":"BEL",
+        "Bosnia and Herzegovina":"BIH",
+        "Bosnia-Herzegovina":"BIH",
+        "Brazil":"BRA",
+        "Canada":"CAN",
+        "Cape Verde":"CPV",
+        "Cape Verde Islands":"CPV",
+        "Colombia":"COL",
+        "Croatia":"CRO",
+        "Czechia":"CZE",
+        "DR Congo":"COD",
+        "Congo DR":"COD",
+        "Ecuador":"ECU",
+        "Egypt":"EGY",
+        "England":"ENG",
+        "France":"FRA",
+        "Germany":"GER",
+        "Ghana":"GHA",
+        "Ivory Coast":"CIV",
+        "Japan":"JPN",
+        "Mexico":"MEX",
+        "Morocco":"MAR",
+        "Netherlands":"NED",
+        "Norway":"NOR",
+        "Paraguay":"PAR",
+        "Portugal":"POR",
+        "Senegal":"SEN",
+        "South Africa":"RSA",
+        "Spain":"ESP",
+        "Sweden":"SWE",
+        "Switzerland":"SUI",
+        "United States":"USA"
+
+    };
+
+    return FIFA[nombre] || nombre;
+
+}
+
+function nombreFase(fase){
+
+    switch(fase){
+
+        case "GROUP_STAGE": return "🌍 Grupos";
+        case "LAST_32": return "🏆 32avos";
+        case "LAST_16": return "🏆 Octavos";
+        case "QUARTER_FINALS": return "🏆 Cuartos";
+        case "SEMI_FINALS": return "🏆 Semifinales";
+        case "THIRD_PLACE": return "🥉 3° Puesto";
+        case "FINAL": return "🏆 Final";
+
+        default:
+            return "";
+
+    }
+
+}
+
+
 async function cargarEquipo() {
 
     const version =
@@ -219,8 +292,8 @@ async function cargarEquipo() {
             <div class="partido">
 
                 <div class="fecha">
-                    ${p.fecha}
-                </div>
+    ${fechaCompacta(p.fecha, p.hora)}
+</div>
 
                 <div class="resultado">
 
@@ -228,7 +301,7 @@ async function cargarEquipo() {
                         ${obtenerBandera(
                             p.local
                         )}
-                        ${p.local}
+                        ${nombreEquipo(p.local)}
                     </span>
 
                     <strong>
@@ -241,7 +314,7 @@ async function cargarEquipo() {
                         ${obtenerBandera(
                             p.visitante
                         )}
-                        ${p.visitante}
+                        ${nombreEquipo(p.visitante)}
                     </span>
 
                 </div>
@@ -264,8 +337,8 @@ async function cargarEquipo() {
             <div class="partido">
 
                 <div class="fecha">
-                    ${p.fecha}
-                </div>
+    ${fechaCompacta(p.fecha, p.hora)}
+</div>
 
                 <div class="resultado">
 
@@ -273,7 +346,7 @@ async function cargarEquipo() {
                         ${obtenerBandera(
                             p.local
                         )}
-                        ${p.local}
+                        ${nombreEquipo(p.local)}
                     </span>
 
                     <strong>
@@ -290,7 +363,7 @@ async function cargarEquipo() {
                         ${obtenerBandera(
                             p.visitante
                         )}
-                        ${p.visitante}
+                        ${nombreEquipo(p.visitante)}
                     </span>
 
                 </div>
@@ -300,6 +373,29 @@ async function cargarEquipo() {
         `;
 
     });
+
+}
+
+
+function fechaCompacta(fecha, hora){
+
+    if(!fecha) return "";
+
+    const meses = [
+
+        "Ene","Feb","Mar","Abr",
+        "May","Jun","Jul","Ago",
+        "Sep","Oct","Nov","Dic"
+
+    ];
+
+    const [anio, mes, dia] = fecha.split("-");
+
+    return hora
+
+        ? `📅 ${dia} ${meses[mes-1]} · ${hora}`
+
+        : `📅 ${dia} ${meses[mes-1]}`;
 
 }
 
