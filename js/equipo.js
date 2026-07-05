@@ -1,7 +1,7 @@
 const MODO_COMPACTO =
     window.innerWidth <= 900;
 
-function nombreEquipo(nombre){
+function nombreCorto(nombre){
 
     if(!MODO_COMPACTO){
         return nombre;
@@ -351,7 +351,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.local
                         )}
-                        ${nombreEquipo(p.local)}
+                        ${nombreCorto(p.local)}
                     </span>
 
                     <strong>
@@ -364,7 +364,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.visitante
                         )}
-                        ${nombreEquipo(p.visitante)}
+                        ${nombreCorto(p.visitante)}
                     </span>
 
                 </div>
@@ -396,7 +396,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.local
                         )}
-                        ${nombreEquipo(p.local)}
+                        ${nombreCorto(p.local)}
                     </span>
 
                     <strong>
@@ -413,7 +413,7 @@ ${estadoActual}
                         ${obtenerBandera(
                             p.visitante
                         )}
-                        ${nombreEquipo(p.visitante)}
+                        ${nombreCorto(p.visitante)}
                     </span>
 
                 </div>
