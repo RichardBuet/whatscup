@@ -292,9 +292,8 @@ async function cargarEquipo() {
             <div class="partido">
 
                 <div class="fecha">
-    ${fechaCompacta(p.fecha, p.hora)}
+    ${p.fecha}
 </div>
-
                 <div class="resultado">
 
                     <span>
@@ -336,8 +335,8 @@ async function cargarEquipo() {
 
             <div class="partido">
 
-                <div class="fecha">
-    ${fechaCompacta(p.fecha, p.hora)}
+             <div class="fecha">
+    ${p.fecha}
 </div>
 
                 <div class="resultado">
