@@ -1,7 +1,7 @@
 const FIFA = {
 
-    "Argentina":"ARG",
     "Algeria":"ALG",
+    "Argentina":"ARG",
     "Australia":"AUS",
     "Austria":"AUT",
     "Belgium":"BEL",
@@ -10,29 +10,44 @@ const FIFA = {
     "Canada":"CAN",
     "Cape Verde Islands":"CPV",
     "Colombia":"COL",
-    "Croatia":"CRO",
-    "Czechia":"CZE",
     "Congo DR":"COD",
+    "Croatia":"CRO",
+    "Curaçao":"CUW",
+    "Czechia":"CZE",
     "Ecuador":"ECU",
     "Egypt":"EGY",
     "England":"ENG",
     "France":"FRA",
     "Germany":"GER",
     "Ghana":"GHA",
+    "Haiti":"HAI",
+    "Iran":"IRN",
+    "Iraq":"IRQ",
     "Ivory Coast":"CIV",
     "Japan":"JPN",
+    "Jordan":"JOR",
     "Mexico":"MEX",
     "Morocco":"MAR",
     "Netherlands":"NED",
+    "New Zealand":"NZL",
     "Norway":"NOR",
+    "Panama":"PAN",
     "Paraguay":"PAR",
     "Portugal":"POR",
+    "Qatar":"QAT",
+    "Saudi Arabia":"KSA",
+    "Scotland":"SCO",
     "Senegal":"SEN",
     "South Africa":"RSA",
+    "South Korea":"KOR",
     "Spain":"ESP",
     "Sweden":"SWE",
     "Switzerland":"SUI",
-    "United States":"USA"
+    "Tunisia":"TUN",
+    "Turkey":"TUR",
+    "United States":"USA",
+    "Uruguay":"URU",
+    "Uzbekistan":"UZB"
 
 };
 
@@ -55,7 +70,7 @@ function nombreFase(fase){
     switch(fase){
 
         case "GROUP_STAGE": return "🌍 Grupos";
-        case "LAST_32": return "🏆 32avos";
+        case "LAST_32": return "🏆 16avos";
         case "LAST_16": return "🏆 Octavos";
         case "QUARTER_FINALS": return "🏆 Cuartos";
         case "SEMI_FINALS": return "🏆 Semifinales";
