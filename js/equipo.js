@@ -265,7 +265,7 @@ async function cargarEquipo() {
         <br>
 
         <h2>
-            ⚽ Partidos jugados
+            ⚽ Partidos jugados:
         </h2>
 
         <div id="partidosJugados"></div>
@@ -273,7 +273,7 @@ async function cargarEquipo() {
         <br>
 
         <h2>
-            📅 Próximos partidos
+            📅 Próximos partidos:
         </h2>
 
         <div id="proximosPartidos"></div>
@@ -300,7 +300,7 @@ async function cargarEquipo() {
                         ${obtenerBandera(
                             p.local
                         )}
-                        ${nombreEquipo(p.local)}
+                        ${p.local}
                     </span>
 
                     <strong>
@@ -313,7 +313,7 @@ async function cargarEquipo() {
                         ${obtenerBandera(
                             p.visitante
                         )}
-                        ${nombreEquipo(p.visitante)}
+                        ${p.visitante}
                     </span>
 
                 </div>
@@ -345,7 +345,7 @@ async function cargarEquipo() {
                         ${obtenerBandera(
                             p.local
                         )}
-                        ${nombreEquipo(p.local)}
+                        ${p.local}
                     </span>
 
                     <strong>
@@ -362,7 +362,7 @@ async function cargarEquipo() {
                         ${obtenerBandera(
                             p.visitante
                         )}
-                        ${nombreEquipo(p.visitante)}
+                        ${p.visitante}
                     </span>
 
                 </div>
@@ -376,26 +376,6 @@ async function cargarEquipo() {
 }
 
 
-function fechaCompacta(fecha, hora){
 
-    if(!fecha) return "";
-
-    const meses = [
-
-        "Ene","Feb","Mar","Abr",
-        "May","Jun","Jul","Ago",
-        "Sep","Oct","Nov","Dic"
-
-    ];
-
-    const [anio, mes, dia] = fecha.split("-");
-
-    return hora
-
-        ? `📅 ${dia} ${meses[mes-1]} · ${hora}`
-
-        : `📅 ${dia} ${meses[mes-1]}`;
-
-}
 
 cargarEquipo();
