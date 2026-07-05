@@ -219,6 +219,15 @@ async function cargarEquipo() {
 
         </p>
 
+<p style="margin-top:8px;font-weight:600">
+
+🏆 Estado actual:
+
+⏳ En desarrollo
+
+</p>
+
+
         <br>
 
         <div class="equipo-card stats-card">
