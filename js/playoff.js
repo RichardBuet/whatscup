@@ -1,3 +1,52 @@
+const FIFA = {
+
+    "Argentina":"ARG",
+    "Australia":"AUS",
+    "Austria":"AUT",
+    "Belgium":"BEL",
+    "Bosnia and Herzegovina":"BIH",
+    "Brazil":"BRA",
+    "Canada":"CAN",
+    "Cape Verde":"CPV",
+    "Colombia":"COL",
+    "Croatia":"CRO",
+    "Czechia":"CZE",
+    "DR Congo":"COD",
+    "Ecuador":"ECU",
+    "Egypt":"EGY",
+    "England":"ENG",
+    "France":"FRA",
+    "Germany":"GER",
+    "Ghana":"GHA",
+    "Japan":"JPN",
+    "Mexico":"MEX",
+    "Morocco":"MAR",
+    "Netherlands":"NED",
+    "Norway":"NOR",
+    "Paraguay":"PAR",
+    "Portugal":"POR",
+    "Senegal":"SEN",
+    "South Africa":"RSA",
+    "Spain":"ESP",
+    "Sweden":"SWE",
+    "Switzerland":"SUI",
+    "United States":"USA"
+
+};
+
+function nombreEquipo(nombre){
+
+    if(window.innerWidth <= 900){
+
+        return FIFA[nombre] || nombre;
+
+    }
+
+    return nombre;
+
+}
+
+
 function marcador(partido) {
 
     if (
@@ -100,7 +149,7 @@ async function cargarPlayoff() {
         onclick="location.href='equipo.html?equipo=${encodeURIComponent(partido.local)}'"
     >
         ${obtenerBandera(partido.local)}
-        ${partido.local || "—"}
+        ${nombreEquipo(partido.local) || "—"}
     </span>
 </td>
 
@@ -119,7 +168,7 @@ async function cargarPlayoff() {
         onclick="location.href='equipo.html?equipo=${encodeURIComponent(partido.visitante)}'"
     >
         ${obtenerBandera(partido.visitante)}
-        ${partido.visitante || "—"}
+        ${nombreEquipo(partido.visitante) || "—"}
     </span>
 </td>
 
