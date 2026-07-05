@@ -243,11 +243,9 @@ else if (jugados.length) {
 
         <br>
 
-        <h2>
-            Grupo ${equipoEncontrado.grupo}
-        </h2>
+        <p style="margin-top:8px;font-weight:600">
 
-        <p>
+    Grupo ${equipoEncontrado.grupo}:
 
             ${
                 posicionGrupo === 1
