@@ -2642,7 +2642,7 @@
     "fecha": "2026-07-05",
     "hora": "17:00",
     "utcDate": "2026-07-05T20:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "LIVE",
     "estadio": "",
     "local": "Brazil",
     "visitante": "Norway",
@@ -2655,12 +2655,12 @@
       "away": 0
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-05T20:20:51Z"
+    "ultimaActualizacion": "2026-07-05T21:32:03Z"
   },
   {
     "id": 537378,
