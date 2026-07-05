@@ -1,5 +1,4 @@
 const FIFA = {
-
     "Algeria":"ALG",
     "Argentina":"ARG",
     "Australia":"AUS",
