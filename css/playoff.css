@@ -1,0 +1,227 @@
+/*--------------------------------------------------
+Playoff V2
+--------------------------------------------------*/
+
+.playoff-card{
+
+    background:var(--color-card);
+
+    border:1px solid var(--color-borde);
+
+    border-radius:12px;
+
+    padding:12px;
+
+    margin-bottom:14px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.20);
+
+}
+
+.playoff-equipo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:6px 0;
+
+}
+
+.playoff-equipo .equipo-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:600;
+
+}
+
+.playoff-marcador{
+
+    min-width:70px;
+
+    text-align:right;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    line-height:1.5;
+
+}
+
+.playoff-info{
+
+    margin-top:8px;
+
+    padding-top:8px;
+
+    border-top:1px solid var(--color-borde);
+
+    font-size:12px;
+
+    color:var(--color-texto-secundario);
+
+}
+
+.playoff-equipo.ganador{
+
+    color:var(--color-verde);
+
+    font-weight:bold;
+
+}
+
+.playoff-equipo.ganador .equipo-link{
+
+    color:var(--color-verde);
+
+}
+
+.playoff-card:hover{
+
+    border-color:var(--color-principal);
+
+    transition:.25s;
+
+}
+
+.playoff-card .fecha{
+
+    margin-bottom:10px;
+
+    text-align:center;
+
+    font-size:12px;
+
+    color:var(--color-texto-secundario);
+
+}
+
+.playoff-card hr{
+
+    margin:10px 0 0;
+
+    border:none;
+
+    border-top:1px solid var(--color-borde);
+
+}
+
+.playoff-card .equipo-link:hover{
+
+    color:var(--color-principal);
+
+    cursor:pointer;
+
+}
+
+.mensaje-error{
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#ff6b6b;
+
+    font-weight:bold;
+
+}
+
+/*--------------------------------------------------
+Pestañas
+--------------------------------------------------*/
+
+.tabs-posiciones{
+
+    display:flex;
+
+    gap:8px;
+
+    overflow-x:auto;
+
+    margin-bottom:16px;
+
+    padding-bottom:4px;
+
+}
+
+.tabs-posiciones button{
+
+    white-space:nowrap;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    border:1px solid var(--color-borde);
+
+    background:var(--color-card);
+
+    color:var(--color-texto);
+
+    cursor:pointer;
+
+    transition:.20s;
+
+}
+
+.tabs-posiciones button:hover{
+
+    background:var(--color-principal);
+
+    color:#fff;
+
+}
+
+.tabs-posiciones .tab-activa{
+
+    background:var(--color-principal);
+
+    color:#fff;
+
+    border-color:var(--color-principal);
+
+}
+
+/*--------------------------------------------------
+Responsive
+--------------------------------------------------*/
+
+@media (max-width:600px){
+
+    .playoff-card{
+
+        padding:10px;
+
+    }
+
+    .playoff-equipo{
+
+        gap:8px;
+
+    }
+
+    .playoff-marcador{
+
+        min-width:55px;
+
+        font-size:14px;
+
+    }
+
+    .playoff-info{
+
+        font-size:11px;
+
+    }
+
+}
