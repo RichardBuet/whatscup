@@ -35,6 +35,7 @@ a{ text-decoration:none; color:inherit; }
 ========================= */
 
 #fixture,
+#equipoDetalle,
 #contenidoPosiciones,
 #equiposGrid,
 #goleadoresContainer,
@@ -44,6 +45,7 @@ a{ text-decoration:none; color:inherit; }
 }
 
 #fixture::-webkit-scrollbar,
+#equipoDetalle::-webkit-scrollbar,
 #contenidoPosiciones::-webkit-scrollbar,
 #equiposGrid::-webkit-scrollbar,
 #contenidoEstadisticas::-webkit-scrollbar,
@@ -52,6 +54,7 @@ a{ text-decoration:none; color:inherit; }
 }
 
 #fixture::-webkit-scrollbar-thumb,
+#equipoDetalle::-webkit-scrollbar-thumb,
 #contenidoPosiciones::-webkit-scrollbar-thumb,
 #equiposGrid::-webkit-scrollbar-thumb,
 #contenidoEstadisticas::-webkit-scrollbar-thumb,
@@ -62,6 +65,7 @@ a{ text-decoration:none; color:inherit; }
 }
 
 #fixture::-webkit-scrollbar-thumb:hover,
+#equipoDetalle::-webkit-scrollbar-thumb:hover,
 #contenidoPosiciones::-webkit-scrollbar-thumb:hover,
 #equiposGrid::-webkit-scrollbar-thumb:hover,
 #contenidoEstadisticas::-webkit-scrollbar-thumb:hover,
@@ -69,7 +73,7 @@ a{ text-decoration:none; color:inherit; }
     background: rgba(107,230,117,.45);
 }
 
-#contenidoPosiciones, #fixture, #listaEquipos, #goleadoresContainer, #contenidoEstadisticas {
+#equipoDetalle, #contenidoPosiciones, #fixture, #listaEquipos, #goleadoresContainer, #contenidoEstadisticas {
     flex:1;
     min-height:0;
     overflow-y:auto;
