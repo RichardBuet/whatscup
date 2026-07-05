@@ -2642,17 +2642,17 @@
     "fecha": "2026-07-05",
     "hora": "17:00",
     "utcDate": "2026-07-05T20:00:00Z",
-    "estado": "TIMED",
+    "estado": "IN_PLAY",
     "estadio": "",
     "local": "Brazil",
     "visitante": "Norway",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 0,
+    "golesVisitante": 0,
+    "ganador": "DRAW",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "entretiempo": {
       "home": null,
@@ -2660,7 +2660,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-05T05:20:12Z"
+    "ultimaActualizacion": "2026-07-05T20:20:51Z"
   },
   {
     "id": 537378,
