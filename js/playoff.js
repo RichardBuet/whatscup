@@ -141,11 +141,11 @@ async function cargarPlayoff() {
 
 const ORDEN = [
 
-    "FINAL",
-    "SEMI_FINALS",
-    "QUARTER_FINALS",
+    "LAST_32",
     "LAST_16",
-    "LAST_32"
+    "QUARTER_FINALS",
+    "SEMI_FINALS",
+    "FINAL"
 
 ];
 
