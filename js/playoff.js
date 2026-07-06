@@ -48,6 +48,44 @@ function nombreEquipo(nombre){
 
 }
 
+let faseActual = "LAST_16";
+
+const FASES = [
+
+    {
+        codigo:"LAST_32",
+        nombre:"32avos"
+    },
+
+    {
+        codigo:"LAST_16",
+        nombre:"Octavos"
+    },
+
+    {
+        codigo:"QUARTER_FINALS",
+        nombre:"Cuartos"
+    },
+
+    {
+        codigo:"SEMI_FINALS",
+        nombre:"Semis"
+    },
+
+    {
+        codigo:"FINAL",
+        nombre:"Final"
+    },
+
+    {
+        codigo:"THIRD_PLACE",
+        nombre:"3° Puesto"
+    }
+
+];
+
+
+
 
 function marcador(partido) {
 
@@ -101,16 +139,13 @@ async function cargarPlayoff() {
 
     const partidos = await response.json();
 
-    const fases = [
 
-        ["LAST_32","32avos de Final"],
-        ["LAST_16","Octavos de Final"],
-        ["QUARTER_FINALS","Cuartos de Final"],
-        ["SEMI_FINALS","Semifinales"],
-        ["THIRD_PLACE","3° Puesto"],
-        ["FINAL","Final"]
 
-    ];
+
+    
+
+    
+
 
     const contenedor =
         document.getElementById(
@@ -119,17 +154,17 @@ async function cargarPlayoff() {
 
     let html = "";
 
-    for (const [codigo,titulo] of fases) {
+    for (const fase of FASES) {
 
         const lista =
             partidos.filter(
-                p => p.fase === codigo
+                p => p.fase === fase.codigo
             );
 
         if (!lista.length) continue;
 
         html += `
-            <h2 class="grupo-titulo">${titulo}</h2>
+            <h2 class="grupo-titulo">${fase.nombre}</h2>
 
             <table class="tabla-grupo">
                 <tbody>
