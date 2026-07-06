@@ -49,6 +49,7 @@ function nombreEquipo(nombre){
 }
 
 let faseActual = "LAST_16";
+let faseInicializada = false;
 
 const FASES = [
 
@@ -149,20 +150,26 @@ const ORDEN = [
 
 ];
 
-for(const codigo of ORDEN){
+if(!faseInicializada){
 
-    if(
-        partidos.some(
-            p =>
-                p.fase === codigo &&
-                p.estado !== "FINISHED"
-        )
-    ){
+    for(const codigo of ORDEN){
 
-        faseActual = codigo;
-        break;
+        if(
+            partidos.some(
+                p =>
+                    p.fase === codigo &&
+                    p.estado !== "FINISHED"
+            )
+        ){
+
+            faseActual = codigo;
+            break;
+
+        }
 
     }
+
+    faseInicializada = true;
 
 }
 
@@ -174,31 +181,6 @@ for(const codigo of ORDEN){
 
     let html = "";
 
-html += `<div class="tabs-playoff">`;
-
-FASES
-    .filter(f => f.codigo !== "THIRD_PLACE")
-    .forEach(f => {
-
-        html += `
-            <button
-                class="${
-                    f.codigo === faseActual
-                    ? "active"
-                    : ""
-                }"
-                onclick="
-                    faseActual='${f.codigo}';
-                    cargarPlayoff();
-                "
-            >
-                ${f.nombre}
-            </button>
-        `;
-
-    });
-
-html += `</div>`;
 
     
 
