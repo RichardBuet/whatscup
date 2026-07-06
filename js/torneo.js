@@ -193,8 +193,9 @@ document
 );
 
 
-activarTab("btnGrupos");
+//activarTab("btnGrupos");
+//mostrarGrupos();
 
-mostrarGrupos();
-
+activarTab("btnPlayoff");
+mostrarPlayoff();
 
