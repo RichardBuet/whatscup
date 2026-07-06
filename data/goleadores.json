@@ -17,11 +17,21 @@
   {
     "jugador": "Harry Kane",
     "equipo": "England",
-    "goles": 5
+    "goles": 6
+  },
+  {
+    "jugador": "Julián Quiñones",
+    "equipo": "Mexico",
+    "goles": 4
   },
   {
     "jugador": "Vinicius Junior",
     "equipo": "Brazil",
+    "goles": 4
+  },
+  {
+    "jugador": "Jude Bellingham",
+    "equipo": "England",
     "goles": 4
   },
   {
@@ -38,15 +48,5 @@
     "jugador": "Ismaïla Sarr",
     "equipo": "Senegal",
     "goles": 4
-  },
-  {
-    "jugador": "Julián Quiñones",
-    "equipo": "Mexico",
-    "goles": 3
-  },
-  {
-    "jugador": "Folarin Balogun",
-    "equipo": "United States",
-    "goles": 3
   }
 ]

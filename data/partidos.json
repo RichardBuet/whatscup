@@ -2660,7 +2660,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-05T22:09:19Z"
+    "ultimaActualizacion": "2026-07-06T03:25:01Z"
   },
   {
     "id": 537378,
@@ -2671,25 +2671,25 @@
     "fecha": "2026-07-05",
     "hora": "22:00",
     "utcDate": "2026-07-06T01:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Mexico",
     "visitante": "England",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "ganador": "DRAW",
+    "golesLocal": 2,
+    "golesVisitante": 3,
+    "ganador": "AWAY_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": 0,
-      "away": 0
+      "home": 2,
+      "away": 3
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 2
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-06T01:23:24Z"
+    "ultimaActualizacion": "2026-07-06T03:25:01Z"
   },
   {
     "id": 537379,
