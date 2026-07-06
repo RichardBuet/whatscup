@@ -55,7 +55,7 @@ const FASES = [
 
     {
         codigo:"LAST_32",
-        nombre:"32avos"
+        nombre:"16avos"
     },
 
     {
@@ -72,17 +72,18 @@ const FASES = [
         codigo:"SEMI_FINALS",
         nombre:"Semis"
     },
+{
+        codigo:"THIRD_PLACE",
+        nombre:"3° Puesto"
+    },
+
 
     {
         codigo:"FINAL",
         nombre:"Final"
-    },
-
-    {
-        codigo:"THIRD_PLACE",
-        nombre:"3° Puesto"
     }
 
+    
 ];
 
 
@@ -146,6 +147,7 @@ const ORDEN = [
     "LAST_16",
     "QUARTER_FINALS",
     "SEMI_FINALS",
+    "THIRD_PLACE",
     "FINAL"
 
 ];
@@ -197,7 +199,7 @@ html += `
 <div class="tabs-playoff">
 
 ${FASES
-    .filter(f => f.codigo !== "THIRD_PLACE")
+
     .map(f => `
         <button
             class="btn-ronda ${f.codigo===faseActual?"activo":""}"
