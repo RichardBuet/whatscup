@@ -139,12 +139,32 @@ async function cargarPlayoff() {
 
     const partidos = await response.json();
 
+const ORDEN = [
 
+    "FINAL",
+    "SEMI_FINALS",
+    "QUARTER_FINALS",
+    "LAST_16",
+    "LAST_32"
 
+];
 
-    
+for(const codigo of ORDEN){
 
-    
+    if(
+        partidos.some(
+            p =>
+                p.fase === codigo &&
+                p.estado !== "FINISHED"
+        )
+    ){
+
+        faseActual = codigo;
+        break;
+
+    }
+
+}
 
 
     const contenedor =
@@ -154,71 +174,73 @@ async function cargarPlayoff() {
 
     let html = "";
 
-    for (const fase of FASES) {
+ const fase = FASES.find(
+    f => f.codigo === faseActual
+);
 
-        const lista =
-            partidos.filter(
-                p => p.fase === fase.codigo
-            );
+const lista = partidos.filter(
+    p => p.fase === fase.codigo
+);
 
-        if (!lista.length) continue;
+html += `
+    <h2 class="grupo-titulo">
+        ${fase.nombre}
+    </h2>
 
-        html += `
-            <h2 class="grupo-titulo">${fase.nombre}</h2>
+    <table class="tabla-grupo">
+        <tbody>
+`;
 
-            <table class="tabla-grupo">
-                <tbody>
-        `;
+lista.forEach(partido => {
 
-        lista.forEach(partido => {
+    html += `
 
-            html += `
-                <tr>
+        <tr>
 
-                    <td style="width:140px">
-                        ${partido.fecha}<br>
-                        ${partido.hora}
-                    </td>
+            <td style="width:140px">
+                ${partido.fecha}<br>
+                ${partido.hora}
+            </td>
 
-                    <td>
-    <span
-        class="equipo-link"
-        onclick="location.href='equipo.html?equipo=${encodeURIComponent(partido.local)}'"
-    >
-        ${obtenerBandera(partido.local)}
-        ${nombreEquipo(partido.local) || "—"}
-    </span>
-</td>
+            <td>
+                <span
+                    class="equipo-link"
+                    onclick="location.href='equipo.html?equipo=${encodeURIComponent(partido.local)}'"
+                >
+                    ${obtenerBandera(partido.local)}
+                    ${nombreEquipo(partido.local)}
+                </span>
+            </td>
 
-                    <td style="
-    text-align:center;
-    font-weight:bold;
-    width:70px;
-    line-height:1.4;
-">
-    ${marcador(partido)}
-</td>
+            <td style="
+                text-align:center;
+                font-weight:bold;
+                width:70px;
+                line-height:1.4;
+            ">
+                ${marcador(partido)}
+            </td>
 
-                    <td>
-    <span
-        class="equipo-link"
-        onclick="location.href='equipo.html?equipo=${encodeURIComponent(partido.visitante)}'"
-    >
-        ${obtenerBandera(partido.visitante)}
-        ${nombreEquipo(partido.visitante) || "—"}
-    </span>
-</td>
+            <td>
+                <span
+                    class="equipo-link"
+                    onclick="location.href='equipo.html?equipo=${encodeURIComponent(partido.visitante)}'"
+                >
+                    ${obtenerBandera(partido.visitante)}
+                    ${nombreEquipo(partido.visitante)}
+                </span>
+            </td>
 
-                </tr>
-            `;
+        </tr>
 
-        });
+    `;
 
-        html += `
-                </tbody>
-            </table>
-        `;
-    }
+});
+
+html += `
+        </tbody>
+    </table>
+`;
 
     contenedor.innerHTML = html;
 
