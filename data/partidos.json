@@ -2700,7 +2700,7 @@
     "fecha": "2026-07-06",
     "hora": "16:00",
     "utcDate": "2026-07-06T19:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Portugal",
     "visitante": "Spain",
@@ -2718,7 +2718,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-06T20:58:25Z"
+    "ultimaActualizacion": "2026-07-06T21:06:44Z"
   },
   {
     "id": 537380,
