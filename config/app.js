@@ -1,7 +1,9 @@
 const APP = {
 
-    competition: "f1",
-
+    competition: "worldcup",
+// worldcup
+// f1
+// libertadores
     name: "WhatsCup",
 
     title: "FIFA World Cup 2026",
