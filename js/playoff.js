@@ -174,6 +174,34 @@ for(const codigo of ORDEN){
 
     let html = "";
 
+html += `<div class="tabs-playoff">`;
+
+FASES
+    .filter(f => f.codigo !== "THIRD_PLACE")
+    .forEach(f => {
+
+        html += `
+            <button
+                class="${
+                    f.codigo === faseActual
+                    ? "active"
+                    : ""
+                }"
+                onclick="
+                    faseActual='${f.codigo}';
+                    cargarPlayoff();
+                "
+            >
+                ${f.nombre}
+            </button>
+        `;
+
+    });
+
+html += `</div>`;
+
+    
+
  const fase = FASES.find(
     f => f.codigo === faseActual
 );
@@ -183,14 +211,35 @@ const lista = partidos.filter(
 );
 
 html += `
-    <h2 class="grupo-titulo">
-        ${fase.nombre}
-    </h2>
 
-    <table class="tabla-grupo">
-        <tbody>
+<div class="tabs-playoff">
+
+${FASES
+    .filter(f => f.codigo !== "THIRD_PLACE")
+    .map(f => `
+        <button
+            class="btn-ronda ${f.codigo===faseActual?"activo":""}"
+            onclick="
+                faseActual='${f.codigo}';
+                cargarPlayoff();
+            "
+        >
+            ${f.nombre}
+        </button>
+    `)
+    .join("")}
+
+</div>
+
+<h2 class="grupo-titulo">
+    ${fase.nombre}
+</h2>
+
+<table class="tabla-grupo">
+    <tbody>
 `;
 
+    
 lista.forEach(partido => {
 
     html += `
