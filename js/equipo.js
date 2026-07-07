@@ -83,6 +83,9 @@ function nombreFase(fase){
 
 }
 
+function fechaCorta(fecha){
+    return fecha.substring(8,10) + "/" + fecha.substring(5,7);
+}
 
 async function cargarEquipo() {
 
@@ -274,56 +277,28 @@ else if (jugados.length) {
 
         </p>
 
-<p style="margin-top:8px;font-weight:600">
-
-🏆 Estado actual:
-
-${estadoActual}
-
-</p>
-
-
+        <p style="margin-top:8px;font-weight:600">
+        
+        🏆 Estado actual:
+        
+        ${estadoActual}
+        </p>
         <br>
-
         <div class="equipo-card stats-card">
-
-            <div class="stats-header">
-
-                <span>PJ</span>
-                <span>PG</span>
-                <span>PE</span>
-                <span>PP</span>
-                <span>GF</span>
-                <span>GC</span>
-                <span>DG</span>
-
+        
+            <div class="stats-resumen">
+        
+                <span><b>PJ</b> ${equipoEncontrado.pj}</span>
+                <span><b>PG</b> ${equipoEncontrado.pg}</span>
+                <span><b>PE</b> ${equipoEncontrado.pe}</span>
+                <span><b>PP</b> ${equipoEncontrado.pp}</span>
+                <span><b>GF</b> ${equipoEncontrado.gf}</span>
+                <span><b>GC</b> ${equipoEncontrado.gc}</span>
+                <span><b>DG</b> ${equipoEncontrado.gf-equipoEncontrado.gc}</span>
+                <span><b>PTS</b> ${equipoEncontrado.pts}</span>
+        
             </div>
-
-            <div class="stats-values">
-
-                <span>${equipoEncontrado.pj}</span>
-                <span>${equipoEncontrado.pg}</span>
-                <span>${equipoEncontrado.pe}</span>
-                <span>${equipoEncontrado.pp}</span>
-                <span>${equipoEncontrado.gf}</span>
-                <span>${equipoEncontrado.gc}</span>
-
-                <span>
-                    ${
-                        equipoEncontrado.gf -
-                        equipoEncontrado.gc
-                    }
-                </span>
-
-            </div>
-
-            <div class="stats-points">
-
-                PTS:
-                ${equipoEncontrado.pts}
-
-            </div>
-
+        
         </div>
 
         <br>
@@ -334,13 +309,15 @@ ${estadoActual}
 
         <div id="partidosJugados"></div>
 
-        <br>
-
-        <h2>
-            📅 Próximos partidos:
-        </h2>
-
-        <div id="proximosPartidos"></div>
+        ${
+            proximos.length
+            ? `
+                <br>
+                <h2>📅 Próximos partidos: </h2>
+                <div id="proximosPartidos"></div>
+            `
+            : ""
+        }
 
     `;
 
@@ -356,8 +333,16 @@ ${estadoActual}
             <div class="partido">
 
                 <div class="fecha">
-    ${p.fecha}
-</div>
+                    ${nombreFase(p.fase)}
+                    ${
+                        p.grupo
+                        ? ` ${p.grupo}`
+                        : ""
+                    }
+                    •
+                    ${fechaCorta(p.fecha)}
+                </div>
+                
                 <div class="resultado">
 
                     <span>
@@ -399,9 +384,16 @@ ${estadoActual}
 
             <div class="partido">
 
-             <div class="fecha">
-    ${p.fecha}
-</div>
+                <div class="fecha">
+                    ${nombreFase(p.fase)}
+                    ${
+                        p.grupo
+                        ? ` ${p.grupo}`
+                        : ""
+                    }
+                    •
+                    ${fechaCorta(p.fecha)}
+                </div>
 
                 <div class="resultado">
 
