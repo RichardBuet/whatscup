@@ -2800,12 +2800,12 @@
       "away": 0
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-07T20:24:18Z"
+    "ultimaActualizacion": "2026-07-07T21:50:45Z"
   },
   {
     "id": 537383,
