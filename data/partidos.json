@@ -2729,25 +2729,25 @@
     "fecha": "2026-07-06",
     "hora": "21:00",
     "utcDate": "2026-07-07T00:00:00Z",
-    "estado": "TIMED",
+    "estado": "IN_PLAY",
     "estadio": "",
     "local": "United States",
     "visitante": "Belgium",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 1,
+    "golesVisitante": 2,
+    "ganador": "AWAY_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 2
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 2
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-06T05:20:12Z"
+    "ultimaActualizacion": "2026-07-07T01:22:00Z"
   },
   {
     "id": 537381,
