@@ -2787,25 +2787,31 @@
     "fecha": "2026-07-07",
     "hora": "17:00",
     "utcDate": "2026-07-07T20:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Switzerland",
     "visitante": "Colombia",
-    "golesLocal": 0,
-    "golesVisitante": 0,
-    "ganador": "DRAW",
-    "duracion": "REGULAR",
+    "golesLocal": 4,
+    "golesVisitante": 3,
+    "ganador": null,
+    "duracion": "PENALTY_SHOOTOUT",
     "tiempoCompleto": {
-      "home": 0,
-      "away": 0
+      "home": 4,
+      "away": 3
     },
     "entretiempo": {
       "home": 0,
       "away": 0
     },
-    "alargue": {},
-    "penales": {},
-    "ultimaActualizacion": "2026-07-07T21:50:45Z"
+    "alargue": {
+      "home": 0,
+      "away": 0
+    },
+    "penales": {
+      "home": 2,
+      "away": 2
+    },
+    "ultimaActualizacion": "2026-07-07T22:54:06Z"
   },
   {
     "id": 537383,
