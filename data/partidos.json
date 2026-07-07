@@ -2758,25 +2758,25 @@
     "fecha": "2026-07-07",
     "hora": "13:00",
     "utcDate": "2026-07-07T16:00:00Z",
-    "estado": "LIVE",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Argentina",
     "visitante": "Egypt",
-    "golesLocal": 0,
-    "golesVisitante": 1,
-    "ganador": "AWAY_TEAM",
+    "golesLocal": 3,
+    "golesVisitante": 2,
+    "ganador": "HOME_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
+      "home": 3,
+      "away": 2
+    },
+    "entretiempo": {
       "home": 0,
       "away": 1
     },
-    "entretiempo": {
-      "home": null,
-      "away": null
-    },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-07T16:22:12Z"
+    "ultimaActualizacion": "2026-07-07T18:15:15Z"
   },
   {
     "id": 537382,
