@@ -2826,21 +2826,21 @@
     "estadio": "",
     "local": "France",
     "visitante": "Morocco",
-    "golesLocal": 0,
+    "golesLocal": 2,
     "golesVisitante": 0,
-    "ganador": "DRAW",
+    "ganador": "HOME_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": 0,
+      "home": 2,
       "away": 0
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-09T20:15:15Z"
+    "ultimaActualizacion": "2026-07-09T21:54:04Z"
   },
   {
     "id": 537384,

@@ -1,13 +1,13 @@
 [
   {
-    "jugador": "Lionel Messi",
-    "equipo": "Argentina",
+    "jugador": "Kylian Mbappé",
+    "equipo": "France",
     "goles": 8
   },
   {
-    "jugador": "Kylian Mbappé",
-    "equipo": "France",
-    "goles": 7
+    "jugador": "Lionel Messi",
+    "equipo": "Argentina",
+    "goles": 8
   },
   {
     "jugador": "Erling Haaland",
@@ -18,6 +18,11 @@
     "jugador": "Harry Kane",
     "equipo": "England",
     "goles": 6
+  },
+  {
+    "jugador": "Ousmane Dembélé",
+    "equipo": "France",
+    "goles": 5
   },
   {
     "jugador": "Julián Quiñones",
@@ -37,11 +42,6 @@
   {
     "jugador": "Mikel Oyarzabal",
     "equipo": "Spain",
-    "goles": 4
-  },
-  {
-    "jugador": "Ousmane Dembélé",
-    "equipo": "France",
     "goles": 4
   },
   {
