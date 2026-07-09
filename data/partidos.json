@@ -2822,7 +2822,7 @@
     "fecha": "2026-07-09",
     "hora": "17:00",
     "utcDate": "2026-07-09T20:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "France",
     "visitante": "Morocco",
@@ -2840,7 +2840,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-09T21:54:04Z"
+    "ultimaActualizacion": "2026-07-09T22:25:01Z"
   },
   {
     "id": 537384,
