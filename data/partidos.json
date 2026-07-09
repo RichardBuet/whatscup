@@ -2822,17 +2822,17 @@
     "fecha": "2026-07-09",
     "hora": "17:00",
     "utcDate": "2026-07-09T20:00:00Z",
-    "estado": "TIMED",
+    "estado": "IN_PLAY",
     "estadio": "",
     "local": "France",
     "visitante": "Morocco",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 0,
+    "golesVisitante": 0,
+    "ganador": "DRAW",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "entretiempo": {
       "home": null,
@@ -2840,7 +2840,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-09T05:20:10Z"
+    "ultimaActualizacion": "2026-07-09T20:15:15Z"
   },
   {
     "id": 537384,
