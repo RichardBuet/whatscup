@@ -2851,25 +2851,25 @@
     "fecha": "2026-07-10",
     "hora": "16:00",
     "utcDate": "2026-07-10T19:00:00Z",
-    "estado": "TIMED",
+    "estado": "IN_PLAY",
     "estadio": "",
     "local": "Spain",
     "visitante": "Belgium",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 1,
+    "golesVisitante": 1,
+    "ganador": "DRAW",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 1
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 1
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-10T05:20:09Z"
+    "ultimaActualizacion": "2026-07-10T20:41:06Z"
   },
   {
     "id": 537385,
