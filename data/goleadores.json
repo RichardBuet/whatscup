@@ -20,6 +20,11 @@
     "goles": 6
   },
   {
+    "jugador": "Jude Bellingham",
+    "equipo": "England",
+    "goles": 5
+  },
+  {
     "jugador": "Ousmane Dembélé",
     "equipo": "France",
     "goles": 5
@@ -32,11 +37,6 @@
   {
     "jugador": "Vinicius Junior",
     "equipo": "Brazil",
-    "goles": 4
-  },
-  {
-    "jugador": "Jude Bellingham",
-    "equipo": "England",
     "goles": 4
   },
   {

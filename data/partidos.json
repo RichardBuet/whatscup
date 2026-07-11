@@ -2671,7 +2671,7 @@
     "fecha": "2026-07-05",
     "hora": "22:00",
     "utcDate": "2026-07-06T01:00:00Z",
-    "estado": "FINISHED",
+    "estado": "2026-07-06 01:00:00Z",
     "estadio": "",
     "local": "Mexico",
     "visitante": "England",
@@ -2689,7 +2689,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-11T05:20:09Z"
+    "ultimaActualizacion": "2026-07-11T21:11:56Z"
   },
   {
     "id": 537379,
@@ -2880,25 +2880,25 @@
     "fecha": "2026-07-11",
     "hora": "18:00",
     "utcDate": "2026-07-11T21:00:00Z",
-    "estado": "TIMED",
+    "estado": "PAUSED",
     "estadio": "",
     "local": "Norway",
     "visitante": "England",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
+    "golesLocal": 1,
+    "golesVisitante": 1,
+    "ganador": "DRAW",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 1
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 1
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-11T05:20:09Z"
+    "ultimaActualizacion": "2026-07-11T21:58:07Z"
   },
   {
     "id": 537386,
