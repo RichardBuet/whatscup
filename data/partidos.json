@@ -2912,25 +2912,28 @@
     "fecha": "2026-07-11",
     "hora": "22:00",
     "utcDate": "2026-07-12T01:00:00Z",
-    "estado": "TIMED",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Argentina",
     "visitante": "Switzerland",
-    "golesLocal": null,
-    "golesVisitante": null,
-    "ganador": null,
-    "duracion": "REGULAR",
+    "golesLocal": 3,
+    "golesVisitante": 1,
+    "ganador": "HOME_TEAM",
+    "duracion": "EXTRA_TIME",
     "tiempoCompleto": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 1
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     },
-    "alargue": {},
+    "alargue": {
+      "home": 2,
+      "away": 0
+    },
     "penales": {},
-    "ultimaActualizacion": "2026-07-11T05:20:09Z"
+    "ultimaActualizacion": "2026-07-12T03:51:58Z"
   },
   {
     "id": 537387,
