@@ -2880,25 +2880,28 @@
     "fecha": "2026-07-11",
     "hora": "18:00",
     "utcDate": "2026-07-11T21:00:00Z",
-    "estado": "PAUSED",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Norway",
     "visitante": "England",
     "golesLocal": 1,
-    "golesVisitante": 1,
-    "ganador": "DRAW",
-    "duracion": "REGULAR",
+    "golesVisitante": 2,
+    "ganador": "AWAY_TEAM",
+    "duracion": "EXTRA_TIME",
     "tiempoCompleto": {
       "home": 1,
-      "away": 1
+      "away": 2
     },
     "entretiempo": {
       "home": 1,
       "away": 1
     },
-    "alargue": {},
+    "alargue": {
+      "home": 0,
+      "away": 1
+    },
     "penales": {},
-    "ultimaActualizacion": "2026-07-11T23:07:31Z"
+    "ultimaActualizacion": "2026-07-11T23:53:31Z"
   },
   {
     "id": 537386,
