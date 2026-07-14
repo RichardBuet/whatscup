@@ -2944,7 +2944,7 @@
     "fecha": "2026-07-14",
     "hora": "16:00",
     "utcDate": "2026-07-14T19:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "France",
     "visitante": "Spain",
@@ -2962,7 +2962,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-14T20:34:59Z"
+    "ultimaActualizacion": "2026-07-14T21:04:16Z"
   },
   {
     "id": 537388,
