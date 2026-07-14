@@ -25,6 +25,11 @@
     "goles": 6
   },
   {
+    "jugador": "Mikel Oyarzabal",
+    "equipo": "Spain",
+    "goles": 5
+  },
+  {
     "jugador": "Ousmane Dembélé",
     "equipo": "France",
     "goles": 5
@@ -37,11 +42,6 @@
   {
     "jugador": "Vinicius Junior",
     "equipo": "Brazil",
-    "goles": 4
-  },
-  {
-    "jugador": "Mikel Oyarzabal",
-    "equipo": "Spain",
     "goles": 4
   },
   {
