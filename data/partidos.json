@@ -2977,21 +2977,21 @@
     "estadio": "",
     "local": "England",
     "visitante": "Argentina",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 0,
-    "ganador": "DRAW",
+    "ganador": "HOME_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
-      "home": 0,
+      "home": 1,
       "away": 0
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-15T19:34:49Z"
+    "ultimaActualizacion": "2026-07-15T20:40:34Z"
   },
   {
     "id": 537389,
