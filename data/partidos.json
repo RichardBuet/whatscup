@@ -2973,17 +2973,17 @@
     "fecha": "2026-07-15",
     "hora": "16:00",
     "utcDate": "2026-07-15T19:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "England",
     "visitante": "Argentina",
     "golesLocal": 1,
-    "golesVisitante": 0,
-    "ganador": "HOME_TEAM",
+    "golesVisitante": 2,
+    "ganador": "AWAY_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
       "home": 1,
-      "away": 0
+      "away": 2
     },
     "entretiempo": {
       "home": 0,
@@ -2991,7 +2991,7 @@
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-15T20:40:34Z"
+    "ultimaActualizacion": "2026-07-15T21:09:25Z"
   },
   {
     "id": 537389,
