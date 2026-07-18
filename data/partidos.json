@@ -3002,25 +3002,25 @@
     "fecha": "2026-07-18",
     "hora": "18:00",
     "utcDate": "2026-07-18T21:00:00Z",
-    "estado": "IN_PLAY",
+    "estado": "PAUSED",
     "estadio": "",
     "local": "France",
     "visitante": "England",
     "golesLocal": 0,
-    "golesVisitante": 1,
+    "golesVisitante": 4,
     "ganador": "AWAY_TEAM",
     "duracion": "REGULAR",
     "tiempoCompleto": {
       "home": 0,
-      "away": 1
+      "away": 4
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 4
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-18T21:22:24Z"
+    "ultimaActualizacion": "2026-07-18T21:56:00Z"
   },
   {
     "id": 537390,
