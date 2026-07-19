@@ -3031,7 +3031,7 @@
     "fecha": "2026-07-19",
     "hora": "16:00",
     "utcDate": "2026-07-19T19:00:00Z",
-    "estado": "LIVE",
+    "estado": "PAUSED",
     "estadio": "",
     "local": "Spain",
     "visitante": "Argentina",
@@ -3044,11 +3044,11 @@
       "away": 0
     },
     "entretiempo": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "alargue": {},
     "penales": {},
-    "ultimaActualizacion": "2026-07-19T19:29:59Z"
+    "ultimaActualizacion": "2026-07-19T20:02:21Z"
   }
 ]
