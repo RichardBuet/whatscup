@@ -3031,24 +3031,27 @@
     "fecha": "2026-07-19",
     "hora": "16:00",
     "utcDate": "2026-07-19T19:00:00Z",
-    "estado": "PAUSED",
+    "estado": "FINISHED",
     "estadio": "",
     "local": "Spain",
     "visitante": "Argentina",
-    "golesLocal": 0,
+    "golesLocal": 1,
     "golesVisitante": 0,
-    "ganador": "DRAW",
-    "duracion": "REGULAR",
+    "ganador": "HOME_TEAM",
+    "duracion": "EXTRA_TIME",
     "tiempoCompleto": {
-      "home": 0,
+      "home": 1,
       "away": 0
     },
     "entretiempo": {
       "home": 0,
       "away": 0
     },
-    "alargue": {},
+    "alargue": {
+      "home": 1,
+      "away": 0
+    },
     "penales": {},
-    "ultimaActualizacion": "2026-07-19T21:23:28Z"
+    "ultimaActualizacion": "2026-07-19T22:15:38Z"
   }
 ]
